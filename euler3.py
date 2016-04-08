@@ -2,7 +2,7 @@ import math
 
 # find all uneven divisors of sqrt x:
 def divisor(x):
-    return [i for i in range(3, int(math.sqrt(x)), 2) if x % i == 0]
+    return [i for i in range(3, int(math.sqrt(x)+1), 2) if x % i == 0]
 
 #find all uneven divisors of sqrt x that are prime:
 def prime_factors(x):
