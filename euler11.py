@@ -1,6 +1,4 @@
-import numpy; from numpy import prod; import time
-
-start_time = time.time()
+import time; from functools import reduce
 
 e ='08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\
     49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00\
@@ -23,17 +21,28 @@ e ='08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\
     20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54\
     01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48'
 
-e = e.replace(' ','')
+e = str.split(e)
 
-def chunk(seq, size):
-    return (seq[pos:pos + size] for pos in range(0, len(seq), 1))
+def horizontal(seq, size):
+    return (seq[pos:pos+size] for pos in range(0, len(seq), 1))
 
-def find_biggestproduct(x):
+def vertical(seq, size, begin, stop):
+    return ([seq[pos], seq[pos+size], seq[pos+size*2], seq[pos+size*3]] for pos in range(begin, len(seq)-stop, 1))
+
+def find_biggestproduct(seq):
     result = []
-    for i in chunk(e, x):
-        result.append(prod([int(b) for b in str(i)], dtype=numpy.uint64))
+    for i in horizontal(seq, 4):
+        i = list(map(int, i))
+        result.append(reduce(lambda x, y: x*y, i))
+    for i in vertical(seq, 20, 0, 60):
+        i = list(map(int, i))
+        result.append(reduce(lambda x, y: x*y, i))
+    for i in vertical(seq, 21, 0, 63):
+        i = list(map(int, i))
+        result.append(reduce(lambda x, y: x*y, i))
+    for i in vertical(seq, 19, 3, 60):
+        i = list(map(int, i))
+        result.append(reduce(lambda x, y: x*y, i))
     return max(result)
 
-print(find_biggestproduct(13))
-
-print("--- %s seconds ---" % (time.time() - start_time))
+print(find_biggestproduct(e))
