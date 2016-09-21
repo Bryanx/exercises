@@ -26,23 +26,29 @@ public class P1W1OpdrachtWiskundigebewerkingen {
         System.out.println("2 aftrekken");
         System.out.println("3 vermenigvuldigen");
         System.out.println("4 delen");
+        System.out.println("5 machten");
         bewerking = keyboardScanner.nextInt();
 
         if  (bewerking == 1) {
-            som = getal1+getal2;
-            System.out.print("Jouw keuze: "+som);
-        }
-        if  (bewerking == 2) {
-            som = getal1-getal2;
-            System.out.print("Jouw keuze: "+som);
-        }
-        if  (bewerking == 3) {
+            som = getal1 + getal2;
+            System.out.print("Jouw keuze: " + som);
+        } else if  (bewerking == 2) {
+            som = getal1 - getal2;
+            System.out.print("Jouw keuze: " + som);
+        } else if  (bewerking == 3) {
             som = getal1*getal2;
-            System.out.print("Jouw keuze: "+som);
-        }
-        if  (bewerking == 4) {
+            System.out.print("Jouw keuze: " + som);
+        } else if  (bewerking == 4) {
             som = getal1/getal2;
-            System.out.print("Jouw keuze: "+som);
+            System.out.print("Jouw keuze: " + som);
+        } else if (bewerking == 5) {
+            int macht = 0;
+            som = 1;
+            while (macht != getal2) {
+                macht = macht + 1;
+                som = som * getal1;
+            }
+            System.out.println("Jouw keuze: " + som);
         }
     }
 }
