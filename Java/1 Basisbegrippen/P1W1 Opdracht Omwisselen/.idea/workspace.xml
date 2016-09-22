@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0f800a8-f7b3-46aa-811f-4d6452f41ba3" name="Default" comment="Nieuwe opdracht toegevoegd.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Omwisselen/Omwisselen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="c0f800a8-f7b3-46aa-811f-4d6452f41ba3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W1 Opdracht Wiskundige bewerkingen/.idea/misc.xml" afterPath="$PROJECT_DIR$/../P1W1 Opdracht Wiskundige bewerkingen/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W1 Opdracht Wiskundige bewerkingen/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W1 Opdracht Wiskundige bewerkingen/.idea/workspace.xml" />
     </list>
     <ignored path="P1W1 Opdracht Omwisselen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -601,12 +596,20 @@
       <option name="presentableId" value="Default" />
       <updated>1474467357111</updated>
       <workItem from="1474467358623" duration="50000" />
-      <workItem from="1474568489490" duration="2149000" />
+      <workItem from="1474568489490" duration="2188000" />
     </task>
+    <task id="LOCAL-00001" summary="Nieuwe opdracht toegevoegd.">
+      <created>1474570686003</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474570686003</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2199000" />
+    <option name="totallyTimeSpent" value="2238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
