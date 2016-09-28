@@ -11,13 +11,13 @@ public class Belasting {
         Scanner keyboardScanner = new Scanner(System.in);
 
         double btwPercentage;
+        double inclusief;
+        double exclusief;
         int bedrag;
         int keuze;
         int stappen = 3;
-        double inclusief = 0;
-        double exclusief = 0;
 
-        while (stappen > 0) {
+        while (stappen-- > 0) {
 
             System.out.print("Geef het BTW percentage: ");
             btwPercentage = keyboardScanner.nextDouble();
@@ -37,7 +37,6 @@ public class Belasting {
                 break;
             }
             System.out.println("€" + exclusief + " + " + btwPercentage + "% BTW = " + inclusief);
-            stappen--;
         }
     }
 }
