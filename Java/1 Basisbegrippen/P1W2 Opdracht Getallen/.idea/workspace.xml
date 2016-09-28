@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f23b7b-0171-4809-aa58-0f68057e711a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/.idea/workspace.xml" />
     </list>
     <ignored path="P1W2 Opdracht Getallen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="Getallen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/getallen/Getallen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="493">
+              <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -148,7 +148,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1W2 Opdracht Pizza" />
   </component>
   <component name="RunManager" selected="Application.Getallen">
     <configuration default="false" name="Getallen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -607,12 +607,20 @@
       <workItem from="1475052809523" duration="1410000" />
       <workItem from="1475054478416" duration="24000" />
       <workItem from="1475054624883" duration="54000" />
-      <workItem from="1475101999922" duration="68000" />
+      <workItem from="1475101999922" duration="102000" />
     </task>
+    <task id="LOCAL-00001" summary="Added some spaces.">
+      <created>1475102083877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475102083877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1556000" />
+    <option name="totallyTimeSpent" value="1590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -656,6 +664,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added some spaces." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some spaces." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -691,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/getallen/Getallen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="493">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
           <folding />
         </state>
       </provider>
