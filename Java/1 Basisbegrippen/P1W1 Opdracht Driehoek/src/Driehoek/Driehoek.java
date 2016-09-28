@@ -34,9 +34,5 @@ public class Driehoek {
             System.out.println();
         }
     }
-
-
-
-
 }
 

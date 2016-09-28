@@ -8,17 +8,18 @@ public class Booth {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
 
-        long Aaccent, P, A;
+        long Aaccent = 11110 00000, P = 00000111000, A = 00010000000;
         int aantal_bits = 5;
 
-        System.out.println("Voer een binair cijfer in voor A: ");
-        A = keyboardScanner.nextLong();
 
-        System.out.println("Voer een binair cijfer in voor Aaccent: ");
-        Aaccent = keyboardScanner.nextLong();
-
-        System.out.println("Voer een binair cijfer in voor P: ");
-        P = keyboardScanner.nextLong();
+//        System.out.println("Voer een binair cijfer in voor A: ");
+//        A = keyboardScanner.nextLong();
+//
+//        System.out.println("Voer een binair cijfer in voor A': ");
+//        Aaccent = keyboardScanner.nextLong();
+//
+//        System.out.println("Voer een binair cijfer in voor P: ");
+//        P = keyboardScanner.nextLong();
 
         while (aantal_bits > 0) {
             System.out.println("P"+aantal_bits+" = "+P);
