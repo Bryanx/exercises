@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Getallen {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
+
         final int MINIMUM = 100000;
         final int MAXIMUM = 999999;
         long eersteGetal;
@@ -25,9 +26,9 @@ public class Getallen {
         }
 
         System.out.print("Het product is ");
-        System.out.println(eersteGetal*tweedeGetal);
+        System.out.println(eersteGetal * tweedeGetal);
         System.out.print("De laatste 5 cijfers zijn: ");
-        System.out.println((eersteGetal*tweedeGetal) % 100000);
+        System.out.println((eersteGetal * tweedeGetal) % 100000);
         //modulo geeft de rest waarde van getal / 100000. Dit zijn de laatste cijfers van het getal.
 
     }

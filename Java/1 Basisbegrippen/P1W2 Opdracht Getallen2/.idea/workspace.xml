@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779c79b9-75d9-4501-b195-383c1bf5bd44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" afterPath="$PROJECT_DIR$/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W1 Opdracht Driehoek/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W1 Opdracht Driehoek/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/getallen2/Getallen2.java" afterPath="$PROJECT_DIR$/src/getallen2/Getallen2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht PeerTutor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht PeerTutor/.idea/workspace.xml" />
     </list>
     <ignored path="P1W2 Opdracht Getallen2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/getallen2/Getallen2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -49,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bryan de Ridder" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="GradleLocalSettings">
@@ -151,7 +152,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1W2 Opdracht Getallen" />
   </component>
   <component name="RunManager" selected="Application.Getallen2">
     <configuration default="false" name="Getallen2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -609,12 +610,20 @@
       <updated>1475054678525</updated>
       <workItem from="1475054679854" duration="1716000" />
       <workItem from="1475057012977" duration="178000" />
-      <workItem from="1475101428663" duration="528000" />
+      <workItem from="1475101428663" duration="570000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleaned up.">
+      <created>1475101984442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475101984442</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2422000" />
+    <option name="totallyTimeSpent" value="2464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -627,7 +636,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -657,6 +666,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleaned up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -688,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/src/getallen2/Getallen2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
