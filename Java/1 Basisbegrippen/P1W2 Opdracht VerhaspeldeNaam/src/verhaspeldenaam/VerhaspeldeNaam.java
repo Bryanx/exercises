@@ -25,7 +25,7 @@ public class VerhaspeldeNaam {
             char temp = karakter[random.nextInt(naam.length())];
 
             //if char is already in new string, try again.
-            if (verhaspeldeNaam.indexOf(temp) == - 1) {
+            if (verhaspeldeNaam.indexOf(temp) == -1) {
                 verhaspeldeNaam += temp;
             }
         }
