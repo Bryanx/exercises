@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
     <list default="true" id="4fd142ea-533a-41d1-b57d-66469292671e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/out/production/2.9.7 Floating-point/floatingpoint/FloatingPoint.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/out/production/2.9.8 Fouten/fouten/Fouten.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/src/floatingpoint/FloatingPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/2.9.8 Fouten.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/src/fouten/Fouten.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie/TemperatuurConversie.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie2/TemperatuurConversie2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie3/TemperatuurConversie3.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/P1W2 Opdracht PeerTutor.iml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/2.9.7 Floating-point.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/modules.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/Booth's Algorithm.iml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/Booth's Algorithm.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/out/production/Booth's Algorithm/Booth.class" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/out/production/Booth's Algorithm/Booth.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/src/Booth.java" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/src/Booth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht ASCII-Tabel/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht ASCII-Tabel/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml" />
+=======
+    <list default="true" id="4f6782f1-f649-411d-ad1f-89a01267ff04" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/out/production/P1W2 Opdracht ASCII-Tabel/asciitabel/AsciiTabel.class" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/out/production/P1W2 Opdracht ASCII-Tabel/asciitabel/AsciiTabel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/out/production/P1W2 Opdracht Belasting/belasting/Belasting.class" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/out/production/P1W2 Opdracht Belasting/belasting/Belasting.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/out/production/P1W2 Opdracht Pizza/pizza/Pizza.class" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/out/production/P1W2 Opdracht Pizza/pizza/Pizza.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W1 Opdracht Driehoek/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W1 Opdracht Driehoek/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/src/asciitabel/AsciiTabel.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht ASCII-Tabel/src/asciitabel/AsciiTabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/src/belasting/Belasting.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Belasting/src/belasting/Belasting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen/src/getallen/Getallen.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen/src/getallen/Getallen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/src/getallen2/Getallen2.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Getallen2/src/getallen2/Getallen2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/src/pizza/Pizza.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Pizza/src/pizza/Pizza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Tellers/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Tellers/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Tellers/src/tellers/Tellers.java" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Tellers/src/tellers/Tellers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Verbruik/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht Verbruik/.idea/workspace.xml" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
     </list>
-    <ignored path="P1W2 Opdracht PeerTutor.iws" />
+    <ignored path="2.9.8 Fouten.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -52,25 +49,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="P1W2 Opdracht PeerTutor" />
+    <favorites_list name="2.9.8 Fouten" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TemperatuurConversie.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
+      <file leaf-file-name="Fouten.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fouten/Fouten.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
+            <state relative-caret-position="153">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemperatuurConversie2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TemperatuurConversie2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -81,6 +79,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+            <state relative-caret-position="225">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
               <folding />
             </state>
           </provider>
@@ -106,9 +108,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
         <option value="$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java" />
         <option value="$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java" />
         <option value="$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java" />
+=======
+        <option value="$PROJECT_DIR$/src/fouten/Fouten.java" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
       </list>
     </option>
   </component>
@@ -119,10 +125,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="3" />
+    <option name="y" value="23" />
+    <option name="width" value="1260" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -131,7 +137,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -149,17 +155,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="P1W2 Opdracht PeerTutor" />
+              <option name="myItemId" value="2.9.8 Fouten" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.9.8 Fouten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.9.8 Fouten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.9.8 Fouten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.9.8 Fouten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fouten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
+=======
+      <pane id="Scope" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -168,21 +205,24 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
   </component>
-  <component name="RunManager" selected="Application.TemperatuurConversie3">
-    <configuration default="false" name="TemperatuurConversie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Fouten">
+    <configuration default="false" name="Fouten" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="temperatuurconversie.*" />
+          <option name="PATTERN" value="fouten.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="temperatuurconversie.TemperatuurConversie" />
+      <option name="MAIN_CLASS_NAME" value="fouten.Fouten" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -191,47 +231,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="P1W2 Opdracht PeerTutor" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TemperatuurConversie2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="temperatuurconversie2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="temperatuurconversie2.TemperatuurConversie2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="P1W2 Opdracht PeerTutor" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TemperatuurConversie3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="temperatuurconversie3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="temperatuurconversie3.TemperatuurConversie3" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="P1W2 Opdracht PeerTutor" />
+      <module name="2.9.8 Fouten" />
       <envs />
       <method />
     </configuration>
@@ -541,7 +541,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="P1W2 Opdracht PeerTutor" />
+      <module name="2.9.8 Fouten" />
       <envs />
       <method />
     </configuration>
@@ -649,16 +649,12 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.TemperatuurConversie" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TemperatuurConversie2" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TemperatuurConversie3" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Fouten" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.TemperatuurConversie3" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TemperatuurConversie2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TemperatuurConversie" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Fouten" />
       </list>
     </recent_temporary>
   </component>
@@ -667,47 +663,65 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4fd142ea-533a-41d1-b57d-66469292671e" name="Default" comment="" />
-      <created>1475073902108</created>
+      <changelist id="4f6782f1-f649-411d-ad1f-89a01267ff04" name="Default" comment="" />
+      <created>1475161081198</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
       <updated>1475073902108</updated>
       <workItem from="1475073903537" duration="3955000" />
       <workItem from="1475101403391" duration="24000" />
-      <workItem from="1475162316473" duration="499000" />
+      <workItem from="1475162316473" duration="386000" />
+=======
+      <updated>1475161081198</updated>
+      <workItem from="1475161082925" duration="567000" />
+      <workItem from="1475161832736" duration="9000" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4478000" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
+    <option name="totallyTimeSpent" value="4365000" />
+=======
+    <option name="totallyTimeSpent" value="576000" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="3" y="23" width="1260" height="773" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2911932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -732,6 +746,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD:Java/1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -741,6 +756,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/fouten/Fouten.java">
+>>>>>>> 4df895bfd250a024b707ced781159b204f45d114:Java/Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -748,26 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java">
+    <entry file="file://$PROJECT_DIR$/src/fouten/Fouten.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -780,10 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java">
+    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -796,10 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
+    <entry file="file://$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
