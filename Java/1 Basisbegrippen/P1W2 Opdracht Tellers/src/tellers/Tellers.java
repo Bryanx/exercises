@@ -6,7 +6,6 @@ package tellers;
  */
 public class Tellers {
     public static void main(String[] args) {
-        final int AANTAL = 100;
 
         int eersteRij = 0;
         int tweedeRij = 10;

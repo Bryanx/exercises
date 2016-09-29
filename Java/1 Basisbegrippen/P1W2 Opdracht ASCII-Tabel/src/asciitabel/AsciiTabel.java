@@ -11,15 +11,13 @@ public class AsciiTabel {
         char ascii;
         final int AANTAL_KOLOMMEN = 6;
 
-        while (getal > 30 && getal < 127) {
-            getal++;
+        while (getal++ > 30 && getal < 127) {
             ascii = (char) getal;
 
-            System.out.print(ascii + getal>99?" ( " + getal + ")\t\t" : " (" + getal + ")\t\t");
+            System.out.print(ascii + (getal > 99 ? " (" + getal + ")\t\t" : " ( " + getal + ")\t\t"));
 
             if (getal % AANTAL_KOLOMMEN == 1) {
                 System.out.println();
-
             }
         }
     }

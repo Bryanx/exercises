@@ -11,26 +11,23 @@ public class Getallen2 {
         Scanner keyboardScanner = new Scanner(System.in);
 
         final double MIMIMUM_DEELTAL = 10E-12;
-        final long MINIMUM_DELER = 10000000;
+        final double MINIMUM_DELER = 10E-6;
         long getalDertien;
         long getalAcht;
         int stappen = 3;
 
-        while (stappen > 0) {
+        while (stappen-- > 0) {
             System.out.print("Geef een geheel getal van 13 cijfers: ");
             getalDertien = keyboardScanner.nextLong();
             System.out.print("Geef een geheel getal van 8 cijfers: ");
             getalAcht = keyboardScanner.nextLong();
 
             if (getalDertien < MIMIMUM_DEELTAL || getalAcht < MINIMUM_DELER) {
-                System.out.println("Error");
-            }else {
-                System.out.println(getalDertien/getalAcht);
-                System.out.println("Het quotiënt is: "+((double)getalDertien/(double)getalAcht));
-                System.out.println("Zonder decimalen is dit: "+(getalDertien/getalAcht));
+                System.out.println("Dit getal is te klein.");
+            } else {
+                System.out.println("Het quotiënt is: " + ((double) getalDertien / (double) getalAcht));
+                System.out.println("Zonder decimalen is dit: " + (getalDertien / getalAcht));
             }
-            stappen--;
-
         }
     }
 }

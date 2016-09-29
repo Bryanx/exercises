@@ -20,13 +20,12 @@ public class Pizza {
         System.out.print("Hoeveel pizza's wens je: ");
         aantalPizzas = keyboardScanner.nextInt();
 
-        while (stappen < aantalPizzas) {
-            stappen++;
-            System.out.print("Hoeveel extra toppings voor pizza "+stappen+" : ");
+        while (stappen++ < aantalPizzas) {
+            System.out.print("Hoeveel extra toppings voor pizza " + stappen + ": ");
             extraToppings += keyboardScanner.nextInt();
         }
 
         totaal = (extraToppings * TOPPING_PRIJS) + (aantalPizzas * PIZZA_PRIJS);
-        System.out.println("Te betalen: €"+totaal);
+        System.out.println("Te betalen: €" + totaal);
     }
 }
