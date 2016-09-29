@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fd142ea-533a-41d1-b57d-66469292671e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/out/production/2.9.7 Floating-point/floatingpoint/FloatingPoint.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/out/production/2.9.8 Fouten/fouten/Fouten.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/src/floatingpoint/FloatingPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/2.9.8 Fouten.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/src/fouten/Fouten.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie/TemperatuurConversie.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie2/TemperatuurConversie2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/P1W2 Opdracht PeerTutor/temperatuurconversie3/TemperatuurConversie3.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/P1W2 Opdracht PeerTutor.iml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/2.9.7 Floating-point.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/modules.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/Booth's Algorithm.iml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/Booth's Algorithm.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/out/production/Booth's Algorithm/Booth.class" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/out/production/Booth's Algorithm/Booth.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../Booth's Algorithm/src/Booth.java" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/1.7.6 Booth's Algorithm/src/Booth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie2/TemperatuurConversie2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java" afterPath="$PROJECT_DIR$/src/temperatuurconversie3/TemperatuurConversie3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4fd142ea-533a-41d1-b57d-66469292671e" name="Default" comment="" />
     <ignored path="P1W2 Opdracht PeerTutor.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,8 +25,8 @@
       <file leaf-file-name="TemperatuurConversie.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -674,16 +640,16 @@
       <updated>1475073902108</updated>
       <workItem from="1475073903537" duration="3955000" />
       <workItem from="1475101403391" duration="24000" />
-      <workItem from="1475162316473" duration="499000" />
+      <workItem from="1475162316473" duration="690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4478000" />
+    <option name="totallyTimeSpent" value="4669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -696,7 +662,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -798,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/temperatuurconversie/TemperatuurConversie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
           <folding />
         </state>
       </provider>
