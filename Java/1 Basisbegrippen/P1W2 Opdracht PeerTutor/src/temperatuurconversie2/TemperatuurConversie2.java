@@ -25,6 +25,7 @@ public class TemperatuurConversie2 {
             return;
         }
 
+
         System.out.print("Geef de stapwaarde: ");
         stapWaarde = keyboardScanner.nextInt();
 

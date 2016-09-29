@@ -15,6 +15,7 @@ public class TemperatuurConversie3 {
         int stapWaarde;
         double fahrenheit;
 
+
         System.out.print("Geef de begintemperatuur in °C: ");
         beginTemperatuur = keyboardScanner.nextInt();
         System.out.print("Geef de eindtemperatuur in °C: ");

@@ -14,7 +14,6 @@ public class TemperatuurConversie {
         double fahrenheit;
         double celsius;
 
-
         while (true) {
             System.out.print("Welke conversie wens je te doen? (1=C/2+F): ");
             keuze = keyboardScanner.nextInt();
