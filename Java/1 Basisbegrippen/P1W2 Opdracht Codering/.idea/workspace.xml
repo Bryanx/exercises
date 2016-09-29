@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79b87fa6-51f8-45bd-ad10-a932fa17e476" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codering/Codering.java" afterPath="$PROJECT_DIR$/src/codering/Codering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht PeerTutor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht PeerTutor/.idea/workspace.xml" />
     </list>
     <ignored path="P1W2 Opdracht Codering.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,6 +44,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bryanx" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="GradleLocalSettings">
@@ -574,12 +577,20 @@
       <workItem from="1475073015251" duration="116000" />
       <workItem from="1475073220608" duration="191000" />
       <workItem from="1475073689725" duration="212000" />
-      <workItem from="1475168990900" duration="3567000" />
+      <workItem from="1475168990900" duration="3678000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed code with new toCharArray">
+      <created>1475172669013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475172669013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4149000" />
+    <option name="totallyTimeSpent" value="4260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -649,6 +660,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed code with new toCharArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed code with new toCharArray" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
