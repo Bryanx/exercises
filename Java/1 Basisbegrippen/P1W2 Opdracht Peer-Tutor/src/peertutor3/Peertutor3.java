@@ -1,12 +1,10 @@
-package temperatuurconversie3;
-
-import java.util.Scanner;
+package peertutor3;
 
 /**
  * @author Bryan de Ridder
- * @version 1.0 28/09/16 17:06
+ * @version 1.0 30/09/16 13:51
  */
-public class TemperatuurConversie3 {
+public class Peertutor3 {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
 

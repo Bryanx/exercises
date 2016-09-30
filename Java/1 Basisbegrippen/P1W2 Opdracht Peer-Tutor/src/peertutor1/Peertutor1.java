@@ -1,12 +1,10 @@
-package temperatuurconversie2;
-
-import java.util.Scanner;
+package peertutor1;
 
 /**
  * @author Bryan de Ridder
- * @version 1.0 28/09/16 17:06
+ * @version 1.0 30/09/16 13:50
  */
-public class TemperatuurConversie2 {
+public class Peertutor1 {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
 
@@ -37,4 +35,3 @@ public class TemperatuurConversie2 {
             System.out.println(beginTemperatuur + " °C = " + fahrenheit + "°F");
         }
     }
-}
