@@ -1,0 +1,9 @@
+body {
+    background-color: gold;
+}
+
+p {
+    font-family: verdana, sans-serif;
+    font-size: 2rem;
+    width: 50%;
+}
