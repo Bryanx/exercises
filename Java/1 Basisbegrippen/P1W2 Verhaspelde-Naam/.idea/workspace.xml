@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9f960c5-9a0a-4b6a-9616-8e78d7b6c078" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht VerhaspeldeNaam/src/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/verhaspelde_naam/VerhaspeldeNaam.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../HTML &amp; CSS/Week2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../HTML &amp; CSS/Week2/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../HTML &amp; CSS/Week2/H5/05_iframe/index.html" afterPath="$PROJECT_DIR$/../../../HTML &amp; CSS/Week2/H5/05_iframe/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../1 Basisbegrippen/P1W2 Opdracht PeerTutor/.idea/workspace.xml" />
     </list>
     <ignored path="P1W2 Verhaspelde-Naam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +24,12 @@
     <favorites_list name="P1W2 Verhaspelde-Naam" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="VerhaspeldeNaam.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/verhaspelde_naam/VerhaspeldeNaam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="165">
+              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,6 +137,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -149,7 +145,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -582,11 +578,12 @@
       <updated>1475234881870</updated>
       <workItem from="1475234884476" duration="38000" />
       <workItem from="1475234946338" duration="94000" />
+      <workItem from="1475235350441" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132000" />
+    <option name="totallyTimeSpent" value="366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1260" height="773" extended-state="0" />
@@ -636,8 +633,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/verhaspelde_naam/VerhaspeldeNaam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/verhaspelde_naam/VerhaspeldeNaam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
