@@ -1,4 +1,4 @@
-package verhaspeldenaam;
+package verhaspelde_naam;
 
 import java.util.Random;
 import java.util.Scanner;

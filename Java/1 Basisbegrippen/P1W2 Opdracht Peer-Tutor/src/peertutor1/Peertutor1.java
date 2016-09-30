@@ -1,5 +1,7 @@
 package peertutor1;
 
+import java.util.Scanner;
+
 /**
  * @author Bryan de Ridder
  * @version 1.0 30/09/16 13:50
@@ -23,7 +25,6 @@ public class Peertutor1 {
             return;
         }
 
-
         System.out.print("Geef de stapwaarde: ");
         stapWaarde = keyboardScanner.nextInt();
 
@@ -35,3 +36,4 @@ public class Peertutor1 {
             System.out.println(beginTemperatuur + " °C = " + fahrenheit + "°F");
         }
     }
+}
