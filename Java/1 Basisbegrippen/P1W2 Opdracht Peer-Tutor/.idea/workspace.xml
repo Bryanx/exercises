@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc037498-2b04-481c-ab20-b6e57ad81fd9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/out/production/P1W2 Opdracht Getallen2/getallen2/Getallen2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Codering/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Codering/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Getallen2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/peertutor1/Peertutor1.java" afterPath="$PROJECT_DIR$/src/peertutor1/Peertutor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Pizza/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Pizza/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Opdracht Verbruik/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Opdracht Verbruik/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/.idea/modules.xml" afterPath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/src/verhaspelde_naam/VerhaspeldeNaam.java" afterPath="$PROJECT_DIR$/../P1W2 Verhaspelde-Naam/src/verhaspelde_naam/VerhaspeldeNaam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Computer Systemen 1/2.9.7 Floating-point/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bc037498-2b04-481c-ab20-b6e57ad81fd9" name="Default" comment="" />
     <ignored path="P1W2 Opdracht Peer-Tutor.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -108,6 +97,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,9 +174,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +184,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Computer Systemen 1/2.9.8 Fouten" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -625,15 +614,16 @@
       <updated>1475235870220</updated>
       <workItem from="1475235872206" duration="505000" />
       <workItem from="1475267342225" duration="166000" />
+      <workItem from="1475492651507" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671000" />
+    <option name="totallyTimeSpent" value="691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,6 +667,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/peertutor1/Peertutor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/peertutor1/Peertutor1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
