@@ -1,5 +1,7 @@
 package peertutor3;
 
+import java.util.Scanner;
+
 /**
  * @author Bryan de Ridder
  * @version 1.0 30/09/16 13:51

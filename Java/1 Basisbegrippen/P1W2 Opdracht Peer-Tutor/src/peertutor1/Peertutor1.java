@@ -10,30 +10,33 @@ public class Peertutor1 {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
 
-        int beginTemperatuur;
-        double eindTemperatuur;
-        int stapWaarde;
+        double beginTemperatuur;
         double fahrenheit;
+        int keuze;
 
-        System.out.print("Geef de begintemperatuur in °C: ");
-        beginTemperatuur = keyboardScanner.nextInt();
-        System.out.print("Geef de eindtemperatuur in °C: ");
-        eindTemperatuur = keyboardScanner.nextDouble();
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Welke conversie wens je te doen?");
+            System.out.println("1) C naar F");
+            System.out.println("2) F naar C");
+            keuze = keyboardScanner.nextInt();
+            System.out.println("Uw keuze: " + keuze);
 
-        if (beginTemperatuur > eindTemperatuur) {
-            System.out.println("Begin temperatuur kan niet kleiner zijn dan de eindtemperatuur.");
-            return;
-        }
-
-        System.out.print("Geef de stapwaarde: ");
-        stapWaarde = keyboardScanner.nextInt();
-
-        System.out.println(beginTemperatuur + " °C = " + (beginTemperatuur * 1.8 + 32) + "°F");
-
-        while (beginTemperatuur < eindTemperatuur) {
-            beginTemperatuur += stapWaarde;
-            fahrenheit = beginTemperatuur * 1.8 + 32;
-            System.out.println(beginTemperatuur + " °C = " + fahrenheit + "°F");
+            switch (keuze) {
+                case 1:
+                    System.out.print("Geef de waarde in C: ");
+                    beginTemperatuur = keyboardScanner.nextInt();
+                    fahrenheit = beginTemperatuur * 1.8 + 32;
+                    System.out.println(beginTemperatuur + "C = " + fahrenheit + "F");
+                    break;
+                case 2:
+                    System.out.print("Geef de waarde in F: ");
+                    fahrenheit = keyboardScanner.nextInt();
+                    beginTemperatuur = fahrenheit - 32 / 1.8;
+                    System.out.println(beginTemperatuur + "F = " + fahrenheit + "C");
+                    break;
+                default:
+                    System.out.println("Foute invoer!");
+            }
         }
     }
 }

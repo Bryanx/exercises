@@ -4,7 +4,7 @@
     <list default="true" id="a58cd306-03de-4f63-b6e7-503194287e41" name="Default" comment="" />
     <ignored path="P1W3 Opdracht Reeksen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen/out/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +21,7 @@
     <favorites_list name="P1W3 Opdracht Reeksen" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Programmeren/exercises" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -41,7 +41,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen/src/reeksen/Reeksen.java" />
+        <option value="$PROJECT_DIR$/src/reeksen/Reeksen.java" />
       </list>
     </option>
   </component>
@@ -81,12 +81,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P1W3 Opdracht Reeksen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -97,6 +104,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1W3 Reeksen" />
   </component>
   <component name="RunManager" selected="Application.Reeksen">
     <configuration default="false" name="Reeksen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -109,7 +117,7 @@
       <option name="MAIN_CLASS_NAME" value="reeksen.Reeksen" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -185,7 +193,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -554,11 +562,14 @@
       <updated>1475599916465</updated>
       <workItem from="1475599918230" duration="768000" />
       <workItem from="1475613421397" duration="93000" />
+      <workItem from="1475653527436" duration="8000" />
+      <workItem from="1475669907590" duration="20000" />
+      <workItem from="1475670188646" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="861000" />
+    <option name="totallyTimeSpent" value="896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -611,21 +622,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen/src/reeksen/Reeksen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Programmeren/exercises/Java/1 Basisbegrippen/P1W3 Opdracht Reeksen/src/reeksen/Reeksen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reeksen/Reeksen.java" />
+    <entry file="file://$PROJECT_DIR$/src/reeksen/Reeksen.java" />
   </component>
 </project>
