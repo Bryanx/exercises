@@ -1,0 +1,23 @@
+/* Let op! welk lettertype weergegeven wordt is afhankelijk van de browser */
+
+
+section > p.sans {
+    font-family: sans-serif;
+}
+section > p.serif {
+    font-family: serif;
+}
+section > p.verdana {
+    font-family: Verdana;
+}
+section > p.mono {
+    font-family: monospace;
+}
+section > p.cursive {
+    font-family: cursive;
+}
+section > p.fantasy {
+    font-family: fantasy;
+}
+
+

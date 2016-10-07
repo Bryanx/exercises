@@ -1,0 +1,25 @@
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Verdana;
+}
+
+header h1 {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+section p {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+footer > strong {
+    color: orange;
+    text-decoration: bold;
+}

@@ -1,0 +1,63 @@
+body {
+    background-color: darkgray;
+    margin: 0;
+}
+
+/* standard paragraph */
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+
+/* image in the banner */
+.banner {
+    max-width: 100%;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+header h1.intro {
+    position: absolute;
+    top: 200px;
+    left: auto;
+    right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 75px;
+    background-color: black;
+    color: white;
+}
+
+/* navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+    display: inline;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+/* links */
+a:link, a:visited, a:hover, a:active {
+    font-family: 'Open Sans', sans-serif;
+    color: #6783ab;
+    text-decoration: none;
+}

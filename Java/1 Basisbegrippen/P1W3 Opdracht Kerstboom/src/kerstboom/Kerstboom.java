@@ -10,28 +10,29 @@ public class Kerstboom {
     public static void main(String[] args) {
         Scanner keyboardScanner = new Scanner(System.in);
 
-        int breedte;
-        int middelste;
+        int boomBreedte;
+        int boomMidden;
 
         System.out.print("Geef de breedte de van kerstboom (oneven getal in bereik 13 .. 29: ");
-        breedte = keyboardScanner.nextInt();
+        boomBreedte = keyboardScanner.nextInt();
 
-        //BOOM
-        middelste = breedte / 2;
-        for (int j = 0; j < breedte; j += 2) {
-            for (int i = 0; i < middelste - 1; i++) {
+        // BOOM
+        boomMidden = boomBreedte / 2;
+        for (int blad = 0, space = boomMidden; blad < boomBreedte || space > 0; blad += 2, space--) {
+            //verspringing
+            for (int i = 0; i < space; i++) {
                 System.out.print(" ");
             }
-            for (int k = 0; k < j; k++) {
+            for (int k = 0; k <= blad; k++) {
                 System.out.print("*");
             }
-        System.out.println();
+            System.out.println();
         }
 
 
-        //STAM
-        for (int j = 0; j < 4; j++) {
-            for (int i = 1; i < middelste; i++) {
+        // STAM
+        for (int hoogteStam = 0; hoogteStam < 4; hoogteStam++) {
+            for (int dikteStam = 1; dikteStam < boomMidden; dikteStam++) {
                 System.out.print(" ");
             }
             System.out.println("***");
