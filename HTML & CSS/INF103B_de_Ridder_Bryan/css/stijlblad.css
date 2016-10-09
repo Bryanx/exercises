@@ -1,63 +1,104 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
-    background-color: darkgray;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
     margin: 0;
+
 }
 
-/* standard paragraph */
+/* Standard paragraph */
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: grey;
+    color: #333745;
+    font-size: 23px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 150%;
+    margin-left: 120px;
+    margin-right: 120px;
+
 }
 
-/* image in the banner */
+h1 {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* banner and text inside the banner */
 .banner {
-    max-width: 100%;
-    position: relative;
-    width: auto;
-    height: auto;
+    filter: brightness(65%);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
 
-header h1.intro {
+header {
+    text-align: center;
+
+}
+
+header h1, header p {
     position: absolute;
-    top: 200px;
-    left: auto;
-    right: auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 75px;
-    background-color: black;
+    font-size: 140px;
+    text-shadow: 0px 1px 2px #2f2f2f;
     color: white;
 }
 
+header h1.intro {
+    top: 80px;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+}
+
+header p.slogan {
+    top: 280px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
 /* navbar */
+.logo, .alogo {
+    float: right;
+    padding: 0px;
+    margin-top: 3px;
+    background-color: none;
+
+}
+
 nav ul {
+    height: 68px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: auto;
-    background-color: black;
-    overflow: hidden;
+    background-color: #333745;
+    padding-right: 180px;
+    padding-left: 120px;
 }
 
 nav li {
-    float: right;
-    display: inline;
+    float: left;
 }
 
 nav a {
     display: block;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
+    color: #77C4D3;
+    padding: 22px 25px;
+    font-size: 18px;
 }
 
 nav li a:hover {
-    background-color: lightgray;
-    color: black;
+    background-color: #EA2E49;
+    color: #DAEDE2;
 }
 
 /* links */
 a:link, a:visited, a:hover, a:active {
-    font-family: 'Open Sans', sans-serif;
-    color: #6783ab;
+    color: #77C4D3;
     text-decoration: none;
 }
