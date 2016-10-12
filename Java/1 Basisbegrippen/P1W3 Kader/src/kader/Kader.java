@@ -13,7 +13,6 @@ public class Kader {
         char symbool;
         int lengte;
         int breedte;
-
         System.out.print("Geef het symbool: ");
         symbool = keyboard.next().charAt(0);
         System.out.print("Geef de lengte: ");
