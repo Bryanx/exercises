@@ -12,7 +12,7 @@ public class Scrabble {
 
         char letterwaarde;
 
-        System.out.println("Geef een letter: ");
+        System.out.print("Geef een letter: ");
         letterwaarde = keyboardScanner.next().charAt(0);
 
         switch (letterwaarde) {
