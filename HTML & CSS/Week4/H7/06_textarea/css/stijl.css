@@ -1,0 +1,15 @@
+ol li {
+    list-style-type: none;
+}
+
+textarea {
+    float: left;
+    background-color: beige;
+    width: 300px;
+    height: 150px;
+}
+
+input {
+    margin-top: 150px;
+    margin-left: 10px;
+}

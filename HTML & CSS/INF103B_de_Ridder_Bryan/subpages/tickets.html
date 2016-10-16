@@ -16,11 +16,11 @@
     <!-- Navigation menu: -->
     <nav>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./lineup.html">Line-up</a></li>
+            <li><a class="hoverable" href="../index.html">Home</a></li>
+            <li><a class="hoverable" href="./lineup.html">Line-up</a></li>
             <li><a class="active" href="./tickets.html">Tickets</a></li>
-            <li><a href="./practicalinfo.html">Practical information</a></li>
-            <li><a href="./photos.html">Photos</a></li>
+            <li><a class="hoverable" href="./practicalinfo.html">Practical information</a></li>
+            <li><a class="hoverable" href="./photos.html">Photos</a></li>
             <li class="navlogo"><a class="alogo" href="../index.html"><img src="../images/icons/logo_magenta_xs.png"
                                                                            alt="logo"></a></li>
         </ul>
@@ -41,9 +41,14 @@
 
 </header>
 
-<article>
+<form action="" method="post">
+    <ul>
+        <li><label for="review">Geef hier je review:</label></li>
+        <li><textarea id="review" name="review"></textarea></li>
+        <li><input type="submit" value="Verzend"></li>
+    </ul>
+</form>
 
-</article>
 
 <footer>
     <div class="footercolumns">

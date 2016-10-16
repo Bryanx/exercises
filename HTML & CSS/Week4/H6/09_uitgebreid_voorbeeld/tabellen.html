@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../my_css/mycss.css"/>
+    <title>Tabellen</title>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td>Cel 1</td>
+        <td>Cel 2</td>
+        <td>Cel 3</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>Rij 1 Cel 1</td>
+        <td>Rij 1 Cel 2</td>
+        <td>Rij 1 Cel 3</td>
+    </tr>
+    <tr>
+        <td>Rij 2 Cel 1</td>
+        <td>Rij 2 Cel 2</td>
+        <td>Rij 2 Cel 3</td>
+    </tr>
+</table>
+
+<table>
+    <caption>Voorbeeld van een bijschrift</caption>
+    <tr>
+        <td>Rij 1 Cel 1</td>
+        <td>Rij 1 Cel 2</td>
+        <td>Rij 1 Cel 3</td>
+    </tr>
+    <tr>
+        <td>Rij 2 Cel 1</td>
+        <td>Rij 2 Cel 2</td>
+        <td>Rij 2 Cel 3</td>
+    </tr>
+</table>
+
+<table>
+    <caption>Voorbeeld van een bijschrift</caption>
+    <thead>
+    <tr>
+        <th>Kolom 1</th>
+        <th>Kolom 2</th>
+        <th>Kolom 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Rij 1 Cel 1</td>
+        <td>Rij 1 Cel 2</td>
+        <td>Rij 1 Cel 3</td>
+    </tr>
+    <tr>
+        <td>Rij 2 Cel 1</td>
+        <td>Rij 2 Cel 2</td>
+        <td>Rij 2 Cel 3</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <caption>Voorbeeld van een bijschrift</caption>
+    <thead>
+    <tr>
+        <th scope="row">Kolom 1
+        <th scope="row">Kolom 2
+        <th scope="row">Kolom 3
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td>Voettekst 1</td>
+        <td>Voettekst 2</td>
+        <td>Voettekst 3</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>Rij 1 Cel 1</td>
+        <td>Rij 1 Cel 2</td>
+        <td>Rij 1 Cel 3</td>
+    </tr>
+    <tr>
+        <td>Rij 2 Cel 1</td>
+        <td>Rij 2 Cel 2</td>
+        <td>Rij 2 Cel 3</td>
+    </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption>Voorbeeld van een bijschrift</caption>
+    <thead>
+    <tr>
+        <th>
+        <th>Kolom 1</th>
+        <th>Kolom 2</th>
+        <th>Kolom 3</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td>
+        <td>Voettekst 1</td>
+        <td>Voettekst 2</td>
+        <td>Voettekst 3</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <th>Kop rij 1</th>
+        <td>Rij 1 Cel 1</td>
+        <td>Rij 1 Cel 2</td>
+        <td>Rij 1 Cel 3</td>
+    </tr>
+    <tr>
+        <th>Kop rij 2</th>
+        <td>Rij 2 Cel 1</td>
+        <td>Rij 2 Cel 2</td>
+        <td>Rij 2 Cel 3</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table id="spanning">
+    <tr>
+        <td rowspan="2">rowspan=2</td>
+        <td colspan="2">colspan=2</td>
+        <td rowspan="2">rowspan=2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+<table id="decimaleUitlijning">
+    <caption>Inkomsten kas</caption>
+    <thead>
+    <tr>
+        <th>
+        <th>Sla</th>
+        <th>Tomaten</th>
+        <th>Komkommers</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>Totaal</th>
+        <td>100,00</td>
+        <td>200,00</td>
+        <td>1600,00</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <th>Mei</th>
+        <td>39,75</td>
+        <td>109,90</td>
+        <td>80,00</td>
+    </tr>
+    <tr>
+        <th>Juni</th>
+        <td>60,25</td>
+        <td>90,10</td>
+        <td>80,00</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <caption>CSS-eigenschappen voor tekst</caption>
+    <thead>
+    <tr>
+        <th scope="col" width="27%">Eigenschap</th>
+        <th scope="col" width="10%">CSS 1</th>
+        <th scope="col" width="10%">CSS 2</th>
+        <th scope="col" width="10%">CSS 2.1</th>
+        <th scope="col" width="10%">CSS 3</th>
+        <th scope="col" width="33%">Standaardwaarde</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th scope="col">Eigenschap</th>
+        <th scope="col">CSS 1</th>
+        <th scope="col">CSS 2</th>
+        <th scope="col">CSS 2.1</th>
+        <th scope="col">CSS 3</th>
+        <th scope="col">Standaardwaarde</th>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <th scope="row"><code>text-align</code></th>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>start</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-align-last</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>start</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-decoration</code></th>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td>?</td>
+        <td><code>geen</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-emphasis</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>geen</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-height</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>auto</code></td>
+    </tr>
+    <tr class="match">
+        <th scope="row"><code>text-indent</code></th>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>0</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-justify</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>auto</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-outline</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>geen</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-shadow</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>geen</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-transform</code></th>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td>?</td>
+        <td><code>geen</code></td>
+    </tr>
+    <tr>
+        <th scope="row"><code>text-wrap</code></th>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/minus.png" alt="no"/></td>
+        <td><img src="images/plus.png" alt="yes"/></td>
+        <td><code>normal</code></td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

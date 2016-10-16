@@ -1,0 +1,10 @@
+table, th, td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    color: black;
+    font-family: Arial;
+    font-weight: ultralight;
+    padding: 1em;
+    width: 50%;
+    font-size: 25px;
+}

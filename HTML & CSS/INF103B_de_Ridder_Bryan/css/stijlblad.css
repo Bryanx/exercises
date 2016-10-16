@@ -77,22 +77,20 @@ h5 {
 /* navbar */
 
 nav ul {
+    position: fixed;
     height: 68px;
+    right: 0;
+    left: 0;
     list-style-type: none;
     margin: 0;
     background-color: #333745;
     padding-right: 180px;
     padding-left: 120px;
+    z-index: 1;
 }
 
 nav li {
     float: left;
-}
-
-li.navlogo, .alogo {
-    float: right;
-    padding: 0px;
-    margin-top: 3px;
 }
 
 nav li a {
@@ -101,27 +99,33 @@ nav li a {
     color: #77C4D3;
     padding: 22px 25px;
     font-size: 18px;
-    background-color: #333745;
 }
 
-nav li a:hover, nav li a.active {
+nav li a.hoverable:hover, nav li a.active {
     background-color: #EA2E49;
     color: white;
+}
+
+li.navlogo, .alogo {
+    float: right;
+    padding: 0px;
+    margin-top: 3px;
 }
 
 /* Main logos and banners */
 /* banner on the homepage */
 .indexbanner {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    margin: 0;
     background: url(../images/photos/party.jpg) no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     min-height: 100%;
-    height: 50vh;
+    height: 85vh;
     width: 100%;
+    margin: 0;
+    padding-top: 5%;
+    transition-duration: 1s;
 }
 
 /* banner on the info page */
@@ -151,6 +155,7 @@ nav li a:hover, nav li a.active {
     padding-top: 5%;
     transition-duration: 1s;
 }
+
 /* Banner on the tickets page */
 .ticketsbanner {
     background: url(../images/photos/ticket.jpg) no-repeat;
@@ -163,14 +168,6 @@ nav li a:hover, nav li a.active {
     margin: 0;
     padding-top: 5%;
     transition-duration: 1s;
-}
-
-/* logo on the main page */
-.logo img {
-    width: 20%;
-    height: auto;
-    margin-top: 100px;
-    transition-duration: 0.4s;
 }
 
 /* text inside the banners */
@@ -187,16 +184,24 @@ header h1, header p {
     color: white;
 }
 
+/* logo on the index page */
+.logo img {
+    width: 20%;
+    height: auto;
+    margin: 50px 0 0 0;
+}
+
 header h1.intro {
     font-size: 60px;
     text-align: center;
+    margin: 25px 0 25px 0;
 }
 
 header p.slogan {
     font-size: 30px;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 0 25px 0;
 }
 
 /* buttons */
@@ -206,7 +211,6 @@ header p.slogan {
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 10px;
-    transition-duration: 0.4s;
     cursor: pointer;
 }
 
@@ -258,15 +262,22 @@ article div.galleryimg {
 }
 
 .galleryimg {
-    transition: border 0.3s ease, filter 0.3s ease;
+    transition: all .5s ease;
     border: 0px solid #EA2E49;
     filter: brightness(50%);
     box-sizing: border-box;
+    transform: scale(1.0);
 }
-
 .galleryimg:hover {
     filter: brightness(100%);
-    border: 20px solid #EA2E49;
+    transform: scale(1.1);
+}
+
+.mask {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .artistimg {

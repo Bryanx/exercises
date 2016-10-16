@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -90%);
+}
+
+label, input {
+    display: block;
+    font-family: Arial;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+label {
+    float: left;
+    width: 5em;
+}
+
+input[type="submit"],input[type="password"],input[type="text"] {
+    background-color: grey;
+    padding: 0.2em;
+    vertical-align: center;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+}
+input[type="password"],input[type="text"] {
+    height: 25px;
+    width: 200px;
+}

@@ -1,0 +1,11 @@
+button {
+    background-color: #A4BA10;
+    color: #2A3592;
+    font-size: 125%;
+    font-family: verdana arial helvetica sans-serif;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px #888;
+    border-radius: 15px;
+}
