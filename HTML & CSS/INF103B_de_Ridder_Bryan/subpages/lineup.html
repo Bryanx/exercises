@@ -16,13 +16,26 @@
     <!-- Navigation menu: -->
     <nav>
         <ul>
-            <li><a class="hoverable" href="../index.html">Home</a></li>
-            <li><a class="active" href="./lineup.html">Line-up</a></li>
-            <li><a class="hoverable" href="./tickets.html">Tickets</a></li>
-            <li><a class="hoverable" href="./practicalinfo.html">Practical information</a></li>
-            <li><a class="hoverable" href="./photos.html">Photos</a></li>
-            <li class="navlogo"><a class="alogo" href="../index.html"><img src="../images/icons/logo_magenta_xs.png"
-                                                                           alt="logo"></a></li>
+            <li class="firstitem"><a class="active" href="../index.html">Home</a></li>
+            <li><a class="hoverable" href="../subpages/lineup.html">Line-up &#9662;</a>
+                <!-- Dropdown menu: -->
+                <ul>
+                    <li><a class="hoverable" href="../subpages/lineup.html#wednesday">Wednesday 13th</a></li>
+                    <li><a class="hoverable" href="../subpages/lineup.html#thursday">Thursday 14th</a></li>
+                    <li><a class="hoverable" href="../subpages/lineup.html#friday">Friday 15th</a></li>
+                </ul>
+            </li>
+            <li><a class="hoverable" href="../subpages/tickets.html">Tickets &#9662;</a>
+                <!-- Dropdown menu: -->
+                <ul>
+                    <li><a class="hoverable" href="../subpages/tickets.html">Ticket information</a></li>
+                    <li><a class="hoverable" href="../subpages/tickets.html#buytickets">Buy tickets</a></li>
+                </ul>
+            </li>
+            <li><a class="hoverable" href="../subpages/practicalinfo.html">Practical information</a></li>
+            <li><a class="hoverable" href="../subpages/fotos.html">Photos</a></li>
+            <li class="navlogo"><a class="alogo" href="../index.html">
+                <img src="../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
         </ul>
     </nav>
 
@@ -43,7 +56,7 @@
 
 <article>
     <!-- Gallery -->
-    <h3>Wednesday, 12 june 2016</h3>
+    <h3 id="wednesday">Wednesday, 12 june 2016</h3>
     <h4 class="mainsubtext">All times are <span class="lightblue">GMT+1</span>.</h4>
     <ul class="centeredgallery">
         <li class="responsivegallery">
@@ -101,7 +114,7 @@
             <h5 class="galleryheader"><span class="lightblue">Beach Lounge</span> : 16.00 - 19.00</h5>
         </li>
     </ul>
-    <h3>Thursday, 13 june 2016</h3>
+    <h3 id="thursday">Thursday, 13 june 2016</h3>
     <h4 class="mainsubtext">On thursay the <span class="lightblue">Beach Lounge</span> is open for extended time!</h4>
     <ul class="centeredgallery">
         <li class="responsivegallery">
@@ -166,7 +179,7 @@
             <h5 class="galleryheader"><span class="lightblue">Beach Lounge</span> : 19.30 - 23.00</h5>
         </li>
     </ul>
-    <h3>Friday, 14 june 2016</h3>
+    <h3 id="friday">Friday, 14 june 2016</h3>
     <h4 class="mainsubtext">On friday the <span class="lightblue">Central Dome</span> is open for extended time!</h4>
     <div class="centeredgallery">
         <li class="responsivegallery">
