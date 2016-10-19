@@ -361,6 +361,22 @@ h3.galleryheader:hover {
     width: 100%;
 }
 
+/* Form on ticket page*/
+form {
+    margin: 0 18% 0 18%;
+}
+
+form ul li {
+    list-style-type: none;
+}
+
+form ul li input {
+}
+
+form ul li label {
+    width: 220px;
+}
+
 /* links */
 a:link, a:visited, a:hover, a:active {
     color: #77C4D3;
