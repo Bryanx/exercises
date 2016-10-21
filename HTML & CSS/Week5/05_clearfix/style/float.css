@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    border: 1px solid black;
+    color: darkgray;
+    font-family: Helvetica, sans-serif;
+}
+
+article {
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    min-width: 500px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    clear: both;
+}

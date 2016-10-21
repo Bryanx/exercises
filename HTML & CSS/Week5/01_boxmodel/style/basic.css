@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 1.5%;
+}
+
+article {
+    width: 60%;
+    padding: 2%;
+    margin: 2%
+}
+
+article.first {
+    border: ridge crimson 6px;
+}
+
+article.second {
+    box-sizing: border-box;
+    border: groove forestgreen 6px;
+}

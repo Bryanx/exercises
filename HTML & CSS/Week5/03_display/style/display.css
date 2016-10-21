@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+ul {
+    background-color: gold;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    color: gold;
+}

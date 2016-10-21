@@ -1,0 +1,18 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+button {
+    background-color: gold;
+    color: blue;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888;
+    font-size: 2em;
+}
