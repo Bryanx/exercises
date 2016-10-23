@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tide</title>
-    <link rel="stylesheet" href="../css/stijlblad.css">
+    <link rel="stylesheet" href="../css/basisstijlblad.css">
     <link rel="icon" href="../images/icons/icon.png">
 
     <!-- External Fonts: -->
@@ -16,7 +16,7 @@
     <!-- Navigation menu: -->
     <nav>
         <ul>
-            <li class="firstitem"><a class="active" href="../index.html">Home</a></li>
+            <li class="firstitem"><a class="hoverable" href="../index.html">Home</a></li>
             <li><a class="hoverable" href="../subpages/lineup.html">Line-up &#9662;</a>
                 <!-- Dropdown menu: -->
                 <ul>
@@ -25,11 +25,11 @@
                     <li><a class="hoverable" href="../subpages/lineup.html#friday">Friday 15th</a></li>
                 </ul>
             </li>
-            <li><a class="hoverable" href="../subpages/tickets.html">Tickets &#9662;</a>
+            <li><a class="hoverable active" href="../subpages/ticketinfo.html">Tickets &#9662;</a>
                 <!-- Dropdown menu: -->
                 <ul>
-                    <li><a class="hoverable" href="../subpages/tickets.html">Ticket information</a></li>
-                    <li><a class="hoverable" href="../subpages/tickets.html#buytickets">Buy tickets</a></li>
+                    <li><a class="hoverable" href="../subpages/ticketinfo.html">Ticket information</a></li>
+                    <li><a class="hoverable" href="../subpages/buytickets.html">Buy tickets</a></li>
                 </ul>
             </li>
             <li><a class="hoverable" href="../subpages/practicalinfo.html">Practical information</a></li>
@@ -41,38 +41,42 @@
 
     <!-- Background banner, title text and buttons: -->
     <div class="ticketsbanner">
-        <h1 class="intro">Our line up for 2016</h1>
-        <p class="slogan">Plan your concerts in advance to get the
-            best Tide experience!</p>
-
-        <!-- Buttons -->
-        <button class="button button1">Buy your tickets!</button>
-        <a href="../subpages/lineup.html">
-            <button class="button button2">View our line-up!</button>
-        </a>
     </div>
 
 </header>
 
-<form action="" method="post" id="buytickets">
-    <ul>
-        <li><label for=“naam”>Naam: </label>
-            <input required type="text" id=“naam” name=“naam” maxlength=“50” size=“40"></li>
-        <li><label for=“familienaam”>Familienaam: </label>
-            <input required type="text" id=“familienaam” name=“familienaam” maxlength=“50” size=“40"></li>
-        <li><label for=“geboortedatum”>Geboortedatum: </label>
-            <input required type="text" id=“geboortedatum” name=“geboortedatum” maxlength=“50” size=“40"></li>
-        <li><label for=“woonplaats”>Woonplaats: </label>
-            <input required type="text" id=“woonplaats” name=“woonplaats” maxlength=“50” size=“40"></li>
-        <li><label for=“adres”>Adres: </label>
-            <input required type="text" id=“adres” name=“adres” maxlength=“50” size=“40"></li>
-        <li><label for=“aantaltickets”>Aantal tickets: </label>
-            <input required type="text" id=“aantaltickets” name=“aantaltickets” maxlength=“50” size=“40"></li>
-        <li><label for="opmerking">Opmerkingen :</label></li>
-        <li><textarea id="opmerking" name="opmerking"></textarea></li>
-        <li><input class="button1" type="submit" value="Submit" name="submit"></li>
-    </ul>
-</form>
+<section class="buytickets">
+    <h1>Get your tickets here</h1>
+    <form action="" method="post" id="buytickets">
+        <ul>
+            <li class="inline"><label for=“naam”>Name: </label>
+                <input required type="text" id=“naam” name=“naam” maxlength=“50” size=“40" placeholder="Name"></li>
+            <li class="inline"><label for=“familienaam”>Surname: </label>
+                <input required type="text" id=“familienaam” name=“familienaam” maxlength=“50” size=“40"
+                       placeholder="Surname"></li>
+            <li><label for=“email”>Email: </label>
+                <input required type="text" id=“email” name=“email” maxlength=“50” size=“40" placeholder="Email"></li>
+            <li><label for=“geboortedatum”>Date of birth: </label>
+                <input required type="text" id=“geboortedatum” name=“geboortedatum” maxlength=“50” size=“40"
+                       placeholder="DD/MM/YYYY"></li>
+            <li><label for=“woonplaats”>City: </label>
+                <input required type="text" id=“woonplaats” name=“woonplaats” maxlength=“50” size=“40"
+                       placeholder="City"></li>
+            <li><label for=“addres”>Adress: </label>
+                <input required type="text" id=“addres” name=“addres” maxlength=“50” size=“40" placeholder="Address"></li>
+            <li><label>Amount of tickets:
+                <select name="aantaltickets">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label></li>
+            <li><input class="ticketbutton" type="submit" value="Ticketbutton" name="Ticketbutton"></li>
+        </ul>
+    </form>
+</section>
 
 
 <footer>
@@ -82,7 +86,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./lineup.html">Line-up</a></li>
-                <li><a href="./tickets.html">Tickets</a></li>
+                <li><a href="./ticketinfo.html">Tickets</a></li>
                 <li><a href="./practicalinfo.html">Practical information</a></li>
                 <li><a href="./photos.html">Photos</a></li>
             </ul>
