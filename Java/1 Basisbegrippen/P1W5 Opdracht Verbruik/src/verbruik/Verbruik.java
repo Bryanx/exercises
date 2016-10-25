@@ -14,7 +14,7 @@ public class Verbruik {
     }
 
     public void verhoogGetankteLiters(double waarde) {
-        this.getankteLiters += getankteLiters;
+        this.getankteLiters += waarde;
     }
 
     public void verhoogAantalTankbeurten() {
@@ -22,7 +22,7 @@ public class Verbruik {
     }
 
     public double gemiddeldVerbruik() {
-        return this.aantalTankbeurten * this.getankteLiters / this.geredenKilometers * 100;
+        return this.getankteLiters / this.geredenKilometers * 100;
     }
 
     @Override

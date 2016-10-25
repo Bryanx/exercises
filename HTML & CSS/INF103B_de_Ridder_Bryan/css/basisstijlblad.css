@@ -9,10 +9,7 @@ TODO: alle stijlbladen voor specifieke pagina's in een apart stijlblad doen
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;     /* All fonts get antialiased = better looking fonts.*/
 }
 
 body {
@@ -21,14 +18,12 @@ body {
 }
 
 /* Text and articles */
-
 p {
     color: #333745;
     font-size: 23px;
     font-weight: 300;
     text-align: left;
     line-height: 150%;
-    list-style-type: circle;
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -40,17 +35,27 @@ article {
     text-align: center;
 }
 
+article header {
+    text-align: center;
+    text-shadow: none;
+}
+
 /* Blue text for highlighting */
 span.lightblue {
     color: #77C4D3;
 }
 
 /* Headers */
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: 'Amaranth', sans-serif;
     margin-top: 60px;
     font-weight: 300;
     text-align: center;
+}
+h1 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #77C4D3;
 }
 
 h2 {
@@ -67,19 +72,23 @@ h3 {
 
 h4 {
     font-size: 22px;
-    text-align: center;
     line-height: 18px;
     color: grey;
+    margin-top: 20px;
 }
 
 h5 {
     font-size: 18px;
-    text-align: center;
     color: grey;
     line-height: 18px;
 }
 
 /* navbar */
+nav {
+    text-shadow: 0 1px 2px #2f2f2f;
+    margin: auto;
+}
+
 nav ul {
     position: fixed;
     height: auto;
@@ -89,80 +98,6 @@ nav ul {
     background-color: #333745;
     list-style-type: none;
     z-index: 1;
-}
-
-/* navbar responsive */
-@media screen and (max-width: 960px) {
-    nav ul li.firstitem, nav ul li:nth-child(5) {
-        margin: 0;
-    }
-
-    header nav ul li a {
-        padding: 22px 10px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    nav {
-        overflow: hidden;
-    }
-
-    nav ul {
-        height: 52px;
-        width: 100%;
-    }
-
-    header nav ul li:hover > ul, header nav ul li {
-        display: none;
-        float: none;
-    }
-
-    header nav ul li a {
-        font-size: 15px;
-        padding: 12px 0;
-    }
-
-    nav ul:hover > li {
-        display: block
-    }
-
-    nav ul:hover .navlogo {
-        display: none;
-    }
-
-    nav:hover > ul {
-        height: auto;
-    }
-
-    nav li.navlogo, a.alogo {
-        display: block;
-        margin: 0;
-        width: 100%;
-        float: left;
-    }
-
-    nav li.navlogo img {
-        float: left;
-        margin-left: 20px;
-        margin-top: 4px;
-    }
-
-    .alogo:after {
-        margin: 15px 15px 0 0;
-        float: right;
-        vertical-align: center;
-        content: "Menu";
-        font-size: 16px;
-
-    }
-    .alogo:before {
-        content: "";
-        background: url(../images/icons/menu.png) no-repeat;
-        width: 42px;
-        height: 42px;
-        float: right;
-        margin: 9px 20px 0 0;
-    }
 }
 
 nav ul li {
@@ -229,9 +164,82 @@ nav ul li ul li a.hoverable:hover {
 
 }
 
+/* navbar responsive */
+@media screen and (max-width: 960px) {
+    nav ul li.firstitem, nav ul li:nth-child(5) {
+        margin: 0;
+    }
+    nav ul li a {
+        padding: 22px 10px;
+    }
+}
+
+/* navbar wordt verticaal bij width kleiner dan 700 */
+@media screen and (max-width: 700px) {
+    nav ul {
+        height: 52px;
+        width: 100%;
+    }
+
+    /* buttons zijn alleen zichtbaar bij hover */
+    nav ul li:hover > ul, nav ul li {
+        display: none;
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    nav ul:hover > li {
+        display: block
+    }
+
+    nav ul:hover .navlogo {
+        display: none;
+    }
+
+    nav:hover > ul {
+        height: auto;
+    }
+
+    nav li.navlogo, a.alogo {
+        display: block;
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+
+    nav li.navlogo img {
+        float: left;
+        margin-left: 20px;
+        margin-top: 4px;
+    }
+
+    /* Menu icon en text wordt zichtbaar */
+    .alogo:after {
+        margin: 15px 15px 0 0;
+        float: right;
+        vertical-align: center;
+        content: "Menu";
+        font-size: 16px;
+    }
+
+    .alogo:before {
+        content: "";
+        background: url(../images/icons/menu.png) no-repeat;
+        width: 42px;
+        height: 42px;
+        float: right;
+        margin: 9px 20px 0 0;
+    }
+}
+
 /* main logos and banners */
 /* banner on the homepage */
-.indexbanner {
+.indexbackgroundimage {
     background: url(../images/photos/party.jpg) no-repeat fixed center center;
     background-size: cover;
     min-height: 100%;
@@ -253,29 +261,12 @@ nav ul li ul li a.hoverable:hover {
     padding-top: 5%;
 }
 
-/* banner on the tickets page */
-.ticketsbanner {
-    background: url(../images/photos/colorfestival.jpg) no-repeat fixed center bottom;
-    background-size: cover;
-    min-height: 100%;
-    height: 85vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
-}
-
 /* text inside the banners */
 /* all text in the header is aligned center and has a shadow */
 header {
     text-align: center;
-    align-content: center;
     text-shadow: 0 1px 2px #2f2f2f;
     margin: auto;
-}
-
-header h1, header p {
-    font-size: 140px;
-    color: white;
 }
 
 /* logo on the index page */
@@ -285,13 +276,15 @@ header h1, header p {
     margin: 50px 0 0 0;
 }
 
-header h1.intro {
+h1.intro {
+    color: white;
     font-size: 60px;
     text-align: center;
     margin: 25px 15%;
 }
 
-header p.slogan {
+p.subintro {
+    color: white;
     font-size: 30px;
     font-weight: normal;
     text-align: center;
@@ -331,62 +324,6 @@ header p.slogan {
 .button2:hover {
     background-color: #77C4D3;
     color: white;
-}
-
-/* Form on ticket page*/
-section.buytickets {
-    box-sizing: border-box;
-    border: 1px solid lightgray;
-    border-radius: 15px;
-    width: 350px;
-    margin: -500px auto 60px;
-    background: rgba(255, 255, 255, .9);
-}
-
-form {
-    margin: 60px 5%;
-}
-
-form ul li {
-    list-style-type: none;
-    padding-top: 10px;
-}
-
-form ul li.inline {
-    display: inline-block;
-    width: 49%;
-}
-
-form ul li label {
-    display: block;
-
-}
-
-form ul li input, form ul li select {
-    box-sizing: border-box;
-    padding-left: 10px;
-    width: 100%;
-    height: 40px;
-    font-size: 15px;
-    border: 1px solid lightgray;
-    border-radius: 7px;
-}
-
-.ticketbutton {
-    box-sizing: border-box;
-    height: 40px;
-    font-size: 16px;
-    border: 1px solid lightgray;
-    background-color: #EA2E49;
-    color: white;
-    padding: auto 0;
-    margin: 4px 2px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-form ul li label {
-    width: auto;
 }
 
 /* links */
