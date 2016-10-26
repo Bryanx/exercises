@@ -20,11 +20,11 @@ public class GolvenGrafiek {
         GrafiekWindow tekenPunt = new GrafiekWindow(10, 6);
 
         for (int i = 0; i < aantal; i++) {
-            Golf golf1 = new Golf();
-            golf1.setAmplitude(random.nextDouble() * 4.0);
-            golf1.setFrequentie(random.nextDouble() * 4.0);
-            for (double j = -5; j < 5; j+=0.001) {
-                tekenPunt.tekenPunt(j, golf1.getYwaarde(j), Color.blue);
+            Golf golf = new Golf();
+            golf.setAmplitude(random.nextDouble() * 4.0);
+            golf.setFrequentie(random.nextDouble() * 4.0);
+            for (double x = -5; x < 5; x+=0.001) {
+                tekenPunt.tekenPunt(x, golf.getYwaarde(x), Color.blue);
             }
         }
         tekenPunt.toon();
