@@ -32,7 +32,7 @@ public class Golf {
     }
 
     public double getYwaarde(double x) {
-        return this.amplitude * Math.sin(frequentie * x);
+        return this.amplitude * Math.sin(this.frequentie * x);
     }
 
     @Override

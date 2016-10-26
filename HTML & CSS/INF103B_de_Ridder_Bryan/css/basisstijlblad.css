@@ -242,7 +242,7 @@ nav ul li ul li a.hoverable:hover {
 .indexbackgroundimage {
     background: url(../images/photos/party.jpg) no-repeat fixed center center;
     background-size: cover;
-    min-height: 100%;
+    min-height: 600px;
     height: 85vh;
     width: 100%;
     margin: 0;
@@ -352,10 +352,7 @@ footer h4 {
     padding-top: 25px;
 }
 
-.footercolumns {
-}
-
-footer div.column {
+footer section.column {
     width: 30%;
     min-width: 200px;
     padding-right: 5%;
@@ -365,20 +362,20 @@ footer div.column {
     vertical-align: top;
 }
 
-div.column ul {
+section.column ul {
     list-style: none;
 }
 
-div.column ul li {
+section.column ul li {
     margin-top: 10px;
     font-size: 15px;
 }
 
-div.column ul li a {
+section.column ul li a {
     color: white;
 }
 
-div.column ul li a:hover {
+section.column ul li a:hover {
     background-color: #EA2E49;
     color: white;
 }
