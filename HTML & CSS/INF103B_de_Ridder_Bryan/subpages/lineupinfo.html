@@ -15,42 +15,45 @@
 </head>
 <body>
 
-<header>
-    <!-- Navigation menu: -->
-    <nav>
-        <ul>
-            <li class="firstitem"><a class="hoverable" href="../index.html">Home</a></li>
-            <li><a class="hoverable active" href="../subpages/lineup.html">Line-up &#9662;</a>
-                <!-- Dropdown menu: -->
-                <ul>
-                    <li><a class="hoverable" href="../subpages/lineup.html#wednesday">Wednesday 13th</a></li>
-                    <li><a class="hoverable" href="../subpages/lineup.html#thursday">Thursday 14th</a></li>
-                    <li><a class="hoverable" href="../subpages/lineup.html#friday">Friday 15th</a></li>
-                </ul>
-            </li>
-            <li><a class="hoverable" href="ticketinfo.html">Tickets &#9662;</a>
-                <!-- Dropdown menu: -->
-                <ul>
-                    <li><a class="hoverable" href="ticketinfo.html">Ticket information</a></li>
-                    <li><a class="hoverable" href="../subpages/buytickets.html">Buy tickets</a></li>
-                </ul>
-            </li>
-            <li><a class="hoverable" href="../subpages/practicalinfo.html">Practical information</a></li>
-            <li><a class="hoverable" href="../subpages/fotos.html">Photos</a></li>
-            <li class="navlogo"><a class="alogo" href="../index.html">
-                <img src="../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
-        </ul>
-    </nav>
+<!-- Navigation menu: -->
+<nav>
+    <ul>
+        <li class="firstitem"><a class="hoverable" href="../index.html">Home</a></li>
+        <li><a class="active" href="./lineupinfo.html">Line-up &#9662;</a>
+            <!-- Lineup dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="./lineupinfo.html#wednesday">Wednesday 13th</a></li>
+                <li><a class="hoverable" href="./lineupinfo.html#thursday">Thursday 14th</a></li>
+                <li><a class="hoverable" href="./lineupinfo.html#friday">Friday 15th</a></li>
+            </ul>
+        </li>
+        <li><a class="hoverable" href="./ticketinfo.html">Tickets &#9662;</a>
+            <!-- Tickets dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="./ticketinfo.html">Ticket information</a></li>
+                <li><a class="hoverable" href="./buytickets.html">Buy tickets</a></li>
+            </ul>
+        </li>
+        <li><a class="hoverable" href="./practicalinfo.html">Practical information</a></li>
+        <li><a class="hoverable" href="./fotos.html">Photos</a></li>
+        <li class="navlogo"><a class="alogo" href="../index.html">
+            <img src="../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
+    </ul>
+</nav>
 
-    <!-- Background banner, title text and buttons: -->
-    <div class="lineupbanner">
-        <h1 class="intro">Our line up for 2016</h1>
-        <p class="subintro">Plan your concerts in advance to get the
-            best Tide experience!</p>
-    </div>
-
+<!-- Background banner, title text and buttons: -->
+<header class="lineupbanner">
+    <h1 class="intro">Our line up for 2016</h1>
+    <p class="subintro">Plan your concerts in advance to get the
+        best Tide experience!
+    </p>
+    <!-- Buttons -->
+    <a href="./buytickets.html">
+        <button class="button button1">Buy your tickets!</button>
+    </a>
 </header>
 
+<!-- Content: -->
 <article>
     <!-- Gallery -->
     <h3 id="wednesday">Wednesday, 12 june 2016</h3>
@@ -247,37 +250,36 @@
     </div>
 </article>
 
+<!-- Footer with 3 columns: -->
 <footer>
-    <section class="footercolumns">
-        <div class="column">
-            <h4>Other stuff</h4>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./lineup.html">Line-up</a></li>
-                <li><a href="ticketinfo.html">Tickets</a></li>
-                <li><a href="./practicalinfo.html">Practical information</a></li>
-                <li><a href="./photos.html">Photos</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h4>Social media</h4>
-            <ul>
-                <li><a href="/index.html">Facebook</a></li>
-                <li><a href="/journeys">Twitter</a></li>
-                <li><a href="/galleries">LinkedIn</a></li>
-                <li><a href="/about">Youtube</a></li>
-                <li><a href="/contact">Vimeo</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h4>Contact us</h4>
-            <ul>
-                <li><a href="/index.html">&#9993; info@tidefestival.com</a></li>
-                <li><a href="/journeys">&#9742; (347) 927-5487</a></li>
-            </ul>
-        </div>
-        <p>&copy; 2011-2016 tide.com All Right Reserved.</p>
+    <section class="column">
+        <h4>Other stuff</h4>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../subpages/lineupinfo.html">Line-up</a></li>
+            <li><a href="../subpages/ticketinfo.html">Tickets</a></li>
+            <li><a href="../subpages/practicalinfo.html">Practical information</a></li>
+            <li><a href="../subpages/photos.html">Photos</a></li>
+        </ul>
     </section>
+    <section class="column">
+        <h4>Social media</h4>
+        <ul>
+            <li><a href="http://facebook.com">Facebook</a></li>
+            <li><a href="http://twitter.com">Twitter</a></li>
+            <li><a href="http://linkedin.com">LinkedIn</a></li>
+            <li><a href="http://youtube.com">Youtube</a></li>
+            <li><a href="http://vimeo.com">Vimeo</a></li>
+        </ul>
+    </section>
+    <section class="column">
+        <h4>Contact us</h4>
+        <ul>
+            <li><a href="mailto:info@tidefestival.com">&#9993; info@tidefestival.com</a></li>
+            <li><a href="tel:347-927-5487">&#9742; (347) 927-5487</a></li>
+        </ul>
+    </section>
+    <p>&copy; 2011-2016 tide.com All Right Reserved.</p>
 </footer>
 </body>
 </html>

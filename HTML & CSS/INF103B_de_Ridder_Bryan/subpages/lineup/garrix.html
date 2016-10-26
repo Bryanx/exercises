@@ -1,190 +1,162 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tide</title>
-    <link rel="stylesheet" href="../../css/basisstijlblad.css">
+    <title>Tide | Lineup</title>
     <link rel="icon" href="../../images/icons/icon.png">
 
+    <!-- CSS: -->
+    <link rel="stylesheet" href="../../css/basisstijlblad.css">
+    <link rel="stylesheet" href="../../css/lineupstijlblad.css">
+
     <!-- External Fonts: -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:400,700">
 </head>
 <body>
 
-<header>
-    <!-- Navigation menu: -->
-    <nav>
-        <ul>
-            <li class="firstitem"><a class="hoverable" href="../../index.html">Home</a></li>
-            <li><a class="hoverable active" href="../../subpages/lineup.html">Line-up &#9662;</a>
-                <!-- Dropdown menu: -->
-                <ul>
-                    <li><a class="hoverable" href="../../subpages/lineup.html#wednesday">Wednesday 13th</a></li>
-                    <li><a class="hoverable" href="../../subpages/lineup.html#thursday">Thursday 14th</a></li>
-                    <li><a class="hoverable" href="../../subpages/lineup.html#friday">Friday 15th</a></li>
-                </ul>
-            </li>
-            <li><a class="hoverable" href="../ticketinfo.html">Tickets &#9662;</a>
-                <!-- Dropdown menu: -->
-                <ul>
-                    <li><a class="hoverable" href="../ticketinfo.html">Ticket information</a></li>
-                    <li><a class="hoverable" href="../../subpages/buytickets.html">Buy tickets</a></li>
-                </ul>
-            </li>
-            <li><a class="hoverable" href="../../subpages/practicalinfo.html">Practical information</a></li>
-            <li><a class="hoverable" href="../../subpages/fotos.html">Photos</a></li>
-            <li class="navlogo"><a class="alogo" href="../../index.html">
-                <img src="../../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
-        </ul>
-    </nav>
-    <!-- Background banner, title text and buttons: -->
-    <div class="lineupbanner">
-        <h1 class="intro">Our line up for 2016</h1>
-        <p class="subintro">Plan your concerts in advance to get the
-            best Tide experience!</p>
+<!-- Navigation menu: -->
+<nav>
+    <ul>
+        <li class="firstitem"><a class="hoverable" href="../../index.html">Home</a></li>
+        <li><a class="active" href="../lineupinfo.html">Line-up &#9662;</a>
+            <!-- Lineup dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="../lineupinfo.html#wednesday">Wednesday 13th</a></li>
+                <li><a class="hoverable" href="../lineupinfo.html#thursday">Thursday 14th</a></li>
+                <li><a class="hoverable" href="../lineupinfo.html#friday">Friday 15th</a></li>
+            </ul>
+        </li>
+        <li><a class="hoverable" href="../ticketinfo.html">Tickets &#9662;</a>
+            <!-- Tickets dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="../ticketinfo.html">Ticket information</a></li>
+                <li><a class="hoverable" href="../buytickets.html">Buy tickets</a></li>
+            </ul>
+        </li>
+        <li><a class="hoverable" href="../practicalinfo.html">Practical information</a></li>
+        <li><a class="hoverable" href="../fotos.html">Photos</a></li>
+        <li class="navlogo"><a class="alogo" href="../../index.html">
+            <img src="../../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
+    </ul>
+</nav>
 
-        <!-- Buttons -->
+<!-- Background banner, title text and buttons: -->
+<header class="lineupbanner">
+    <h1 class="intro">Our line up for 2016</h1>
+    <p class="subintro">Plan your concerts in advance to get the
+        best Tide experience!
+    </p>
+    <!-- Buttons -->
+    <a href="../buytickets.html">
         <button class="button button1">Buy your tickets!</button>
-        <a href="../../subpages/lineup.html">
-            <button class="button button2">View our line-up!</button>
-        </a>
-    </div>
+    </a>
 </header>
 
-
+<!-- Content: -->
 <article>
-    <div class="artistcentered">
-        <section class="artistgallery">
-            <img class="artistimg" src="../../images/bands/garrix.jpg" alt="Garrix" width="250" height="250">
-            <h3 class="artistheader">Martin Garrix</h3>
-            <h5 class="artistheader">Thursday, 13 june 2016</h5>
-            <h5 class="artistheader"><span class="lightblue">Beach Lounge</span> : 16.00 - 19.00</h5>
-        </section>
-    </div>
+    <figure class="artistgallery">
+        <img class="artistimg" src="../../images/bands/garrix.jpg" alt="Garrix" width="250" height="250">
+        <h3 class="artistheader">Martin Garrix</h3>
+        <h5 class="artistheader">Thursday, 13 june 2016</h5>
+        <h5 class="artistheader"><span class="lightblue">Beach Lounge</span> : 16.00 - 19.00</h5>
+    </figure>
+    <section>
+        <p><b>Martijn Gerard Garritsen</b>, better known by his stage name <b>Martin Garrix</b> (stylized as <b>Mar+in
+            Garri&#215;</b>),
+            is a Dutch DJ, record producer and musician. He is currently ranked number 3 on <i>DJ Mag</i>'s Top 100 DJs.
+            In
+            2016, he founded the label <a href='http://wikipedia.org/wiki/STMPD_RCRDS'>STMPD RCRDS</a> months after
+            leaving
+            Spinnin' Records.</p>
+        <p>Garritsen learned to play guitar at age 8. In 2004, he expressed interest in becoming a DJ after seeing <a
+                href='http://wikipedia.org/wiki/Ti&#235;sto'>Ti&#235;sto</a> perform at the Olympic games in Athens. He
+            took
+            particular inspiration from the track "Traffic", prompting him to download specialist software, FL Studio,
+            and
+            enabling him to start composing. In 2013, he graduated from the Herman Brood Academy, a production school in
+            Utrecht. Garritsen ghost writes tracks for other artists, and despite this, only one in fifty of his tracks
+            have
+            made it out to the public. In an interview when asked about his social class, Garritsen said middle-class.
+            He
+            also said his 'dream mentor' was Calvin Harris.</p>
+    </section>
+    <section>
+        <h3>2012: Early career</h3>
+        <p>Garritsen had his beginnings with the songs "BFAM" (with Julian Jordan) and "Just Some Loops", a
+            collaboration
+            with <a href='http://wikipedia.org/wiki/TV_Noise'>TV Noise</a> that appeared on the compilation album <i>Loop
+                Masters Essential, Volume 2</i>. He signed to <a href='http://wikipedia.org/wiki/Spinnin'
+            >Spinnin' Records</a> in 2012, releasing "Error 404" through the label.</p>
+        <h3>2013&#8211;14: Breakthrough</h3>
 
-    <p><b>Martijn Gerard Garritsen</b>, better known by his stage name <b>Martin Garrix</b> (stylized as <b>Mar+in Garri&#215;</b>),
-        is a Dutch DJ, record producer and musician. He is currently ranked number 3 on <i>DJ Mag</i>'s Top 100 DJs. In
-        2016, he founded the label <a href='http://wikipedia.org/wiki/STMPD_RCRDS'>STMPD RCRDS</a> months after leaving
-        Spinnin' Records.</p>
-    <p>Garritsen learned to play guitar at age 8. In 2004, he expressed interest in becoming a DJ after seeing <a
-            href='http://wikipedia.org/wiki/Ti&#235;sto'>Ti&#235;sto</a> perform at the Olympic games in Athens. He took
-        particular inspiration from the track "Traffic", prompting him to download specialist software, FL Studio, and
-        enabling him to start composing. In 2013, he graduated from the Herman Brood Academy, a production school in
-        Utrecht. Garritsen ghost writes tracks for other artists, and despite this, only one in fifty of his tracks have
-        made it out to the public. In an interview when asked about his social class, Garritsen said middle-class. He
-        also said his 'dream mentor' was Calvin Harris.</p>
-    <h3>2012: Early career</h3>
-    <p>Garritsen had his beginnings with the songs "BFAM" (with Julian Jordan) and "Just Some Loops", a collaboration
-        with <a href='http://wikipedia.org/wiki/TV_Noise'>TV Noise</a> that appeared on the compilation album <i>Loop
-            Masters Essential, Volume 2</i>. He signed to <a href='http://wikipedia.org/wiki/Spinnin'
-        >Spinnin' Records</a> in 2012, releasing "Error 404" through the label.</p>
-    <h3>2013&#8211;14: Breakthrough</h3>
-
-    <p>In 2013, Garritsen co-released "Torrent" with <a href='http://wikipedia.org/wiki/Sidney_Samson'>Sidney Samson</a>
-        on Ti&#235;sto's <a href='http://wikipedia.org/wiki/Musical_Freedom'>Musical Freedom</a> label. He gained fame
-        through his own solo release "Animals" released on 16 June 2013 on Dutch record label Spinnin' Records, becoming
-        a hit in a great number of charts in Europe, and became the youngest person to reach the No. 1 spot on Beatport.
-        The track appears on Hardwell's album <i>Hardwell presents 'Revealed Volume 4'</i>. On 30 September 2013,
-        Garritsen released a remix of "Project T" by Sander Van Doorn and Dimitri Vegas &amp; Like Mike which quickly
-        hit No. 1 on the <a href='http://wikipedia.org/wiki/Beatport'>Beatport</a> charts. He appeared on <i>DJ
-            Magazine</i>'s top 100 DJs list in 2013 as a new entry at number 40. In 2014, he appeared on
-        <i>DJ Magazine</i>'s top 100 DJs list at number 4.</p>
-    <p>In November 2013, Garritsen signed a deal with Scooter Braun's <a href='http://wikipedia.org/wiki/Scooter_Braun'>Scooter
-        Braun</a> Projects (later School Boy Records). In December 2013, he released "Wizard" with Jay Hardway, the song
-        has peaked to number 6 in <a href='http://wikipedia.org/wiki/Belgium'>Belgium</a> and number 17 in the
-        Netherlands. His collaboration with Firebeatz, "Helicopter", placed No. 1 on the Beatport Top 100 charts for 2
-        weeks. He performed at <a href='http://wikipedia.org/wiki/Ultra_Music_Festival'>Ultra Music Festival</a> 2014,
-        where he debuted several new and unreleased tracks, including collaborations with Dillon Francis, <a
-                href='http://wikipedia.org/wiki/Hardwell'>Hardwell</a> and Afrojack.</p>
-    <p>In 2014, Garritsen released "Proxy" as a free download. He released a song with <a
-            href='http://wikipedia.org/wiki/MOTi'>MOTi</a> with the title "Virus (How About Now)" which was later in the
-        year as well as his collaboration with <a href='http://wikipedia.org/wiki/Afrojack'>Afrojack</a> releasing "Turn
-        Up the Speakers" which Afrojack and Garritsen both premiered at Ultra Music Festival.</p>
-    <h3>2015: More melodic sound and split from Spinnin' Records
-    </h3>
-
-    <p>In 2015, Garritsen experimented with progressive house and started producing progressive style apart from his
-        signature big room sound. On 6 February 2015, he released the track "Forbidden Voices" as a gift for 10 million
-        likes on his Facebook page. In February 2015, he released the single "Don't Look Down" featuring Usher. He also
-        released two video versions for it on Vevo, "Towel Boy" and "Towel Girl." The track was written by Garritsen, <a
-                href='http://wikipedia.org/wiki/James_'>James 'JHart' Abrahart</a> and Busbee. It
-        peaked at No. 3 on the <i>Billboard</i> Dance Club Songs.</p>
-    <p>In an interview with <i>DigitalSpy</i> in early 2015, Garritsen noted that Usher is a "humble" artist and a great
-        collaborator to whom he can direct input. He also worked with multi-Grammy winner <a
-                href='http://wikipedia.org/wiki/Ed_Sheeran'>Ed Sheeran</a> on a track called "Rewind Repeat It" which he
-        played at Ultra Music Festival in Miami in March 2015. On 4 May 2015, he released a track with Ti&#235;sto,
-        called "The Only Way Is Up". On 22 May 2015, <a href='http://wikipedia.org/wiki/Avicii'>Avicii</a> released a
-        lyric video of the song "Waiting for Love" co-produced by Garritsen. On 6 July 2015, Garritsen released the <i>Break
-            Through The Silence</i> EP with Russian DJs Matisse and Sadko. Later, on 31 October 2015, he released a
-        track titled "Poison" as a promotional single.</p>
-    <p>On 26 August 2015, Garritsen made an announcement on social media regarding rumors he had terminated his
-        agreements with the company Spinnin' Records and MusicAllStars Management in which he confirmed he was no longer
-        working with the two companies. The cause was cited due to a "...difference of opinion between us regarding the
-        reasonableness of the agreements." over ownership rights of his music. The major debate revolves around
-        ownership of his first major hit "Animals," which was released when he was only 17 and lacking experience in
-        contract negotiation. The post reads "From the beginning of this year I tried to get back the ownership rights
-        of my music from Spinnin' Records and to keep my confidence in MAS. I am extremely disappointed that the
-        discussions have not led to a change in the agreements or return of the ownership rights, and that is why I
-        nullified them."</p>
-    <p>In November 2015, after being split from Spinnin' Records, Garritsen announced that he would create his own
-        record label.</p>
-    <p>On 31 December 2015, Garritsen released "Bouncybob", his final track of the year, for free, which he had
-        co-produced with Justin Mylo and Mesto.</p>
-    <h3>2016: STMPD RCRDS and debut studio album</h3>
-    <p>Garritsen launched his own record label called STMPD RCRDS in the first quarter of 2016. On 11 March 2016, he
-        released his first single via STMPD RCRDS titled "Now That I've Found You", featuring the vocals of John Martin
-        and Michel Zitron.</p>
-    <p>On 20 February 2016, Garritsen announced that his debut album will be arriving this year via Twitter after the
-        social media platform asked some of its content curators to use its new video platform to announce their plans
-        for 2016. On 18 March 2016, he debuted a great part of his 2016 debut album at Ultra Music Festival, and chose
-        to use his one-hour set to premiere ten new unreleased tracks, including collaborations with Jay Hardway, Julian
-        Jordan, <a href='http://wikipedia.org/wiki/Mike_Shinoda'>Mike Shinoda</a> of Linkin Park, Ed Sheeran, <a
-                href='http://wikipedia.org/wiki/Bebe_Rexha'>Bebe Rexha</a> and Third Party along with AREA21, a music
-        duo believed to be Garritsen himself with Maejor. On 27 May 2016, he released his second single "Lions in the
-        Wild" with British DJ duo Third Party.</p>
-    <p>On 13 June 2016, Garritsen released a promotional single titled "Oops" which became the E3 2016 anthem. On 26
-        July 2016, it was announced that Garritsen signed a 'worldwide' contract with Sony Music International. He said
-        in the release, "Their forward thinking approach to streaming and incredible roster of talented artists combined
-        with their passion and understanding for my vision of the future of my music made this a no brainer." On 29 July
-        2016, he released the track "In the Name of Love" with Bebe Rexha.</p>
-    <p>On 22 August 2016, Garritsen made his first ever live performance of his own music, with Rexha on The Tonight
-        Show Starring Jimmy Fallon, accompanied by The Tonight Show&#8217;s house band, The Roots.</p>
-
-    <br><br>Source Wiki: <a href='https://en.wikipedia.org/wiki/Martin_Garrix'>Martin Garrix</a>
+        <p>In 2013, Garritsen co-released "Torrent" with <a href='http://wikipedia.org/wiki/Sidney_Samson'>Sidney
+            Samson</a>
+            on Ti&#235;sto's <a href='http://wikipedia.org/wiki/Musical_Freedom'>Musical Freedom</a> label. He gained
+            fame
+            through his own solo release "Animals" released on 16 June 2013 on Dutch record label Spinnin' Records,
+            becoming
+            a hit in a great number of charts in Europe, and became the youngest person to reach the No. 1 spot on
+            Beatport.
+            The track appears on Hardwell's album <i>Hardwell presents 'Revealed Volume 4'</i>. On 30 September 2013,
+            Garritsen released a remix of "Project T" by Sander Van Doorn and Dimitri Vegas &amp; Like Mike which
+            quickly
+            hit No. 1 on the <a href='http://wikipedia.org/wiki/Beatport'>Beatport</a> charts. He appeared on <i>DJ
+                Magazine</i>'s top 100 DJs list in 2013 as a new entry at number 40. In 2014, he appeared on
+            <i>DJ Magazine</i>'s top 100 DJs list at number 4.</p>
+        <p>In November 2013, Garritsen signed a deal with Scooter Braun's <a
+                href='http://wikipedia.org/wiki/Scooter_Braun'>Scooter
+            Braun</a> Projects (later School Boy Records). In December 2013, he released "Wizard" with Jay Hardway, the
+            song
+            has peaked to number 6 in <a href='http://wikipedia.org/wiki/Belgium'>Belgium</a> and number 17 in the
+            Netherlands. His collaboration with Firebeatz, "Helicopter", placed No. 1 on the Beatport Top 100 charts for
+            2
+            weeks. He performed at <a href='http://wikipedia.org/wiki/Ultra_Music_Festival'>Ultra Music Festival</a>
+            2014,
+            where he debuted several new and unreleased tracks, including collaborations with Dillon Francis, <a
+                    href='http://wikipedia.org/wiki/Hardwell'>Hardwell</a> and Afrojack.</p>
+        <p>In 2014, Garritsen released "Proxy" as a free download. He released a song with <a
+                href='http://wikipedia.org/wiki/MOTi'>MOTi</a> with the title "Virus (How About Now)" which was later in
+            the
+            year as well as his collaboration with <a href='http://wikipedia.org/wiki/Afrojack'>Afrojack</a> releasing
+            "Turn
+            Up the Speakers" which Afrojack and Garritsen both premiered at Ultra Music Festival.</p>
+    </section>
+    <cite>
+        Source Wiki: <a href='https://en.wikipedia.org/wiki/Martin_Garrix'>Martin Garrix</a>
+    </cite>
 </article>
 
+<!-- Footer with 3 columns: -->
 <footer>
-    <div class="footercolumns">
-        <div class="column">
-            <h4>Other stuff</h4>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../subpages/lineup.html">Line-up</a></li>
-                <li><a href="../ticketinfo.html">Tickets</a></li>
-                <li><a href="../../subpages/practicalinfo.html">Practical information</a></li>
-                <li><a href="../../subpages/photos.html">Photos</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h4>Social media</h4>
-            <ul>
-                <li><a href="/index.html">Facebook</a></li>
-                <li><a href="/journeys">Twitter</a></li>
-                <li><a href="/galleries">LinkedIn</a></li>
-                <li><a href="/about">Youtube</a></li>
-                <li><a href="/contact">Vimeo</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h4>Contact us</h4>
-            <ul>
-                <li><a href="/index.html">&#9993; info@tidefestival.com</a></li>
-                <li><a href="/journeys">&#9742; (347) 927-5487</a></li>
-            </ul>
-        </div>
-        <p>&copy; 2011-2016 tide.com All Right Reserved.</p>
-    </div>
+    <section class="column">
+        <h4>Other stuff</h4>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../lineupinfo.html">Line-up</a></li>
+            <li><a href="../ticketinfo.html">Tickets</a></li>
+            <li><a href="../practicalinfo.html">Practical information</a></li>
+            <li><a href="../photos.html">Photos</a></li>
+        </ul>
+    </section>
+    <section class="column">
+        <h4>Social media</h4>
+        <ul>
+            <li><a href="http://facebook.com">Facebook</a></li>
+            <li><a href="http://twitter.com">Twitter</a></li>
+            <li><a href="http://linkedin.com">LinkedIn</a></li>
+            <li><a href="http://youtube.com">Youtube</a></li>
+            <li><a href="http://vimeo.com">Vimeo</a></li>
+        </ul>
+    </section>
+    <section class="column">
+        <h4>Contact us</h4>
+        <ul>
+            <li><a href="mailto:info@tidefestival.com">&#9993; info@tidefestival.com</a></li>
+            <li><a href="tel:347-927-5487">&#9742; (347) 927-5487</a></li>
+        </ul>
+    </section>
+    <p>&copy; 2011-2016 tide.com All Right Reserved.</p>
 </footer>
 </body>
 </html>

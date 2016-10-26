@@ -75,7 +75,7 @@ public class ChatBot {
 
         }
     }
-    
+
     @Override
     public String toString() {
         return "Hallo, ik ben chatbot Veronica, stel me een vraag en ik geef je een oplossing!\n" +

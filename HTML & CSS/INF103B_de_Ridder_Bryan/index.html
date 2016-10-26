@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Tide | Your festival holiday</title>
-    <link rel="stylesheet" href="css/basisstijlblad.css">
     <link rel="icon" href="images/icons/icon.png">
+
+    <!-- CSS: -->
+    <link rel="stylesheet" href="css/basisstijlblad.css">
 
     <!-- External Fonts: -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
@@ -16,48 +18,49 @@
 <nav>
     <ul>
         <li class="firstitem"><a class="active" href="./index.html">Home</a></li>
-        <li><a class="hoverable" href="subpages/lineup.html">Line-up &#9662;</a>
-            <!-- Dropdown menu: -->
+        <li><a class="hoverable" href="./subpages/lineupinfo.html">Line-up &#9662;</a>
+            <!-- Lineup dropdown menu: -->
             <ul>
-                <li><a class="hoverable" href="subpages/lineup.html#wednesday">Wednesday 13th</a></li>
-                <li><a class="hoverable" href="subpages/lineup.html#thursday">Thursday 14th</a></li>
-                <li><a class="hoverable" href="subpages/lineup.html#friday">Friday 15th</a></li>
+                <li><a class="hoverable" href="./subpages/lineupinfo.html#wednesday">Wednesday 13th</a></li>
+                <li><a class="hoverable" href="./subpages/lineupinfo.html#thursday">Thursday 14th</a></li>
+                <li><a class="hoverable" href="./subpages/lineupinfo.html#friday">Friday 15th</a></li>
             </ul>
         </li>
-        <li><a class="hoverable" href="subpages/ticketinfo.html">Tickets &#9662;</a>
-            <!-- Dropdown menu: -->
+        <li><a class="hoverable" href="./subpages/ticketinfo.html">Tickets &#9662;</a>
+            <!-- Tickets dropdown menu: -->
             <ul>
-                <li><a class="hoverable" href="subpages/ticketinfo.html">Ticket information</a></li>
-                <li><a class="hoverable" href="buytickets.html">Buy tickets</a></li>
+                <li><a class="hoverable" href="./subpages/ticketinfo.html">Ticket information</a></li>
+                <li><a class="hoverable" href="./subpages/buytickets.html">Buy tickets</a></li>
             </ul>
         </li>
-        <li><a class="hoverable" href="subpages/practicalinfo.html">Practical information</a></li>
-        <li><a class="hoverable" href="subpages/fotos.html">Photos</a></li>
+        <li><a class="hoverable" href="./subpages/practicalinfo.html">Practical information</a></li>
+        <li><a class="hoverable" href="./subpages/fotos.html">Photos</a></li>
         <li class="navlogo"><a class="alogo" href="./index.html">
-            <img src="images/icons/logo_magenta_xs.png" alt="logo"></a></li>
+            <img src="./images/icons/logo_magenta_xs.png" alt="logo"></a></li>
     </ul>
 </nav>
 
 <!-- Banner, intro text and buttons: -->
 <header class="indexbackgroundimage">
     <div class="logo"><img src="images/icons/logo_magenta.png" alt="logo"></div>
-    <h1 class="intro">Tide is your festival holiday with music drinks and more...</h1>
+    <h1>Tide is your festival with music drinks and more...</h1>
     <p class="subintro">Enjoy your stay at the renowned Coast of Freedom</p>
 
     <!-- Buttons -->
-    <button class="button button1">Buy your tickets!</button>
-    <a href="./subpages/lineup.html">
-        <button class="button button2">View our line-up!</button>
-    </a>
+    <a class="button button1" href="./subpages/buytickets.html">Buy your tickets!</a>
+    <a class="button button2" href="./subpages/lineupinfo.html">View our line-up!</a>
 </header>
 
+<!-- Content: -->
 <article>
     <header>
         <h2>Latest news</h2>
     </header>
     <section>
-        <h3>Tide wins best European Festival of 2016!</h3>
-        <h4>13 January 2016</h4>
+        <header>
+            <h3>Tide wins best European Festival of 2016!</h3>
+            <h4>13 January 2016</h4>
+        </header>
         <p> The winners of the 2016 European Festival Awards were announced at a gala show in Groningen, The Netherlands
             last night. 'Tide' managed to finish in first place.</p>
         <p> Presented in association with Yourope (the European Festival Association) and marking the opening of the
@@ -72,8 +75,10 @@
             year as the best European festival.</p>
     </section>
     <section>
-        <h3>Tide attracted 76.000 visitors in three days!</h3>
-        <h4>25 December 2015</h4>
+        <header>
+            <h3>Tide attracted 76.000 visitors in three days!</h3>
+            <h4>25 December 2015</h4>
+        </header>
         <p>The first three nights of our festival attracted more than 76,000 visitors! Meanwhile 10-day-pass-tickets are
             sold out, one-day tickets are still available. Friday night, Belgian band Hooverphonic attracted 7.000 music
             fans, while a concert by American The Weeknd was quickly sold out. </p>
@@ -85,13 +90,14 @@
     </section>
 </article>
 
+<!-- Footer with 3 columns: -->
 <footer>
     <section class="column">
         <h4>Other stuff</h4>
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./subpages/lineup.html">Line-up</a></li>
-            <li><a href="subpages/ticketinfo.html">Tickets</a></li>
+            <li><a href="subpages/lineupinfo.html">Line-up</a></li>
+            <li><a href="./subpages/ticketinfo.html">Tickets</a></li>
             <li><a href="./subpages/practicalinfo.html">Practical information</a></li>
             <li><a href="./subpages/photos.html">Photos</a></li>
         </ul>

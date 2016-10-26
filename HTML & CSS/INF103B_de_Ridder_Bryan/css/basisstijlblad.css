@@ -9,18 +9,33 @@ TODO: alle stijlbladen voor specifieke pagina's in een apart stijlblad doen
 * {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;     /* All fonts get antialiased = better looking fonts.*/
+    -webkit-font-smoothing: antialiased; /* All fonts get antialiased */
+    -moz-osx-font-smoothing: grayscale; /* Also for Firefox */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     background-color: white;
+}
+
+/* responsive text*/
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 /* Text and articles */
 p {
     color: #333745;
-    font-size: 23px;
+    font-size: 1.44em;
     font-weight: 300;
     text-align: left;
     line-height: 150%;
@@ -36,7 +51,6 @@ article {
 }
 
 article header {
-    text-align: center;
     text-shadow: none;
 }
 
@@ -52,49 +66,47 @@ h1, h2, h3, h4, h5 {
     font-weight: 300;
     text-align: center;
 }
+
 h1 {
-    font-size: 60px;
-    line-height: 80px;
-    color: #77C4D3;
+    font-size: 3.5em;
+    margin: 25px 20px;
+    color: white;
 }
 
 h2 {
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 3.125em;
+    line-height: 1em;
     color: #77C4D3;
 }
 
 h3 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 2.5em;
+    line-height: 1.25em;
     color: #EA2E49;
 }
 
 h4 {
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 1.375em;
+    line-height: 1.125em;
     color: grey;
     margin-top: 20px;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.2em;
     color: grey;
-    line-height: 18px;
+    line-height: 1.125em;
 }
 
 /* navbar */
 nav {
     text-shadow: 0 1px 2px #2f2f2f;
-    margin: auto;
 }
 
 nav ul {
     position: fixed;
     height: auto;
     width: 100%;
-    margin: 0;
-    padding: 0;
     background-color: #333745;
     list-style-type: none;
     z-index: 1;
@@ -122,6 +134,7 @@ nav ul li a.hoverable:hover, nav li a.active {
 
 }
 
+/* logo in navbar */
 li.navlogo, .alogo {
     float: right;
     margin-right: 9%;
@@ -137,7 +150,7 @@ nav ul ul {
     background-color: transparent;
 }
 
-/* reveals ul on hover */
+/* reveals ul child on hover */
 nav ul li:hover > ul {
     display: block;
 }
@@ -156,32 +169,25 @@ nav ul li ul li a.hoverable {
     text-align: left;
 }
 
-nav ul li ul li a.hoverable:hover {
-    font-size: 15px;
-    text-align: left;
-    color: white;
-    text-shadow: 0 1px 2px #2f2f2f;
-
-}
-
 /* navbar responsive */
 @media screen and (max-width: 960px) {
     nav ul li.firstitem, nav ul li:nth-child(5) {
         margin: 0;
     }
+
     nav ul li a {
         padding: 22px 10px;
     }
 }
 
-/* navbar wordt verticaal bij width kleiner dan 700 */
-@media screen and (max-width: 700px) {
+/* navbar becomes vertical at width 720px */
+@media screen and (max-width: 720px) {
     nav ul {
         height: 52px;
         width: 100%;
     }
 
-    /* buttons zijn alleen zichtbaar bij hover */
+    /* nav items are only visible on hover (onclick not possible without JS?) */
     nav ul li:hover > ul, nav ul li {
         display: none;
         float: none;
@@ -218,7 +224,7 @@ nav ul li ul li a.hoverable:hover {
         margin-top: 4px;
     }
 
-    /* Menu icon en text wordt zichtbaar */
+    /* Menu icon and Menu text becomes visible */
     .alogo:after {
         margin: 15px 15px 0 0;
         float: right;
@@ -252,10 +258,10 @@ nav ul li ul li a.hoverable:hover {
 
 /* banner on the info page */
 .infobanner {
-    background: url(../images/photos/woman.jpg) no-repeat fixed center top;
+    background: url(../images/photos/woman.jpg) no-repeat fixed center center;
     background-size: cover;
-    min-height: 100%;
-    height: 50vh;
+    min-height: 300px;
+    height: 20vh;
     width: 100%;
     margin: 0;
     padding-top: 5%;
@@ -264,9 +270,9 @@ nav ul li ul li a.hoverable:hover {
 /* text inside the banners */
 /* all text in the header is aligned center and has a shadow */
 header {
+    box-sizing: border-box;
     text-align: center;
     text-shadow: 0 1px 2px #2f2f2f;
-    margin: auto;
 }
 
 /* logo on the index page */
@@ -276,54 +282,12 @@ header {
     margin: 50px 0 0 0;
 }
 
-h1.intro {
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    margin: 25px 15%;
-}
-
 p.subintro {
     color: white;
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: normal;
     text-align: center;
-    margin: 0 0 25px 0;
-}
-
-/* buttons */
-.button {
-    color: white;
-    padding: 16px 32px;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.button1 {
-    color: white;
-    background-color: #EA2E49;
-    border: 2px solid #EA2E49;
-}
-
-.button1:hover {
-    background-color: white;
-    border: 2px solid white;
-    color: #EA2E49;
-}
-
-.button2 {
-    margin-left: 100px;
-    background-color: transparent;
-    color: white;
-    text-shadow: 0 1px 1px #4b4b4b;
-    border: 2px solid #77C4D3;
-}
-
-.button2:hover {
-    background-color: #77C4D3;
-    color: white;
+    margin: 25px 10%;
 }
 
 /* links */
@@ -335,6 +299,32 @@ a:link, a:visited, a:hover, a:active {
 
 a:hover {
     color: #EA2E49;
+}
+
+/* buttons */
+.button {
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 50px 20px;
+    border-radius: 10px;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+header a.button1:link, header a.button1:visited {
+    color: white;
+    background-color: #EA2E49;
+}
+
+header a.button2:link, header a.button2:visited {
+    background-color: #77C4D3;
+    color: white;
+    text-shadow: 0 1px 1px #4b4b4b;
+}
+
+header a.button2:hover, header a.button1:hover {
+    background-color: #333745;
 }
 
 /* footer */
@@ -349,7 +339,7 @@ footer {
 footer h4 {
     text-align: left;
     color: #EA2E49;
-    padding-top: 25px;
+    padding-top: 0.6em;
 }
 
 footer section.column {
@@ -367,8 +357,8 @@ section.column ul {
 }
 
 section.column ul li {
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 0.625em;
+    font-size: 1em;
 }
 
 section.column ul li a {
@@ -382,9 +372,9 @@ section.column ul li a:hover {
 
 footer p {
     border-top: 1px solid grey;
-    padding-top: 25px;
-    margin: 25px 0 0 0;
-    font-size: 15px;
+    padding-top: 1.5em;
+    margin: 1.5em 0 0 0;
+    font-size: 1em;
     text-align: right;
     color: white;
 }

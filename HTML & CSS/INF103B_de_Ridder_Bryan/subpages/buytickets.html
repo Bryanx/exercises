@@ -42,54 +42,45 @@
 </nav>
 
 <!-- Background banner, title text and buttons: -->
-<!-- Banner, intro text and buttons: -->
-<header class="ticketinfobanner">
-    <h1>Tide ticket info</h1>
-    <p class="subintro">Limited time discount for early reservations!</p>
-
-    <!-- Buttons -->
-    <a href="./buytickets.html">
-        <button class="button button1">Buy your tickets!</button>
-    </a>
-    <a href="./lineupinfo.html">
-        <button class="button button2">View our line-up!</button>
-    </a>
+<header>
+    <section class="ticketsbanner">
+    </section>
 </header>
 
 <!-- Content: -->
-<article>
-    <header>
-        <h2>Latest news</h2>
-    </header>
-    <section>
-        <h3>Tide wins best European Festival of 2016!</h3>
-        <h4>13 January 2016</h4>
-        <p> The winners of the 2016 European Festival Awards were announced at a gala show in Groningen, The Netherlands
-            last night. 'Tide' managed to finish in first place.</p>
-        <p> Presented in association with Yourope (the European Festival Association) and marking the opening of the
-            annual four-day Eurosonic Noorderslag event, the European Festival Awards celebrate the successes of
-            Europe’s music festival industry. Decided by a combination of public vote and industry juries, the Awards
-            are the only pan-European body solely dedicated to recognising the contributions and achievements of the
-            event organisers and performing artists that generate billions of Euros for local economies and brighten up
-            the summer for tens of millions of festival-goers each year. The 2016 European Festival Awards featured over
-            350 festivals from 50 different European countries, with over 800,000 votes cast in total. This years award
-            goes to 'Tide', for an outstanding lineup and a great visual story telling performance. Runner up 'Sziget
-            Festival', responded in disgrace of the voting system. Thank you all for voting for Tide this
-            year as the best European festival.</p>
-    </section>
-    <section>
-        <h3>Tide attracted 76.000 visitors in three days!</h3>
-        <h4>25 December 2015</h4>
-        <p>The first three nights of our festival attracted more than 76,000 visitors! Meanwhile 10-day-pass-tickets are
-            sold out, one-day tickets are still available. Friday night, Belgian band Hooverphonic attracted 7.000 music
-            fans, while a concert by American The Weeknd was quickly sold out. </p>
-        <p> Saturday evening, Belgian
-            singer Antoine Hénaut and Mickey 3D and Feu! Chatterton from France performed at 'Tide'. While the Central
-            Dome welcomed Americansinger Brisa Roché and her latest album "Invisible". On Sunday, Bears of Legend and
-            Chelim entertained the crowd, although it was Grandgeorges who sold out the hall. At the Main Stage, Belgian
-            band La Smala & friends concluded the evening.</p>
-    </section>
-</article>
+<section class="buytickets">
+    <h3>Get your tickets here</h3>
+    <form action="" method="post" id="buytickets">
+        <ul>
+            <li class="inline"><label for=“naam”>Name: </label>
+                <input required type="text" id=“naam” name=“naam” maxlength=“50” size=“40" placeholder="Name"></li>
+            <li class="inline"><label for=“familienaam”>Surname: </label>
+                <input required type="text" id=“familienaam” name=“familienaam” maxlength=“50” size=“40"
+                       placeholder="Surname"></li>
+            <li><label for=“email”>Email: </label>
+                <input required type="text" id=“email” name=“email” maxlength=“50” size=“40" placeholder="Email"></li>
+            <li><label for=“geboortedatum”>Date of birth: </label>
+                <input required type="text" id=“geboortedatum” name=“geboortedatum” maxlength=“50” size=“40"
+                       placeholder="DD/MM/YYYY"></li>
+            <li><label for=“woonplaats”>City: </label>
+                <input required type="text" id=“woonplaats” name=“woonplaats” maxlength=“50” size=“40"
+                       placeholder="City"></li>
+            <li><label for=“addres”>Adress: </label>
+                <input required type="text" id=“addres” name=“addres” maxlength=“50” size=“40" placeholder="Address">
+            </li>
+            <li><label>Amount of tickets:
+                <select name="aantaltickets">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label></li>
+            <li><input class="ticketbutton" type="submit" value="Ticketbutton" name="Ticketbutton"></li>
+        </ul>
+    </form>
+</section>
 
 <!-- Footer with 3 columns: -->
 <footer>
