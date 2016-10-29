@@ -2,8 +2,6 @@
 magentarood = #EA2E49;
 lichtblauw = #77C4D3;
 donkerblauw = #333745;
-
-TODO: alle stijlbladen voor specifieke pagina's in een apart stijlblad doen
 */
 
 * {
@@ -45,13 +43,67 @@ p {
 
 article {
     box-sizing: border-box;
-    width: 70%;
-    margin: 0 15% 60px;
+    width: 82%;
+    max-width: 1600px;
+    margin: 0 9% 60px;
     text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+    article {
+        margin: 0 auto 60px;
+    }
 }
 
 article header {
     text-shadow: none;
+}
+
+article section figure {
+    margin-top: 60px;
+    width: 100%;
+}
+article section figure img {
+    width:100%;
+}
+
+/* Three columns on main page */
+.threecolumnscontainer {
+    margin: 0 9%;
+    height: auto;
+}
+
+.threecolumns {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%;
+    min-width: 260px;
+    max-width: 290px;
+    vertical-align: top;
+    padding: 0 2%;
+    height: auto;
+    text-align: left;
+}
+
+.threecolumns h3 {
+    font-size: 2em;
+    margin-top: 2em;
+    white-space: nowrap;
+    text-align: left;
+}
+.threecolumns h4 {
+    margin-top: .4em;
+    font-size: .9em;
+    text-align: left;
+}
+.threecolumns p {
+    font-size: 1em;
+    margin: 1em 0;
+    height: 8em;
+}
+.threecolumns a.button {
+    margin: 0;
+    display: inline;
 }
 
 /* Blue text for highlighting */
@@ -109,7 +161,7 @@ nav ul {
     width: 100%;
     background-color: #333745;
     list-style-type: none;
-    z-index: 1;
+    z-index: 10;
 }
 
 nav ul li {
@@ -183,11 +235,11 @@ nav ul li ul li a.hoverable {
 /* navbar becomes vertical at width 720px */
 @media screen and (max-width: 720px) {
     nav ul {
-        height: 52px;
+        position: relative;
+        height: auto;
         width: 100%;
     }
 
-    /* nav items are only visible on hover (onclick not possible without JS?) */
     nav ul li:hover > ul, nav ul li {
         display: none;
         float: none;
@@ -199,16 +251,12 @@ nav ul li ul li a.hoverable {
         padding: 12px 0;
     }
 
-    nav ul:hover > li {
-        display: block
+    nav ul li {
+        display: block;
     }
 
     nav ul:hover .navlogo {
         display: none;
-    }
-
-    nav:hover > ul {
-        height: auto;
     }
 
     nav li.navlogo, a.alogo {
@@ -219,34 +267,14 @@ nav ul li ul li a.hoverable {
     }
 
     nav li.navlogo img {
-        float: left;
-        margin-left: 20px;
-        margin-top: 4px;
-    }
-
-    /* Menu icon and Menu text becomes visible */
-    .alogo:after {
-        margin: 15px 15px 0 0;
-        float: right;
-        vertical-align: center;
-        content: "Menu";
-        font-size: 16px;
-    }
-
-    .alogo:before {
-        content: "";
-        background: url(../images/icons/menu.png) no-repeat;
-        width: 42px;
-        height: 42px;
-        float: right;
-        margin: 9px 20px 0 0;
+        display: none;
     }
 }
 
 /* main logos and banners */
 /* banner on the homepage */
 .indexbackgroundimage {
-    background: url(../images/photos/party.jpg) no-repeat fixed center center;
+    background: url(../images/banners/party.jpg) no-repeat fixed center center;
     background-size: cover;
     min-height: 600px;
     height: 85vh;
@@ -258,10 +286,10 @@ nav ul li ul li a.hoverable {
 
 /* banner on the info page */
 .infobanner {
-    background: url(../images/photos/woman.jpg) no-repeat fixed center center;
+    background: url(../images/banners/stage.jpg) no-repeat fixed center bottom;
     background-size: cover;
-    min-height: 300px;
-    height: 20vh;
+    min-height: 370px;
+    height: 50vh;
     width: 100%;
     margin: 0;
     padding-top: 5%;
@@ -304,7 +332,7 @@ a:hover {
 /* buttons */
 .button {
     color: white;
-    padding: 16px 32px;
+    padding: 1em 2em;
     font-size: 16px;
     margin: 50px 20px;
     border-radius: 10px;
@@ -312,23 +340,27 @@ a:hover {
     line-height: 60px;
 }
 
-header a.button1:link, header a.button1:visited {
+a.button1:link, a.button1:visited {
     color: white;
     background-color: #EA2E49;
 }
 
-header a.button2:link, header a.button2:visited {
-    background-color: #77C4D3;
+a.button2:link, a.button2:visited {
+    background-color: #333745;
     color: white;
-    text-shadow: 0 1px 1px #4b4b4b;
+    text-shadow: 0 1px 1px black;
 }
 
-header a.button2:hover, header a.button1:hover {
+a.button1:hover {
     background-color: #333745;
+}
+a.button2:hover {
+    background-color: #EA2E49;
 }
 
 /* footer */
 footer {
+    clear: left;
     background-color: #333745;
     padding: 60px 120px;
     height: auto;

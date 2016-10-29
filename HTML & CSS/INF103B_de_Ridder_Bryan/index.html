@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tide | Your festival holiday</title>
     <link rel="icon" href="images/icons/icon.png">
 
     <!-- CSS: -->
-    <link rel="stylesheet" href="css/basisstijlblad.css">
+    <link rel="stylesheet" href="css/basicstylesheet.css">
 
     <!-- External Fonts: -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
@@ -30,11 +31,11 @@
             <!-- Tickets dropdown menu: -->
             <ul>
                 <li><a class="hoverable" href="./subpages/ticketinfo.html">Ticket information</a></li>
-                <li><a class="hoverable" href="./subpages/buytickets.html">Buy tickets</a></li>
+                <li><a class="hoverable" href="subpages/tickets/buytickets.html">Buy tickets</a></li>
             </ul>
         </li>
         <li><a class="hoverable" href="./subpages/practicalinfo.html">Practical information</a></li>
-        <li><a class="hoverable" href="./subpages/fotos.html">Photos</a></li>
+        <li><a class="hoverable" href="./subpages/photos.html">Photos</a></li>
         <li class="navlogo"><a class="alogo" href="./index.html">
             <img src="./images/icons/logo_magenta_xs.png" alt="logo"></a></li>
     </ul>
@@ -44,23 +45,45 @@
 <header class="indexbackgroundimage">
     <div class="logo"><img src="images/icons/logo_magenta.png" alt="logo"></div>
     <h1>Tide is your festival with music drinks and more...</h1>
-    <p class="subintro">Enjoy your stay at the renowned Coast of Freedom</p>
+    <p class="subintro">Enjoy your stay at the Coast of Freedom</p>
 
     <!-- Buttons -->
-    <a class="button button1" href="./subpages/buytickets.html">Buy your tickets!</a>
+    <a class="button button1" href="subpages/tickets/buytickets.html">Buy your tickets!</a>
     <a class="button button2" href="./subpages/lineupinfo.html">View our line-up!</a>
 </header>
 
 <!-- Content: -->
+<article class="threecolumnscontainer">
+    <h2>Latest news</h2>
+    <section class="threecolumns">
+        <h3>Best EU Festival!</h3>
+        <h4>13 January 2016</h4>
+        <p> The winners of the 2016 European Festival Awards were announced in Groningen, The Netherlands
+            last night. 'Tide' managed to finish in first place.</p>
+        <a class="button button2" href="subpages/tickets/buytickets.html">Read more</a>
+    </section>
+    <section class="threecolumns">
+        <h3>76.000 visitors!</h3>
+        <h4>25 December 2015</h4>
+        <p>The first three nights of our festival attracted more than 76,000 visitors! Meanwhile 3-day-tickets are
+            sold out, one-day tickets are still available. </p>
+        <a class="button button2" href="subpages/tickets/buytickets.html">Read more</a>
+    </section>
+    <section class="threecolumns">
+        <h3>Go-Pass sale!</h3>
+        <h4>29 November 2015</h4>
+        <p>From the 1st of december untill the 30th of january there will be a sale on Go-Pass
+            tickets. Everyone buying a ticket in this time period will receive 25% discount.</p>
+        <a class="button button2" href="subpages/tickets/buytickets.html">Read more</a>
+    </section>
+</article>
 <article>
-    <header>
-        <h2>Latest news</h2>
-    </header>
     <section>
-        <header>
-            <h3>Tide wins best European Festival of 2016!</h3>
-            <h4>13 January 2016</h4>
-        </header>
+        <figure>
+            <img src="images/articlebanners/trophies.jpg">
+        </figure>
+        <h3>Tide wins best European Festival of 2016!</h3>
+        <h4>13 January 2016</h4>
         <p> The winners of the 2016 European Festival Awards were announced at a gala show in Groningen, The Netherlands
             last night. 'Tide' managed to finish in first place.</p>
         <p> Presented in association with Yourope (the European Festival Association) and marking the opening of the
@@ -75,18 +98,35 @@
             year as the best European festival.</p>
     </section>
     <section>
-        <header>
-            <h3>Tide attracted 76.000 visitors in three days!</h3>
-            <h4>25 December 2015</h4>
-        </header>
-        <p>The first three nights of our festival attracted more than 76,000 visitors! Meanwhile 10-day-pass-tickets are
+        <figure>
+            <img src="images/articlebanners/people.jpg">
+        </figure>
+        <h3>Tide attracted 76.000 visitors in three days!</h3>
+        <h4>25 December 2015</h4>
+        <p>The first three nights of our festival attracted more than 76,000 visitors! Meanwhile 3-day-pass-tickets are
             sold out, one-day tickets are still available. Friday night, Belgian band Hooverphonic attracted 7.000 music
             fans, while a concert by American The Weeknd was quickly sold out. </p>
-        <p> Saturday evening, Belgian
-            singer Antoine Hénaut and Mickey 3D and Feu! Chatterton from France performed at 'Tide'. While the Central
-            Dome welcomed Americansinger Brisa Roché and her latest album "Invisible". On Sunday, Bears of Legend and
-            Chelim entertained the crowd, although it was Grandgeorges who sold out the hall. At the Main Stage, Belgian
+        <p> Saturday evening, Belgian singer Antoine Hénaut and Mickey 3D and Feu! Chatterton from France performed at
+            'Tide'. While the Central Dome welcomed Americansinger Brisa Roché and her latest album "Invisible". On
+            Sunday, Bears of Legend and Chelim entertained the crowd, although it was Grandgeorges who sold out the
+            hall. At the Main Stage, Belgian
             band La Smala & friends concluded the evening.</p>
+    </section>
+    <section>
+        <figure>
+            <img src="images/articlebanners/ticket.jpg">
+        </figure>
+        <h3>Limited time sale on Go-Pass tickets!</h3>
+        <h4>29 November 2015</h4>
+        <p>Beginning on the 1st of december untill the 30th of january there will be a limited sale on Go-Pass
+            tickets. Everyone buying a ticket between this time period will receive a 25% discount. This sale is
+            meant to encourage people to book tickets in advance, so we can comprehend the amount of people coming.</p>
+        <p>Like we've seen last year at the Tide festival, it became much busier than we could have ever anticipated,
+            causing some very busy moments on our festival. This made several complaints on our crowd management and its
+            understandable, people weren't to happy about it. So to prevent this from happening again this year, we're
+            introducing a limited time sale for all you early bookers! This way we know in advance how much crowd
+            management will be neccesary in the future. We can't foresee everything ofcourse, so we hop we've got your
+            suppoert on how we're handeling this. Remember, we're a young festival we learn by each step we take.</p>
     </section>
 </article>
 

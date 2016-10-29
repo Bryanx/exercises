@@ -1,0 +1,46 @@
+/* Photogallery */
+.photogallerybanner {
+    background: url(../images/banners/lights.jpg) no-repeat fixed center bottom;
+    background-size: cover;
+    min-height: 370px;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 5%;
+}
+
+section.photogallery {
+    min-width: 100%;
+    border-top: 20px solid #77C4D3;
+}
+
+.photo {
+    right: 0;
+    float: left;
+    background-color: black;
+    overflow: hidden;
+}
+
+.photo img {
+    transition: transform .1s ease, filter .1s ease;
+    width: 25vw;
+    height: auto;
+    vertical-align: middle;
+    filter: brightness(60%);
+    transform: scale(1.0);
+}
+.photo img:hover {
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1000px) {
+    .photo img {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .photo img {
+        width: 100vw;
+    }
+}

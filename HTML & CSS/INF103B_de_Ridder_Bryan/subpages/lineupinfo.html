@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tide | Lineup</title>
     <link rel="icon" href="../images/icons/icon.png">
 
     <!-- CSS: -->
-    <link rel="stylesheet" href="../css/basisstijlblad.css">
-    <link rel="stylesheet" href="../css/lineupstijlblad.css">
+    <link rel="stylesheet" href="../css/basicstylesheet.css">
+    <link rel="stylesheet" href="../css/lineupstylesheet.css">
 
     <!-- External Fonts: -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
@@ -31,11 +32,11 @@
             <!-- Tickets dropdown menu: -->
             <ul>
                 <li><a class="hoverable" href="./ticketinfo.html">Ticket information</a></li>
-                <li><a class="hoverable" href="./buytickets.html">Buy tickets</a></li>
+                <li><a class="hoverable" href="tickets/buytickets.html">Buy tickets</a></li>
             </ul>
         </li>
         <li><a class="hoverable" href="./practicalinfo.html">Practical information</a></li>
-        <li><a class="hoverable" href="./fotos.html">Photos</a></li>
+        <li><a class="hoverable" href="./photos.html">Photos</a></li>
         <li class="navlogo"><a class="alogo" href="../index.html">
             <img src="../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
     </ul>
@@ -43,14 +44,11 @@
 
 <!-- Background banner, title text and buttons: -->
 <header class="lineupbanner">
-    <h1 class="intro">Our line up for 2016</h1>
-    <p class="subintro">Plan your concerts in advance to get the
-        best Tide experience!
+    <h1>Our line up for 2016</h1>
+    <p class="subintro">Plan your concerts in advance to get the best Tide experience!
     </p>
     <!-- Buttons -->
-    <a href="./buytickets.html">
-        <button class="button button1">Buy your tickets!</button>
-    </a>
+    <a class="button button1" href="tickets/buytickets.html">Buy your tickets!</a>
 </header>
 
 <!-- Content: -->
@@ -181,7 +179,7 @@
     </ul>
     <h3 id="friday">Friday, 14 june 2016</h3>
     <h4 class="mainsubtext">On friday the <span class="lightblue">Central Dome</span> is open for extended time!</h4>
-    <div class="centeredgallery">
+    <ul class="centeredgallery">
         <li class="responsivegallery">
             <a href="../subpages/lineup/kensington.html">
                 <div class="mask">
@@ -247,7 +245,7 @@
                 <h3 class="galleryheader">U2</h3></a>
             <h5 class="galleryheader"><span class="lightblue">Beach Lounge</span> : 16.00 - 19.00</h5>
         </li>
-    </div>
+    </ul>
 </article>
 
 <!-- Footer with 3 columns: -->

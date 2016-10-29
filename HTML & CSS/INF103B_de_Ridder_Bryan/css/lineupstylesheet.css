@@ -1,6 +1,6 @@
 /* banner on the lineup page */
 .lineupbanner {
-    background: url(../images/photos/fireworks.jpg) no-repeat fixed center bottom;
+    background: url(../images/banners/fireworks.jpg) no-repeat fixed center bottom;
     background-size: cover;
     min-height: 370px;
     height: 50vh;

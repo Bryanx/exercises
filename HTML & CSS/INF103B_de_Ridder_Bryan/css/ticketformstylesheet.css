@@ -1,0 +1,141 @@
+/* banner on the tickets page */
+.ticketsbanner {
+    background: url(../images/banners/colorfestival.jpg) no-repeat fixed center bottom;
+    background-size: cover;
+    min-height: 650px;
+    height: 85vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.ticketinfobanner {
+    background: url(../images/banners/beach.jpg) no-repeat fixed center bottom;
+    background-size: cover;
+    min-height: 370px;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 5%;
+}
+
+/* Form on ticket page */
+/* Uses a negative margin instead of absolute positioning, because the header height is fixed. */
+section.buytickets {
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 475px;
+    height: auto;
+    margin: -530px auto 60px;
+    background: rgba(255, 255, 255, .9);
+}
+
+/* Form uses fullwidth on mobile devices */
+@media screen and (max-width: 500px) {
+    section.buytickets {
+        width: 100%;
+    }
+}
+
+form {
+    margin: 30px 5%;
+}
+
+form ul li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+form ul li.halfinline {
+    display: inline-block;
+    width: 49.4%;
+}
+
+form ul li.thirdinline {
+    display: inline-block;
+    width: 32.6%;
+}
+
+form ul li label {
+    display: block;
+
+}
+
+form ul li input, form ul li select {
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 0.9em;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+form ul li label.checkbox {
+    width: 70%;
+    display: inline;
+    vertical-align: middle;
+
+}
+
+form ul li input.checkbox {
+    height: auto;
+    width: 5%;
+    display: inline;
+}
+
+.center {
+    text-align: center;
+}
+
+.ticketbutton {
+    box-sizing: border-box;
+    height: 40px;
+    width: 200px;
+    padding: 0;
+    margin: 4px auto;
+    font-size: 16px;
+    text-shadow: 0 1px 1px #4b4b4b;
+    border: none;
+    background-color: #EA2E49;
+    color: white;
+    cursor: pointer;
+}
+
+.ticketbutton:hover {
+    background-color: #333745;
+    color: white;
+}
+
+form ul li label {
+    width: auto;
+}
+
+.legalnotice {
+    font-size: 1em;
+}
+
+/* Confirmation page */
+.ticketconfirmation {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .9);
+    width: 50%;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .ticketconfirmation {
+        width: 100%;
+    }
+}
+
+.notice {
+    text-align: center;
+    text-shadow: none;
+    margin-top: 30px;
+}

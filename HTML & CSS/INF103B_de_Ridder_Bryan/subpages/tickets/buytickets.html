@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide | Buy tickets</title>
+    <link rel="icon" href="../../images/icons/icon.png">
+
+    <!-- CSS: -->
+    <link rel="stylesheet" href="../../css/basicstylesheet.css">
+    <link rel="stylesheet" href="../../css/ticketformstylesheet.css">
+
+    <!-- External Fonts: -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:400,700">
+</head>
+<body>
+
+<!-- Navigation menu: -->
+<nav>
+    <ul>
+        <li class="firstitem"><a class="hoverable" href="../../index.html">Home</a></li>
+        <li><a class="hoverable" href="../lineupinfo.html">Line-up &#9662;</a>
+            <!-- Lineup dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="../lineupinfo.html#wednesday">Wednesday 13th</a></li>
+                <li><a class="hoverable" href="../lineupinfo.html#thursday">Thursday 14th</a></li>
+                <li><a class="hoverable" href="../lineupinfo.html#friday">Friday 15th</a></li>
+            </ul>
+        </li>
+        <li><a class="active" href="../ticketinfo.html">Tickets &#9662;</a>
+            <!-- Tickets dropdown menu: -->
+            <ul>
+                <li><a class="hoverable" href="../ticketinfo.html">Ticket information</a></li>
+                <li><a class="hoverable" href="./buytickets.html">Buy tickets</a></li>
+            </ul>
+        </li>
+        <li><a class="hoverable" href="../practicalinfo.html">Practical information</a></li>
+        <li><a class="hoverable" href="../photos.html">Photos</a></li>
+        <li class="navlogo"><a class="alogo" href="../../index.html">
+            <img src="../../images/icons/logo_magenta_xs.png" alt="logo"></a></li>
+    </ul>
+</nav>
+
+<!-- Background banner, title text and buttons: -->
+<header class="ticketsbanner">
+</header>
+
+<!-- Content: -->
+<section class="buytickets">
+    <h3>Get your tickets here</h3>
+    <form action="ticketconfirm.html" method="get" id="buytickets">
+        <ul>
+            <li class="halfinline"><label for="naam">Name: </label>
+                <input required type="text" id="naam" name="naam" maxlength="50" size="40"
+                       placeholder="Please enter your name"></li>
+            <li class="halfinline"><label for="familienaam">Surname: </label>
+                <input required type="text" id="familienaam" name="familienaam" maxlength="50" size="40"
+                       placeholder="What's your last name?"></li>
+            <li><label for="email">Email: </label>
+                <input required type="email" id="email" name="email" maxlength="50" size="40"
+                       placeholder="Don't worry, we won't use this for spam"></li>
+            <li class="thirdinline"><label for="geboortedag">Date of birth: </label>
+                <input required type="number" id="geboortedag" name="geboortedag" maxlength="50" size="40"
+                       placeholder="DD"></li>
+            <li class="thirdinline"><label>
+                <select required name="geboortemaand" id="geboortemaand">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            </label></li>
+            <li class="thirdinline"><input required type="number" id="geboortejaar" name="geboortejaar" maxlength="50"
+                                           size="40" placeholder="YYYY"></li>
+            <li><label for="residence">City: </label>
+                <input required type="text" id="residence" name="residence" maxlength="50" size="40"
+                       placeholder="Please tell us where you live"></li>
+            <li><label for="address">Address: </label>
+                <input required type="text" id="address" name="address" maxlength="50" size="40"
+                       placeholder="And to be exact, your address">
+            </li>
+            <li><label for="phonenumber">Phonenumber: </label>
+                <input required type="tel" id="phonenumber" name="phonenumber" maxlength="50" size="40"
+                       placeholder="+32">
+            </li>
+            <li class="halfinline"><label>Ticket type:
+                <select required name="tickettype" id="tickettype">
+                    <option value="1">1 day ticket</option>
+                    <option value="2">2 days ticket</option>
+                    <option value="3">3 days ticket</option>
+                    <option value="4">Go-Pass ticket</option>
+                    <option value="5">Student ticket</option>
+                </select>
+            </label></li>
+            <li class="halfinline"><label for="ticketamount">Amount of tickets:</label>
+                <input required type="number" id="ticketamount" name="ticketamount" maxlength="50" size="40"
+                       placeholder="1">
+            </li>
+            <li class="center"><input class="checkbox" id="newsletter" type="checkbox" name="newsletter" value="yes"
+                                      title="newsletter">
+                <label class="checkbox" for="newsletter">I want to signup for the Tide newsletter</label></li>
+            <li class="center"><input required class="checkbox" id="terms" type="checkbox" name="terms" value="yes">
+                <label class="checkbox" for="terms">I agree to the
+                    <a href="buytickets.html#beginlegalnotice">terms of service</a></label></li>
+            <li class="center"><input class="ticketbutton" type="submit" value="Order ticket(s)" name="ticketbutton">
+            </li>
+        </ul>
+    </form>
+</section>
+<article class="pushdown">
+    <p class="legalnotice" id="beginlegalnotice">
+        Please read this Copyright Notice carefully before using this site. By using this site, you signify your consent
+        to the terms of this Copyright Notice. If you do not agree to the Terms, please exit the site.
+        Terms
+    </p>
+    <p class="legalnotice">
+        1. You should assume that everything you see, read or hear on this site is protected by copyright, design right
+        and/or other intellectual property rights unless otherwise stated and may only be used in accordance with these
+        Terms. Tide&trade; does not warrant or represent that your use of materials displayed on this site will not
+        infringe
+        rights of third parties not owned by or affiliated with Tide&trade;. Images, illustrations, graphics, text, etc,
+        are
+        either the property of Tide&trade; or third parties who have licensed their rights to Tide&trade;. The use of
+        these
+        materials by you, or anyone else authorised by you, is prohibited unless specifically permitted by these Terms.
+        Any unauthorised use of the images may violate copyright laws, trademark laws and/or other regulations and
+        statutes.
+    </p>
+    <p class="legalnotice">
+        2. The trademarks, logos and designs displayed on the site, are the property of Tide&trade; or third parties who
+        have
+        licensed their rights to Tide&trade;. Nothing contained on the site should be construed as granting, by
+        implication,
+        estoppel, or otherwise, any license or right to use any trademark displayed on the site without the written
+        permission of Tide&trade; or such third party that may own the trademarks displayed on the site.
+    </p>
+    <p class="legalnotice">
+        3. You may download, print and store selected portions of the content of the site provided that you (l) only use
+        these copies for your own personal, non-commercial use, (ll) do not copy or post the content on any network
+        computer or broadcast the content in the media, and (lll) do not modify or alter the content in any way. No
+        right, title or interest in any downloaded materials is transferred to you as a result of any such downloading.
+        Tide&trade; reserves complete title and full intellectual property rights in any content you download from this
+        site.
+        Except as noted above, you may not copy, download, reproduce, modify, publish, distribute, transmit, transfer or
+        create derivative works from the content without obtaining written permission from Tide&trade; in advance.
+    </p>
+    <p class="legalnotice">
+        4. Tide&trade; has not reviewed all of the sites linked to this site and is not responsible for the contents of
+        any
+        off-site pages or any other sites linked to this site. Your linking to any other off-site pages or other sites
+        is at your own risk.
+    </p>
+    <p class="legalnotice">
+        5. This site may contain links to other Web sites operated by third parties other than Tide&trade;. Such links
+        are
+        provided for your convenience only. Tide&trade; does not control such Web sites and is not responsible for their
+        content. The fact that this site contains links to other sites does not mean that Tide&trade; approves of,
+        endorses
+        or recommends those sites, nor does it imply any association with their operators. Tide&trade; disclaims all
+        warranties, express or implied, as to the accuracy, legality, reliability or validity of any content on any
+        other site and disclaims all responsibility for any loss, injury, claim, liability or damage of any kind
+        resulting from any third party Web sites or content therein directly or indirectly accessed through links in
+        this site.
+    </p>
+    <p class="legalnotice">
+        6. Tide&trade; may at any time revise these Terms by updating this posting. You are bound by any such revision
+        and
+        should therefore periodically visit this page to review the current Terms to which you are bound.
+    </p>
+    <p class="legalnotice">
+        7. These Terms shall be governed by and construed under the laws of Switzerland, without regard to conflict of
+        laws principles. Any legal action with respect to any transaction subject to these Terms must be commenced
+        within one year after the cause of action has arisen. Any actions arising out of products purchased through the
+        Website shall be decided by the federal courts of Switzerland. Buyer agrees to submit to the jurisdiction of
+        these courts and waives any claim that venue is improper for any reasons in these courts.
+    </p>
+</article>
+
+<!-- Footer with 3 columns: -->
+<footer>
+    <section class="column">
+        <h4>Other stuff</h4>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../lineupinfo.html">Line-up</a></li>
+            <li><a href="../ticketinfo.html">Tickets</a></li>
+            <li><a href="../practicalinfo.html">Practical information</a></li>
+            <li><a href="../photos.html">Photos</a></li>
+        </ul>
+    </section>
+    <section class="column">
+        <h4>Social media</h4>
+        <ul>
+            <li><a href="http://facebook.com">Facebook</a></li>
+            <li><a href="http://twitter.com">Twitter</a></li>
+            <li><a href="http://linkedin.com">LinkedIn</a></li>
+            <li><a href="http://youtube.com">Youtube</a></li>
+            <li><a href="http://vimeo.com">Vimeo</a></li>
+        </ul>
+    </section>
+    <section class="column">
+        <h4>Contact us</h4>
+        <ul>
+            <li><a href="mailto:info@tidefestival.com">&#9993; info@tidefestival.com</a></li>
+            <li><a href="tel:347-927-5487">&#9742; (347) 927-5487</a></li>
+        </ul>
+    </section>
+    <p>&copy; 2011-2016 tide.com All Right Reserved.</p>
+</footer>
+</body>
+</html>
