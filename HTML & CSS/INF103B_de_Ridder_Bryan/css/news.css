@@ -1,0 +1,57 @@
+/* Main banner on home page and news pages*/
+.indexbackgroundimage {
+    background: url(../images/banners/party.jpg) no-repeat fixed center center;
+    background-size: cover;
+    min-height: 600px;
+    height: 85vh;
+    transition-duration: 1s;
+}
+
+/* logo on the index page */
+.logo img {
+    width: 20%;
+    height: auto;
+    margin: 50px 0 0 0;
+}
+
+/* Three columns for news on main page and other news pages */
+.threecolumnscontainer {
+    margin: 0 9% 60px;
+    height: auto;
+}
+
+.threecolumns {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%;
+    min-width: 260px;
+    max-width: 290px;
+    vertical-align: top;
+    padding: 0 2%;
+    height: auto;
+    text-align: left;
+}
+
+.threecolumns h3 {
+    font-size: 2em;
+    margin-top: 2em;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.threecolumns h4 {
+    margin-top: .4em;
+    font-size: .9em;
+    text-align: left;
+}
+
+.threecolumns p {
+    font-size: 1em;
+    margin: 1em 0;
+    height: 8em;
+}
+
+.threecolumns a.button {
+    margin: 0;
+    display: inline;
+}

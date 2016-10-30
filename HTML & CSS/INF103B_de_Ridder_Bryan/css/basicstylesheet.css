@@ -1,14 +1,14 @@
 /*
-magentarood = #EA2E49;
-lichtblauw = #77C4D3;
-donkerblauw = #333745;
+magentared = #EA2E49;
+lightblue = #77C4D3;
+darkblue = #333745;
 */
 
 * {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased; /* All fonts get antialiased */
-    -moz-osx-font-smoothing: grayscale; /* Also for Firefox */
+    -webkit-font-smoothing: antialiased; /* All fonts get antialiased*/
+    -moz-osx-font-smoothing: grayscale; /* Also for Firefox (impossible to do this without using a vendor-extension) */
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     background-color: white;
 }
 
-/* responsive text*/
+/* responsive headers, paragraphs, widths, margins, etc (with use of em)*/
 @media screen and (max-width: 720px) {
     body {
         font-size: 14px;
@@ -37,73 +37,27 @@ p {
     font-weight: 300;
     text-align: left;
     line-height: 150%;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 2em 0;
 }
 
 article {
     box-sizing: border-box;
     width: 82%;
-    max-width: 1600px;
     margin: 0 9% 60px;
     text-align: center;
-}
-
-@media screen and (min-width: 1600px) {
-    article {
-        margin: 0 auto 60px;
-    }
 }
 
 article header {
     text-shadow: none;
 }
 
+/* Images in articles */
 article section figure {
     margin-top: 60px;
-    width: 100%;
 }
+
 article section figure img {
-    width:100%;
-}
-
-/* Three columns on main page */
-.threecolumnscontainer {
-    margin: 0 9%;
-    height: auto;
-}
-
-.threecolumns {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 33%;
-    min-width: 260px;
-    max-width: 290px;
-    vertical-align: top;
-    padding: 0 2%;
-    height: auto;
-    text-align: left;
-}
-
-.threecolumns h3 {
-    font-size: 2em;
-    margin-top: 2em;
-    white-space: nowrap;
-    text-align: left;
-}
-.threecolumns h4 {
-    margin-top: .4em;
-    font-size: .9em;
-    text-align: left;
-}
-.threecolumns p {
-    font-size: 1em;
-    margin: 1em 0;
-    height: 8em;
-}
-.threecolumns a.button {
-    margin: 0;
-    display: inline;
+    width: 100%;
 }
 
 /* Blue text for highlighting */
@@ -121,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 3.5em;
-    margin: 25px 20px;
+    margin: 25px 9%;
     color: white;
 }
 
@@ -146,31 +100,24 @@ h4 {
 
 h5 {
     font-size: 1.2em;
-    color: grey;
     line-height: 1.125em;
+    color: grey;
 }
 
-/* navbar */
-nav {
-    text-shadow: 0 1px 2px #2f2f2f;
-}
-
+/* Main navbar (displays on all pages) */
 nav ul {
+    box-sizing: border-box;
     position: fixed;
     height: auto;
     width: 100%;
     background-color: #333745;
     list-style-type: none;
+    text-shadow: 0 1px 2px #2f2f2f;
     z-index: 10;
 }
 
 nav ul li {
     float: left;
-}
-
-/* first nav item is moved to the center */
-.firstitem {
-    margin-left: 9%;
 }
 
 nav ul li a {
@@ -180,21 +127,26 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Makes the nav items hoverable, also makes the current nav item active: */
 nav ul li a.hoverable:hover, nav li a.active {
     background-color: #EA2E49;
     color: white;
 
 }
 
-/* logo in navbar */
-li.navlogo, .alogo {
-    float: right;
-    margin-right: 9%;
-    padding: 0;
-    margin-top: 7px;
+/* first nav item is moved to the center */
+.firstnavitem {
+    margin-left: 9%;
 }
 
-/* navbar dropdown menu */
+/* logo in navbar (last item also moved to the center)*/
+li.navlogo, .alogo {
+    float: right;
+    margin: 7px 9% 0 0;
+    padding: 0;
+}
+
+/* navbar dropdown menus */
 /* display none at first */
 nav ul ul {
     display: none;
@@ -202,7 +154,7 @@ nav ul ul {
     background-color: transparent;
 }
 
-/* reveals ul child on hover */
+/* reveals dropdown menu on hover */
 nav ul li:hover > ul {
     display: block;
 }
@@ -223,7 +175,7 @@ nav ul li ul li a.hoverable {
 
 /* navbar responsive */
 @media screen and (max-width: 960px) {
-    nav ul li.firstitem, nav ul li:nth-child(5) {
+    .firstnavitem {
         margin: 0;
     }
 
@@ -240,74 +192,29 @@ nav ul li ul li a.hoverable {
         width: 100%;
     }
 
-    nav ul li:hover > ul, nav ul li {
+    nav ul li, nav ul li:hover > ul, nav li.navlogo img {
         display: none;
         float: none;
         text-align: center;
     }
 
-    nav ul li a {
-        font-size: 18px;
-        padding: 12px 0;
-    }
-
     nav ul li {
         display: block;
     }
-
-    nav ul:hover .navlogo {
-        display: none;
-    }
-
-    nav li.navlogo, a.alogo {
-        display: block;
-        margin: 0;
-        width: 100%;
-        float: left;
-    }
-
-    nav li.navlogo img {
-        display: none;
-    }
 }
 
-/* main logos and banners */
-/* banner on the homepage */
-.indexbackgroundimage {
-    background: url(../images/banners/party.jpg) no-repeat fixed center center;
-    background-size: cover;
-    min-height: 600px;
-    height: 85vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
-    transition-duration: 1s;
-}
-
-/* banner on the info page */
-.infobanner {
-    background: url(../images/banners/stage.jpg) no-repeat fixed center bottom;
-    background-size: cover;
-    min-height: 370px;
-    height: 50vh;
+/* default banner: */
+.banner {
     width: 100%;
     margin: 0;
     padding-top: 5%;
 }
-
 /* text inside the banners */
 /* all text in the header is aligned center and has a shadow */
 header {
     box-sizing: border-box;
     text-align: center;
     text-shadow: 0 1px 2px #2f2f2f;
-}
-
-/* logo on the index page */
-.logo img {
-    width: 20%;
-    height: auto;
-    margin: 50px 0 0 0;
 }
 
 p.subintro {
@@ -331,29 +238,26 @@ a:hover {
 
 /* buttons */
 .button {
-    color: white;
     padding: 1em 2em;
-    font-size: 16px;
     margin: 50px 20px;
     border-radius: 10px;
     white-space: nowrap;
     line-height: 60px;
 }
 
-a.button1:link, a.button1:visited {
-    color: white;
-    background-color: #EA2E49;
-}
-
-a.button2:link, a.button2:visited {
-    background-color: #333745;
+a.button {
     color: white;
     text-shadow: 0 1px 1px black;
 }
 
-a.button1:hover {
+a.button1:link, a.button1:visited {
+    background-color: #EA2E49;
+}
+
+a.button2:link, a.button2:visited, a.button1:hover {
     background-color: #333745;
 }
+
 a.button2:hover {
     background-color: #EA2E49;
 }
@@ -363,7 +267,6 @@ footer {
     clear: left;
     background-color: #333745;
     padding: 60px 120px;
-    height: auto;
     font-weight: 300;
     border-top: 40px solid #77C4D3;
 }
@@ -384,22 +287,18 @@ footer section.column {
     vertical-align: top;
 }
 
-section.column ul {
+footer section.column ul li {
+    margin-top: 0.625em;
+    font-size: 1em;
     list-style: none;
 }
 
-section.column ul li {
-    margin-top: 0.625em;
-    font-size: 1em;
-}
-
-section.column ul li a {
+footer section.column ul li a {
     color: white;
 }
 
-section.column ul li a:hover {
+footer section.column ul li a:hover {
     background-color: #EA2E49;
-    color: white;
 }
 
 footer p {

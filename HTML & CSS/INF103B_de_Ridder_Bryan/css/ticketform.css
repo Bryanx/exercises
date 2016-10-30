@@ -4,9 +4,6 @@
     background-size: cover;
     min-height: 650px;
     height: 85vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
 }
 
 .ticketinfobanner {
@@ -14,9 +11,6 @@
     background-size: cover;
     min-height: 370px;
     height: 50vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
 }
 
 /* Form on ticket page */

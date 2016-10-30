@@ -1,0 +1,62 @@
+/* banner on the info page */
+.practicalinfobanner {
+    background: url(../images/banners/stage.jpg) no-repeat fixed center bottom;
+    background-size: cover;
+    min-height: 370px;
+    height: 50vh;
+}
+
+/* google maps */
+iframe.googlemaps {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* FAQ */
+dl {
+    text-align: left;
+    margin: 60px 9%;
+    border-bottom: 1px solid lightgray;
+}
+dt {
+    box-sizing: border-box;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: lightgray;
+    width: 100%;
+    padding: 1em 1em;
+    color: #333745;
+    font-weight: bold;
+}
+
+dd {
+    color: white;
+    padding: 2em 5em;
+    display: none;
+    background-color: #77C4D3;
+
+}
+
+/* used hover since onclick is not possible in CSS? */
+dt:hover + dd, dd:hover, dt:hover{
+    display: block;
+}
+
+.icon {
+    height: 3em;
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+.expand {
+    float: right;
+}
+
+/* responsive */
+/* FAQ uses full width at screen below 720px */
+@media screen and (max-width: 720px) {
+    dl {
+        margin: 60px 0;
+    }
+}

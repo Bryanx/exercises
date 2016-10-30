@@ -4,9 +4,6 @@
     background-size: cover;
     min-height: 370px;
     height: 50vh;
-    width: 100%;
-    margin: 0;
-    padding-top: 5%;
 }
 
 /* Image gallery for lineup page*/
@@ -59,4 +56,9 @@ h3.galleryheader:hover {
     box-sizing: border-box;
     width: 100%;
     min-height: 450px;
+}
+
+/* articles on artist pages */
+.artistarticle {
+    margin-bottom: 60px;
 }
