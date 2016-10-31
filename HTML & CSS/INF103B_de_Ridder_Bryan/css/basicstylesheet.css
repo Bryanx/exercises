@@ -7,7 +7,7 @@ darkblue = #333745;
 * {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased; /* All fonts get antialiased*/
+    -webkit-font-smoothing: antialiased; /* All fonts get antialiased */
     -moz-osx-font-smoothing: grayscale; /* Also for Firefox (impossible to do this without using a vendor-extension) */
 }
 
@@ -17,7 +17,7 @@ body {
     background-color: white;
 }
 
-/* responsive headers, paragraphs, widths, margins, etc (with use of em)*/
+/* responsive headers, paragraphs, widths, margins, etc (with use of em) */
 @media screen and (max-width: 720px) {
     body {
         font-size: 14px;
@@ -58,11 +58,6 @@ article section figure {
 
 article section figure img {
     width: 100%;
-}
-
-/* Blue text for highlighting */
-span.lightblue {
-    color: #77C4D3;
 }
 
 /* Headers */
@@ -184,7 +179,7 @@ nav ul li ul li a.hoverable {
     }
 }
 
-/* navbar becomes vertical at width 720px */
+/* navbar list items stack vertical at width 720px */
 @media screen and (max-width: 720px) {
     nav ul {
         position: relative;
@@ -203,7 +198,7 @@ nav ul li ul li a.hoverable {
     }
 }
 
-/* default banner: */
+/* default banner (displays on all pages): */
 .banner {
     width: 100%;
     margin: 0;

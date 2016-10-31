@@ -6,7 +6,7 @@
     height: 50vh;
 }
 
-/* Image gallery for lineup page*/
+/* Image gallery for lineup page */
 .centeredgallery {
     text-align: center;
     overflow: hidden;
@@ -61,4 +61,9 @@ h3.galleryheader:hover {
 /* articles on artist pages */
 .artistarticle {
     margin-bottom: 60px;
+}
+
+/* Blue text for highlighting */
+span.lightblue {
+    color: #77C4D3;
 }
