@@ -1,4 +1,4 @@
-/* Photogallery */
+/* Banner on the photos page */
 .photogallerybanner {
     background: url(../images/banners/lights.jpg) no-repeat fixed center bottom;
     background-size: cover;
@@ -6,6 +6,9 @@
     height: 50vh;
 }
 
+/* -----------------------------------*/
+/* ------->>> PHOTO GALLERY <<<-------*/
+/* -----------------------------------*/
 .photogallery {
     min-width: 100%;
     border-top: 20px solid #77C4D3;

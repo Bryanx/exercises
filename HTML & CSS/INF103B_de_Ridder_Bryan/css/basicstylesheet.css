@@ -12,8 +12,7 @@ darkblue = #333745;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font: 16px 'Open Sans', 'Helvetica', 'Arial', sans-serif;
     background-color: white;
 }
 
@@ -30,13 +29,13 @@ body {
     }
 }
 
-/* Text and articles */
+/* -----------------------------------*/
+/* ------>>> TEXT & ARTICLES <<<------*/
+/* -----------------------------------*/
 p {
     color: #333745;
-    font-size: 1.44em;
-    font-weight: 300;
+    font: normal normal 300 1.44em/150% 'Open Sans';
     text-align: left;
-    line-height: 150%;
     margin: 2em 0;
 }
 
@@ -99,7 +98,9 @@ h5 {
     color: grey;
 }
 
-/* Main navbar (displays on all pages) */
+/* -----------------------------------*/
+/* ---------->>> NAVBAR <<<-----------*/
+/* -----------------------------------*/
 nav ul {
     box-sizing: border-box;
     position: fixed;
@@ -122,7 +123,8 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Makes the nav items hoverable, also makes the current nav item active: */
+/* Makes the nav items hoverable */
+/* Also makes the current nav item active: */
 nav ul li a.hoverable:hover, nav li a.active {
     background-color: #EA2E49;
     color: white;
@@ -198,13 +200,15 @@ nav ul li ul li a.hoverable {
     }
 }
 
-/* default banner (displays on all pages): */
+/* -----------------------------------*/
+/* ------->>> DEFAULT HEADER <<<------*/
+/* -----------------------------------*/
 .banner {
     width: 100%;
     margin: 0;
     padding-top: 5%;
 }
-/* text inside the banners */
+
 /* all text in the header is aligned center and has a shadow */
 header {
     box-sizing: border-box;
@@ -220,7 +224,9 @@ p.subintro {
     margin: 25px 10%;
 }
 
-/* links */
+/* -----------------------------------*/
+/* ------>>> BUTTONS & LINKS <<<------*/
+/* -----------------------------------*/
 a:link, a:visited, a:hover, a:active {
     color: #77C4D3;
     text-decoration: none;
@@ -231,7 +237,6 @@ a:hover {
     color: #EA2E49;
 }
 
-/* buttons */
 .button {
     padding: 1em 2em;
     margin: 50px 20px;
@@ -257,9 +262,11 @@ a.button2:hover {
     background-color: #EA2E49;
 }
 
-/* footer */
+/* -----------------------------------*/
+/* ---------->>> FOOTER <<<-----------*/
+/* -----------------------------------*/
 footer {
-    clear: left;
+    clear: both;
     background-color: #333745;
     padding: 60px 120px;
     font-weight: 300;

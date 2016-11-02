@@ -7,14 +7,16 @@
     transition-duration: 1s;
 }
 
-/* logo on the index page */
+/* logo on the index and news pages */
 .logo img {
     width: 20%;
     height: auto;
     margin: 50px 0 0 0;
 }
 
-/* Three columns for news on main page and other news pages */
+/* -----------------------------------*/
+/* ------->>> NEWS COLUMNS <<<--------*/
+/* -----------------------------------*/
 .threecolumnscontainer {
     margin: 0 9% 60px;
     height: auto;

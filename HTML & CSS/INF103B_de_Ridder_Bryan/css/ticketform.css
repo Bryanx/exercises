@@ -13,9 +13,12 @@
     height: 50vh;
 }
 
-/* Form on ticket page */
-/* Uses a negative margin instead of absolute positioning, because the header height is fixed. */
-section.buytickets {
+/* -----------------------------------*/
+/* ------>>> BUYTICKETS FORM <<<------*/
+/* -----------------------------------*/
+/* Uses a negative margin instead of absolute positioning */
+/* because the header height is fixed. */
+.formcontainer {
     box-sizing: border-box;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -23,13 +26,6 @@ section.buytickets {
     height: auto;
     margin: -530px auto 60px;
     background: rgba(255, 255, 255, .9);
-}
-
-/* Form uses fullwidth on mobile devices */
-@media screen and (max-width: 500px) {
-    section.buytickets {
-        width: 100%;
-    }
 }
 
 form {
@@ -41,19 +37,8 @@ form ul li {
     padding-top: 10px;
 }
 
-form ul li.halfinline {
-    display: inline-block;
-    width: 49.4%;
-}
-
-form ul li.thirdinline {
-    display: inline-block;
-    width: 32.6%;
-}
-
 form ul li label {
-    display: block;
-
+    vertical-align: middle;
 }
 
 form ul li input, form ul li select {
@@ -66,20 +51,12 @@ form ul li input, form ul li select {
     border-radius: 7px;
 }
 
-form ul li label.checkbox {
-    width: 70%;
-    display: inline;
-    vertical-align: middle;
-
-}
-
-form ul li input.checkbox {
+input.chkbox {
     height: auto;
     width: 5%;
-    display: inline;
 }
 
-.center {
+.aligncenter {
     text-align: center;
 }
 
@@ -102,16 +79,43 @@ form ul li input.checkbox {
     color: white;
 }
 
-form ul li label {
-    width: auto;
+/* Responsive form */
+/* For inputfields with 2 columns: */
+form ul li.halfinline {
+    display: inline-block;
+    width: 49.4%;
 }
 
-.legalnotice {
+/* For inputfields with 3 columns: */
+form ul li.thirdinline {
+    display: inline-block;
+    width: 32.6%;
+}
+
+/* Form uses fullwidth on small screens */
+@media screen and (max-width: 500px) {
+    section.formcontainer {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+/* -----------------------------------*/
+/* ------>>> Terms of Service <<<-----*/
+/* -----------------------------------*/
+.tos {
     font-size: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+li.tos {
+    margin: 2em auto;
 }
 
-/* Confirmation page */
-.ticketconfirmation {
+/* -----------------------------------*/
+/* -->>> TICKET CONFIRMATION PAGE <<<-*/
+/* -----------------------------------*/
+.noticecontainer {
     box-sizing: border-box;
     background: rgba(255, 255, 255, .9);
     width: 50%;
@@ -123,7 +127,7 @@ form ul li label {
 }
 
 @media screen and (max-width: 500px) {
-    .ticketconfirmation {
+    .noticecontainer {
         width: 100%;
     }
 }

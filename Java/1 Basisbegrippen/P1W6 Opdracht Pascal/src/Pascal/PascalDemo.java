@@ -16,25 +16,19 @@ public class PascalDemo {
 //        System.out.println("Hoeveel rijen wens je af te drukken?: ");
 //        aantal = keyboard.nextInt();
 
-        int[] rijen = new int[aantalRijen];
-
         for (int rij = 0; rij < aantalRijen; rij++) {
 
             System.out.print("rij " + rij + ":\t");
-            rijen[rij] = 1;
 
             for (int kol = 0; kol < rij + 1; kol++) {
-
-                System.out.print(rijen[kol] + " ");
+                if (rij == kol || kol == 0) {
+                    System.out.print("1 ");
+                } else if (rij > 1 && kol > 0) {
+                    System.out.print("? ");
+                } else {
+                    System.out.print(0 + " ");
+                }
             }
-            if (rij == 1) {
-                teller++;
-                rijen[rij] = teller;
-
-            } else if (rij == 2) {
-                rijen[rij] = 3;
-            }
-
             System.out.println();
         }
 
