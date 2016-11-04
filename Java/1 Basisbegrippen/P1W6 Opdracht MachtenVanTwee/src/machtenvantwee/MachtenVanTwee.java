@@ -16,5 +16,19 @@ public class MachtenVanTwee {
         this.machten = new int[aantal];
     }
 
+    public void vulTabel() {
+        for (int i = 0; i < machten.length; i++) {
+            this.machten[i] = machten[(int)Math.pow(i, 2)];
+            System.out.println(machten[i]);
+        }
+    }
+
+    @Override
+    public String toString() {
+        for (int i = 0; i < machten.length; i++) {
+            System.out.printf("2 tot de macht %d", i);
+        }
+        return "";
+    }
 
 }
