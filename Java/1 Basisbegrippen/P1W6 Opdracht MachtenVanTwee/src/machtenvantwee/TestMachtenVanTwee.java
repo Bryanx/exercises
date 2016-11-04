@@ -25,11 +25,7 @@ public class TestMachtenVanTwee {
             scanner.nextLine();
         } while (herhaal);
         macht.maakTabel(aantal);
-//        macht.vulTabel();
-        System.out.println((int)Math.pow(4, 2));
-//        macht.toString();
-        // maak de tabel
-        // vul de tabel met de machten van 2
-        // toon de tabel via toString
+        macht.vulTabel();
+        System.out.println(macht);
     }
 }

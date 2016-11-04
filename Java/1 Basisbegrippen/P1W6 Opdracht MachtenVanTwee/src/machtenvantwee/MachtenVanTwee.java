@@ -18,17 +18,17 @@ public class MachtenVanTwee {
 
     public void vulTabel() {
         for (int i = 0; i < machten.length; i++) {
-            this.machten[i] = machten[(int)Math.pow(i, 2)];
-            System.out.println(machten[i]);
+            this.machten[i] = (int) Math.pow(2, i);
         }
     }
 
     @Override
     public String toString() {
+        String print = "Machten van 2\n";
         for (int i = 0; i < machten.length; i++) {
-            System.out.printf("2 tot de macht %d", i);
+            print += ("2 tot de macht " + i + " = " + machten[i] + "\n");
         }
-        return "";
+        return print;
     }
 
 }
