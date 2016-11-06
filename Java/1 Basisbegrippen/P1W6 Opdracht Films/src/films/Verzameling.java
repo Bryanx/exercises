@@ -27,10 +27,10 @@ public class Verzameling {
     }
 
     public void voegFilmToe(Film film) {
-        this.films[index][index] = film;
         if (index >= MAX_AANTAL) {
             isVol = true;
         } else {
+            this.films[index][index] = film;
             index++;
         }
     }

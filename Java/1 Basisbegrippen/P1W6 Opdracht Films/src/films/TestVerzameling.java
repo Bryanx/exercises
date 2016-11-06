@@ -17,7 +17,7 @@ public class TestVerzameling {
         verzameling.voegFilmToe(new Film("Reservoir Dogs", 1992));
         verzameling.voegFilmToe(new Film("Jurassic Park", 1993));
         verzameling.voegFilmToe(new Film("Schindler's List", 1993));
-        Film[] films = verzameling.getFilms();
+        Film[][] films = verzameling.getFilms();
         for (int i = 0; i < verzameling.getIndex(); i++) {
             // vul hier aan (volgnr + titel + jaar per film)
         }
