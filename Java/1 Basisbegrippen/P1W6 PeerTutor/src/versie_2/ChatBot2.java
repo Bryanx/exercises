@@ -51,7 +51,7 @@ public class ChatBot2 {
     public String antwoordOpVraag(String vraag) {
         if (vraag.equals("stop")) {
             return "\"Je hebt blijkbaar geen vragen meer. Ok, dan ben ik weg. De groeten van\n" +
-                    "Veronica\"";
+                    "Sint & Piet\"";
         } else if (vraag.length() < 4) {
             return null;
         } else {
