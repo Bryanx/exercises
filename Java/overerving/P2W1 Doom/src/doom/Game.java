@@ -9,11 +9,13 @@ import java.util.Random;
 public class Game {
     //atributes
     private final int NUMBER_OF_MONSTERS = 10;
+    private final int NUMBER_OF_ZOMBIES = 10;
 
     private int width;
     private int height;
     private Player player;
     private Monster[] monsters;
+    private Zombie[] zombie;
 
     //constructor
     public Game(int width, int height) {
@@ -24,6 +26,12 @@ public class Game {
         Random r = new Random();
         for (int i = 0; i < NUMBER_OF_MONSTERS; i++) {
             this.monsters[i] = new Monster(this,
+                    r.nextInt(width),
+                    r.nextInt(height));
+        }
+        this.zombie = new Zombie[NUMBER_OF_ZOMBIES];
+        for (int i = 0; i < NUMBER_OF_ZOMBIES; i++) {
+            this.zombie[i] = new Zombie(this,
                     r.nextInt(width),
                     r.nextInt(height));
         }
@@ -50,7 +58,7 @@ public class Game {
     }
 
 
-    public void drawField() {
+    private void drawField() {
         //bovenkant
         for (int i = 0; i < this.width + 2; i++) {
             System.out.print('-');
@@ -92,5 +100,9 @@ public class Game {
     }
     public int getHeight() {
         return this.height;
+    }
+
+    public Player getPlayer() {
+        return this.player;
     }
 }

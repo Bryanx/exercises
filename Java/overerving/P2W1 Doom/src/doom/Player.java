@@ -39,6 +39,9 @@ public class Player {
     }
 
     public void reduceHealth(int amount) {
+        if  (this.health == 0) {
+            return;
+        }
         this.health -= amount;
     }
 

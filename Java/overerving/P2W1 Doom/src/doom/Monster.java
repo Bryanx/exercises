@@ -36,9 +36,15 @@ public class Monster {
         if (this.y > game.getHeight()) {
             this.y = game.getHeight() - 1;
         }
+        Player player = game.getPlayer();
+
+        if (Math.abs(this.x-player.getX()) <= 1 && Math.abs(this.y-player.getY()) <= 1) {
+            attackPlayer(player);
+        }
+
     }
 
-    public void attackPlayer(Player player){
+    private void attackPlayer(Player player){
         player.reduceHealth(POWER);
     }
 
