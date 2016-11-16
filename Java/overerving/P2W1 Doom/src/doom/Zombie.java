@@ -13,4 +13,7 @@ public class Zombie extends Monster {
     public Zombie(Game game, int x, int y) {
         super(game, x, y);
     }
+
+    //TODO: ZOMBIE dood in 10 stappen
+    //TODO: DEMON wandelt niet dood op afstand 3
 }
