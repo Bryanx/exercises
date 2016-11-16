@@ -15,7 +15,7 @@ public class Game {
     private int height;
     private Player player;
     private Monster[] monsters;
-    private Zombie[] zombie;
+    private Zombie[] zombies;
 
     //constructor
     public Game(int width, int height) {
@@ -29,9 +29,9 @@ public class Game {
                     r.nextInt(width),
                     r.nextInt(height));
         }
-        this.zombie = new Zombie[NUMBER_OF_ZOMBIES];
+        this.zombies = new Zombie[NUMBER_OF_ZOMBIES];
         for (int i = 0; i < NUMBER_OF_ZOMBIES; i++) {
-            this.zombie[i] = new Zombie(this,
+            this.zombies[i] = new Zombie(this,
                     r.nextInt(width),
                     r.nextInt(height));
         }
@@ -76,6 +76,13 @@ public class Game {
                     for (Monster monster: monsters) {
                         if (j == monster.getX() && i == monster.getY()) {
                             System.out.print(monster.getSymbol());
+                            foundMonster = true;
+                            break;
+                        }
+                    }
+                    for (Zombie zombie: zombies) {
+                        if (j == zombie.getX() && i == zombie.getY()) {
+                            System.out.print(zombie.getSymbol());
                             foundMonster = true;
                             break;
                         }
