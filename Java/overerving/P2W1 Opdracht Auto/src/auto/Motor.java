@@ -6,21 +6,25 @@ package auto;
  */
 public class Motor {
     private final int MAX_TOERENTAL = 5800;
-    private int toerental;
+    private int toerental = 0;
 
     public void verhoogToerental(int toename) {
-        if (toerental < MAX_TOERENTAL) {
+        if (toerental + toename > MAX_TOERENTAL) {
+            this.toerental = MAX_TOERENTAL;
+        } else {
             this.toerental += toename;
-        }else {
-            System.out.println("Hij gaat niet harder.");
         }
     }
 
     public int getToerental() {
-        return toerental;
+        return this.toerental;
     }
 
     public void setToerental(int toerental) {
-        this.toerental = toerental;
+        if (toerental < MAX_TOERENTAL) {
+            this.toerental = toerental;
+        } else {
+            this.toerental = MAX_TOERENTAL;
+        }
     }
 }

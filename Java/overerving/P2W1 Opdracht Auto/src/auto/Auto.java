@@ -7,7 +7,7 @@ package auto;
 public class Auto {
     private String merkNaam;
     private String nummerPlaat;
-    private Motor motor;
+    private Motor motor = new Motor();
 
     public Auto(String merkNaam, String nummerPlaat) {
         this.merkNaam = merkNaam;
@@ -15,7 +15,12 @@ public class Auto {
     }
 
     public Auto(String merkNaam) {
-        this.merkNaam = merkNaam;
+        this(merkNaam, "");
+    }
+
+    public Auto(Auto auto){
+        this.merkNaam = auto.merkNaam;
+        this.nummerPlaat = auto.nummerPlaat;
     }
 
     public void geefGas() {
@@ -27,5 +32,23 @@ public class Auto {
 
     public void rem() {
         this.motor.setToerental(0);
+    }
+
+    public boolean equals(Auto auto){
+        return (this.nummerPlaat.equals(auto.nummerPlaat));
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
+    }
+
+    public void toonToerental() {
+        System.out.println(this.motor.getToerental());
+    }
+
+    @Override
+    public String toString(){
+        return this.merkNaam + " met kenteken: " + this.nummerPlaat;
     }
 }
