@@ -14,6 +14,11 @@ public class Zombie extends Monster {
         super(game, x, y);
     }
 
+    public void move(){
+        super.move();
+
+    }
+
     //TODO: ZOMBIE dood in 10 stappen
     //TODO: DEMON wandelt niet dood op afstand 3
 }
