@@ -8,9 +8,9 @@ import java.util.Random;
  */
 public class Game {
     //atributes
-    private final int NUMBER_OF_MONSTERS = 0;
-    private final int NUMBER_OF_ZOMBIES = 0;
-    private final int NUMBER_OF_DEMONS = 30;
+    private final int NUMBER_OF_MONSTERS = 10;
+    private final int NUMBER_OF_ZOMBIES = 10;
+    private final int NUMBER_OF_DEMONS = 5;
 
     private int width;
     private int height;
@@ -53,6 +53,9 @@ public class Game {
             }
             for (Zombie zombie : zombies) {
                 zombie.move();
+            }
+            for (Demon demon : demons) {
+                demon.move();
             }
             drawField();
             try {

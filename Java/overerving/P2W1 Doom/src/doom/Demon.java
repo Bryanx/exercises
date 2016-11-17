@@ -14,8 +14,8 @@ public class Demon extends Monster{
     @Override
     public void move() {
         Player player = game.getPlayer();
-        if (Math.abs(this.x-player.getX()) <= 1 && Math.abs(this.y-player.getY()) <= 1) {
-            super.attackPlayer(player);
+        if (Math.abs(this.x-player.getX()) <= 2 && Math.abs(this.y-player.getY()) <= 2) {
+            attackPlayer(player);
         }
 
     }
