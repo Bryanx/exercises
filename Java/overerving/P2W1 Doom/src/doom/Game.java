@@ -8,14 +8,16 @@ import java.util.Random;
  */
 public class Game {
     //atributes
-    private final int NUMBER_OF_MONSTERS = 10;
-    private final int NUMBER_OF_ZOMBIES = 10;
+    private final int NUMBER_OF_MONSTERS = 0;
+    private final int NUMBER_OF_ZOMBIES = 0;
+    private final int NUMBER_OF_DEMONS = 30;
 
     private int width;
     private int height;
     private Player player;
     private Monster[] monsters;
     private Zombie[] zombies;
+    private Demon[] demons;
 
     //constructor
     public Game(int width, int height) {
@@ -35,7 +37,12 @@ public class Game {
                     r.nextInt(width),
                     r.nextInt(height));
         }
-
+        this.demons = new Demon[NUMBER_OF_DEMONS];
+        for (int i = 0; i < NUMBER_OF_DEMONS; i++) {
+            this.demons[i] = new Demon(this,
+                    r.nextInt(width),
+                    r.nextInt(height));
+        }
     }
 
     public void runGameLoop() {
@@ -43,6 +50,9 @@ public class Game {
             player.move();
             for (Monster monster : monsters) {
                 monster.move();
+            }
+            for (Zombie zombie : zombies) {
+                zombie.move();
             }
             drawField();
             try {
@@ -87,6 +97,13 @@ public class Game {
                             break;
                         }
                     }
+                    for (Demon demon: demons) {
+                        if (j == demon.getX() && i == demon.getY()) {
+                            System.out.print(demon.getSymbol());
+                            foundMonster = true;
+                            break;
+                        }
+                    }
                     if (!foundMonster) {
                         System.out.print(" ");
                     }
@@ -111,5 +128,15 @@ public class Game {
 
     public Player getPlayer() {
         return this.player;
+    }
+
+    public void addZombies() {
+        Random r = new Random();
+        this.zombies = new Zombie[NUMBER_OF_ZOMBIES];
+        for (int i = 0; i < NUMBER_OF_ZOMBIES; i++) {
+            this.zombies[i] = new Zombie(this,
+                    r.nextInt(width),
+                    r.nextInt(height));
+        }
     }
 }

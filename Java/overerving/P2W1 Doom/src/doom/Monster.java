@@ -26,7 +26,7 @@ public class Monster extends DoomCharacter {
 
     }
 
-    private void attackPlayer(Player player){
+    void attackPlayer(Player player){
         player.reduceHealth(POWER);
     }
 

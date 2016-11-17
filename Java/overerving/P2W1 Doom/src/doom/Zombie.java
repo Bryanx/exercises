@@ -8,17 +8,37 @@ import java.util.Random;
  */
 public class Zombie extends Monster {
     private char symbol = 'Z';
+    private int counter = 0;
+    private int deathcounter = 0;
 
     //constructor
     public Zombie(Game game, int x, int y) {
         super(game, x, y);
     }
 
-    public void move(){
-        super.move();
-
+    @Override
+    public void move() {
+        Random rd = new Random();
+        if (counter < rd.nextInt(20) + 5 && this.symbol != '+') {
+            super.move();
+            counter++;
+        } else {
+            isDead();
+        }
     }
 
-    //TODO: ZOMBIE dood in 10 stappen
-    //TODO: DEMON wandelt niet dood op afstand 3
+    private void isDead() {
+        this.symbol = '+';
+        deathcounter++;
+        if (deathcounter == 5) {
+            super.x = -1;
+            super.y = -1;
+            game.addZombies();
+        }
+    }
+
+    @Override
+    public char getSymbol() {
+        return this.symbol;
+    }
 }

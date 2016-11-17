@@ -6,7 +6,7 @@ package doom;
  */
 public class Main {
     public static void main(String[] args) {
-        Game game = new Game(100, 10);
+        Game game = new Game(150, 10);
         game.runGameLoop();
         System.out.println("The player died.");
 
