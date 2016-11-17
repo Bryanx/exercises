@@ -16,7 +16,8 @@ public class Bol extends RuimteFiguur {
         super("zwart");
         this.straal = straal;
     }
-    public Bol(){
+
+    public Bol() {
         this(1.0);
     }
 
@@ -24,11 +25,11 @@ public class Bol extends RuimteFiguur {
         return straal;
     }
 
-    public double oppervlakte(){
-        return 4 * Math.PI * straal * straal * straal;
+    public double oppervlakte() {
+        return 4 * Math.PI * straal * straal;
     }
 
     public double inhoud() {
-        return 4/3 *Math.PI * straal * straal * straal;
+        return 4.0 / 3.0 * Math.PI * Math.pow(straal, 3);
     }
 }

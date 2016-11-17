@@ -20,11 +20,15 @@ public class RuimteFiguren {
         figuren[4] = new Bol("rood", 2.0);
     }
 
-    public String toonFiguren() {
+    public void toonFiguren() {
         String string = "";
         for (RuimteFiguur figuur: figuren) {
-            string += "kleur: " +figuur.getKleur() + figuur.oppervlakte() + figuur.inhoud();
+            string += String.format("kleur: %s \toppervlakte: %.3f \tinhoud: %.3f %n",
+                    figuur.getKleur(),
+                    figuur.oppervlakte(),
+                    figuur.inhoud());
+
         }
-        return string;
+        System.out.println(string);
     }
 }
