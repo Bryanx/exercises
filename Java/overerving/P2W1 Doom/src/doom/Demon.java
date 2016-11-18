@@ -6,6 +6,7 @@ package doom;
  */
 public class Demon extends Monster{
     private char symbol = 'D';
+    private final int RANGE = 2;
 
     public Demon(Game game, int x, int y) {
         super(game, x, y);
@@ -14,7 +15,7 @@ public class Demon extends Monster{
     @Override
     public void move() {
         Player player = game.getPlayer();
-        if (Math.abs(this.x-player.getX()) <= 2 && Math.abs(this.y-player.getY()) <= 2) {
+        if (Math.abs(this.x-player.getX()) <= RANGE && Math.abs(this.y-player.getY()) <= RANGE) {
             attackPlayer(player);
         }
 

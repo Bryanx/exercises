@@ -31,8 +31,6 @@ public class Zombie extends Monster {
         this.symbol = '+';
         deathcounter++;
         if (deathcounter == 5) {
-            super.x = -1;
-            super.y = -1;
             game.addZombies();
         }
     }
