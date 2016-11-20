@@ -24,9 +24,9 @@ public class Piloot {
 
     @Override
     public String toString() {
-        return "Piloot " +
-                "naam = " + naam +
-                ", team = " + team +
-                ", tijd = " + tijd;
+        return String.format("%-20s %-15s %-20s",
+        this.naam,
+        this.team,
+        this.tijd);
     }
 }
