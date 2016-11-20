@@ -13,4 +13,20 @@ public class Piloot {
         this.naam = naam;
         this.team = team;
     }
+
+    public void setTijd(Tijd tijd) {
+        this.tijd = tijd;
+    }
+
+    public Tijd getTijd() {
+        return tijd;
+    }
+
+    @Override
+    public String toString() {
+        return "Piloot " +
+                "naam = " + naam +
+                ", team = " + team +
+                ", tijd = " + tijd;
+    }
 }
