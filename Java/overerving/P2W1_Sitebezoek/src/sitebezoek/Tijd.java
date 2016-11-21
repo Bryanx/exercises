@@ -37,8 +37,22 @@ public class Tijd {
     }
 
     public int toInteger() {
-        return honderdsten + minuten*100 + seconden*10000 + uren*1000000;
+        return honderdsten + minuten * 100 + seconden * 10000 + uren * 1000000;
     }
 
-    
+    public void maakRandomTijd() {
+        this.uren = random.nextInt(24);
+        this.seconden = random.nextInt(60);
+        this.minuten = random.nextInt(60);
+        this.honderdsten = random.nextInt(999);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%d:%d:%d.%d",
+                this.uren,
+                this.minuten,
+                this.seconden,
+                this.honderdsten);
+    }
 }
