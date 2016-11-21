@@ -21,35 +21,35 @@ public class Tijd {
     }
 
     public int getUren() {
-        return uren;
+        return this.uren;
     }
 
     public int getSeconden() {
-        return seconden;
+        return this.seconden;
     }
 
     public int getMinuten() {
-        return minuten;
+        return this.minuten;
     }
 
     public int getHonderdsten() {
-        return honderdsten;
+        return this.honderdsten;
     }
 
     public int toInteger() {
-        return honderdsten + minuten * 100 + seconden * 10000 + uren * 1000000;
+        return this.honderdsten + this.seconden * 100 + this.minuten * 10000 + this.uren * 1000000;
     }
 
     public void maakRandomTijd() {
         this.uren = random.nextInt(24);
         this.seconden = random.nextInt(60);
         this.minuten = random.nextInt(60);
-        this.honderdsten = random.nextInt(999);
+        this.honderdsten = random.nextInt(99);
     }
 
     @Override
     public String toString() {
-        return String.format("%d:%d:%d.%d",
+        return String.format("%d:%02d:%02d.%02d",
                 this.uren,
                 this.minuten,
                 this.seconden,
