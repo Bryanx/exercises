@@ -10,4 +10,10 @@ public class Konijn extends Dier {
     public Konijn(String naam, String ras, String kleur, String chipnummer){
         super(naam, ras, kleur, chipnummer);
     }
+
+    @Override
+    public String toString() {
+        return this.naam + " " + ras + " " + kleur + " " + graaft;
+
+    }
 }

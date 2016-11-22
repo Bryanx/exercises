@@ -14,4 +14,10 @@ public class Hond extends Dier {
     public String getSlogan() {
         return slogan;
     }
+
+    @Override
+    public String toString() {
+        return this.naam + " " + ras + " " + kleur + " " + slogan;
+
+    }
 }

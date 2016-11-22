@@ -23,6 +23,10 @@ public class Dier {
         this.kleur = kleur;
     }
 
+    public void setNaam(String naam){
+        this.naam = naam;
+    }
+
     public String getChipnummer(){
         return chipnummer;
     }

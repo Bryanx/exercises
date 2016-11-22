@@ -9,8 +9,9 @@ public class Square extends Rectangle {
     public String description = "Square";
 
     public Square() {
-        super(1,1);
+        super(1, 1);
     }
+
     public Square(int side) {
         super(side, side);
     }
@@ -20,17 +21,34 @@ public class Square extends Rectangle {
         super.setPosition(x, y);
     }
 
-    public void setSize(int side){
+    public void setSize(int side) {
         super.setHeight(side);
         super.setWidth(side);
     }
 
     @Override
-    public void setWidth(int width){
+    public void setWidth(int width) {
         this.setSize(width);
     }
+
     @Override
-    public void setHeight(int width){
+    public void setHeight(int width) {
         this.setSize(width);
+    }
+
+    @Override
+    public boolean equals(Object otherSquare) {
+        if (!(otherSquare instanceof Square)) {
+            return false;
+        }
+        Square square = (Square) otherSquare;   //cast het object
+        if (this.getWidth() == square.getWidth() &&
+                this.getHeight() == square.getHeight() &&
+                this.getX() == square.getX() &&
+                this.getY() == square.getY()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
