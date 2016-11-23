@@ -1,4 +1,7 @@
-package doom;
+package doom.characters;
+
+import doom.Game;
+import doom.Room;
 
 import java.util.Random;
 
@@ -6,7 +9,7 @@ import java.util.Random;
  * @author Bryan de Ridder
  * @version 1.0 15/11/2016 16:46
  */
-public class DoomCharacter {
+public abstract class DoomCharacter {
     protected int x;
     protected int y;
     protected Game game;
@@ -33,11 +36,11 @@ public class DoomCharacter {
         if (this.x < 0) {this.x = 1;}
         if (this.y < 0) {this.y = 1;}
 
-        if (this.x > game.getWidth()) {
-            this.x = game.getWidth() - 1;
+        if (this.x > Room.WIDTH) {
+            this.x = Room.WIDTH - 1;
         }
-        if (this.y > game.getHeight()) {
-            this.y = game.getHeight() - 1;
+        if (this.y > Room.HEIGHT) {
+            this.y = Room.HEIGHT - 1;
         }
     }
 }

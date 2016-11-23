@@ -1,13 +1,15 @@
-package doom;
+package doom.characters.monsters;
 
-import java.util.Random;
+import doom.Game;
+import doom.characters.DoomCharacter;
+import doom.characters.Player;
 
 /**
  * @author Bryan de Ridder
  * @version 1.0 15/11/2016 15:07
  */
 public class Monster extends DoomCharacter {
-    private final int POWER = 1;
+    public static final int POWER = 1;
     private char symbol = 'M';
 
     //constructor

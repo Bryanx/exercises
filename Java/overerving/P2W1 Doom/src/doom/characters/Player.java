@@ -1,13 +1,14 @@
-package doom;
+package doom.characters;
 
-import java.util.Random;
+import doom.Game;
 
 /**
  * @author Bryan de Ridder
  * @version 1.0 15/11/2016 13:57
  */
 public class Player extends DoomCharacter {
-    private int health = 9;
+    public static final int START_HEALTH = 9;
+    private int health = START_HEALTH;
 
     //constructor
     public Player(Game game, int x, int y) {

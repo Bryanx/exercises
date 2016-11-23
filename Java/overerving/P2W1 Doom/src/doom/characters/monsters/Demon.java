@@ -1,12 +1,15 @@
-package doom;
+package doom.characters.monsters;
+
+import doom.Game;
+import doom.characters.Player;
 
 /**
  * @author Bryan de Ridder
  * @version 1.0 17/11/2016 13:25
  */
 public class Demon extends Monster{
+    public static final int RANGE = 2;
     private char symbol = 'D';
-    private final int RANGE = 2;
 
     public Demon(Game game, int x, int y) {
         super(game, x, y);
