@@ -10,27 +10,36 @@ public class PascalDemo {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
-        int aantalRijen = 5;
-        int teller = 0;
+        int aantalRijen = 12;
 
-//        System.out.println("Hoeveel rijen wens je af te drukken?: ");
-//        aantal = keyboard.nextInt();
+        int[] rijen = new int[aantalRijen];
 
-        for (int rij = 0; rij < aantalRijen; rij++) {
+        int[] kolommen = new int[];
 
-            System.out.print("rij " + rij + ":\t");
+        int[][] matrix = new int[aantalRijen][aantalRijen];
 
-            for (int kol = 0; kol < rij + 1; kol++) {
-                if (rij == kol || kol == 0) {
-                    System.out.print("1 ");
-                } else if (rij > 1 && kol > 0) {
-                    System.out.print("? ");
-                } else {
-                    System.out.print(0 + " ");
-                }
+        for (int i = 0; i < aantalRijen; i++) {
+            matrix[i][0] = 1;
+        }
+        for (int y = 1; y < aantalRijen; y++) {
+            for (int x = 1; x < aantalRijen; x++) {
+                int a = matrix[y - 1][x];
+                int b = matrix[y - 1][x - 1];
+                int c = a + b;
+                matrix[y][x] = c;
+            }
+        }
+
+        for (int[] rij : matrix) {
+            for (int i : rij) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
+
+
+//        System.out.println("Hoeveel rijen wens je af te drukken?: ");
+//        aantal = keyboard.nextInt();
 
         // De rij print evenveel getallen als het rij nummer.
         // Het eerste getal is altijd 1;
@@ -40,7 +49,15 @@ public class PascalDemo {
         // Het derde getal is altijd het vorige rijnummer[1] + rijnummer[2]
         // Het vierde getal is altijd het vorige rijnummer[2] + rijnummer[3]
         // Het vijfde getal is altijd het vorige rijnummer[3] + rijnummer[4]
+        /*
+        a b
+          c
 
-
+        for (y dim)
+            for (x dim)
+                b = y - 1 + x
+                a = y - 1 + x - 1
+                c = a + b
+        */
     }
 }

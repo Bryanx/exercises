@@ -17,18 +17,20 @@ import java.util.Random;
 public class Game {
     //atributes
     public static final int GAME_SPEED = 1000;
-    public static final int NUMBER_OF_MONSTERS = 50;
+    public static final int NUMBER_OF_MONSTERS = 40;
     private Room room;
     private Player player;
     private Monster[] monsters;
     private Zombie[] zombies;
     private Demon[] demons;
-    private LocalTime start;
-    private LocalTime end;
+    private long startTime;
+    private long endTime;
 
     //constructor
     public Game() {
-        this.player = new Player(this,Room.WIDTH / 2, Room.HEIGHT / 2);
+        Instant epochNow = Instant.now();
+        startTime = epochNow.getEpochSecond();
+        this.player = new Player(this, Room.WIDTH / 2, Room.HEIGHT / 2);
         this.monsters = new Monster[NUMBER_OF_MONSTERS];
         Random r = new Random();
         for (int i = 0; i < NUMBER_OF_MONSTERS; i++) {
@@ -37,7 +39,7 @@ public class Game {
                 this.monsters[i] = new Monster(this,
                         r.nextInt(Room.WIDTH),
                         r.nextInt(Room.HEIGHT));
-            } else if (muntje == 1){
+            } else if (muntje == 1) {
                 this.monsters[i] = new Zombie(this,
                         r.nextInt(Room.WIDTH),
                         r.nextInt(Room.HEIGHT));
@@ -51,7 +53,6 @@ public class Game {
     }
 
     public void runGameLoop() {
-        start = LocalTime.now();
         while (player.getHealth() > 0) {
             player.move();
             for (Monster monster : monsters) {
@@ -68,13 +69,15 @@ public class Game {
                 System.out.println();
             }
         }
-        end = LocalTime.now();
+        Instant epochNow = Instant.now();
+        endTime = epochNow.getEpochSecond();
         System.out.println();
         DateTimeFormatter longFormatter =
                 DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
-        LocalDate now = LocalDate.now();
-        System.out.println(longFormatter.format(now));
-        System.out.println("De speler heeft " + (Time.between(end-start) + " seconden overleeft");
+        LocalDate currentDate = LocalDate.now();
+        System.out.println(longFormatter.format(currentDate));
+        System.out.println("The player survived for " + (this.endTime -this.startTime) + " seconds.");
+        System.out.println("The player died.");
         System.out.println();
     }
 

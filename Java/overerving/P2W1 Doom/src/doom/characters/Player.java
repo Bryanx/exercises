@@ -26,4 +26,5 @@ public class Player extends DoomCharacter {
     public int getHealth() {
         return this.health;
     }
+
 }

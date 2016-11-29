@@ -28,18 +28,19 @@ public abstract class DoomCharacter {
     public int getY() {
         return this.y;
     }
+
     public void move() {
         Random r = new Random();
         this.x += r.nextInt(3) - 1;
         this.y += r.nextInt(3) - 1;
 
-        if (this.x < 0) {this.x = 1;}
-        if (this.y < 0) {this.y = 1;}
+        if (this.x < 1) {this.x = 1;}
+        if (this.y < 1) {this.y = 1;}
 
-        if (this.x > Room.WIDTH) {
+        if (this.x > Room.WIDTH - 1) {
             this.x = Room.WIDTH - 1;
         }
-        if (this.y > Room.HEIGHT) {
+        if (this.y > Room.HEIGHT - 1) {
             this.y = Room.HEIGHT - 1;
         }
     }

@@ -49,6 +49,5 @@ public class Wijn {
                 this.naam,
                 this.berekenPrijs(),
                 this.getKenmerken());
-
     }
 }
