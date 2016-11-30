@@ -1,0 +1,9 @@
+body {
+    background-color: #8fbc8f;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.eerste { color: red; }
+.tweede { color: green; }
+.derde { color: blue; }

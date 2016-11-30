@@ -5,12 +5,14 @@ package minmax;
  * @version 1.0 29/11/2016 17:06
  */
 public class Getallen implements MinMax {
-    private int[] getallen = new int[100];
+    private int[] getallen = new int[MAX_AANTAL];
     private int aantal;
 
     public void add(int waarde) {
-        this.getallen[aantal] = waarde;
-        aantal++;
+        if (aantal < MAX_AANTAL) {
+            this.getallen[aantal] = waarde;
+            aantal++;
+        }
     }
 
     @Override

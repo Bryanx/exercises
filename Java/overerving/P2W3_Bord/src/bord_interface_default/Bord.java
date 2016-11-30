@@ -4,7 +4,7 @@ package bord_interface_default;
  * @author Bryan de Ridder
  * @version 1.0 30/11/2016 09:20
  */
-public abstract class Bord implements Berekenbaar {
+public class Bord implements Berekenbaar {
     protected String materiaal;
     protected String kleur;
 
@@ -14,7 +14,9 @@ public abstract class Bord implements Berekenbaar {
     }
 
     @Override
-    public abstract double oppervlakte();
+    public double oppervlakte(){
+        return 0.0;
+    }
 
     @Override
     public String toString(){
