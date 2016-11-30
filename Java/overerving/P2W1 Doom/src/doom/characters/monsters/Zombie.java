@@ -19,6 +19,7 @@ public class Zombie extends Monster {
         this.status = ZombieStatus.ALIVE;
     }
 
+    //The zombies dies randomly
     @Override
     public void move() {
         switch (this.status) {

@@ -46,7 +46,7 @@ public class Wijn {
     @Override
     public String toString() {
         return String.format("%-50s €%7.2f %n\t (%s)",
-                this.naam,
+                this.getNaam(),
                 this.berekenPrijs(),
                 this.getKenmerken());
     }

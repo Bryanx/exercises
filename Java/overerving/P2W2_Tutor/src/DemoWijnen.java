@@ -1,5 +1,9 @@
 import wijnen.*;
 
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 
 /**
@@ -36,7 +40,6 @@ public class DemoWijnen {
         System.out.println(w7.toString());
 
 
-
         //Controle na deel 3 en 4:
         System.out.println("\n=== CONTROLE NA BASISOPDRACHT 3 en 4 ===");
         Wijn w8 = new Champagne("Lancelot Reserve", "Cramant", LocalDate.of(2015, 10, 10), 18.20, Smaak.EXTRA_BRUT);
@@ -46,7 +49,6 @@ public class DemoWijnen {
         System.out.println(w8.toString());
         System.out.println(w9.toString());
         System.out.println(w10.toString());
-
 
 
         //Controle na opdracht 5.1 en 5.2 en 5.3:
@@ -75,7 +77,7 @@ public class DemoWijnen {
         System.out.printf("Oudste wijn: %s = %d\n", oudste.getNaam(), oudste.getOogstDatum().getYear());
 
 
-		//Controle na deel 5.4:
+        //Controle na deel 5.4:
         //wijnhuis afdrukken:
         System.out.println("\n=== CONTROLE NA OPGAVE 5.4 ===");
         System.out.println(wh);

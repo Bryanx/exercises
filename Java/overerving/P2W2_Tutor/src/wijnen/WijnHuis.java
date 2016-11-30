@@ -19,37 +19,36 @@ public class WijnHuis {
     public void voegWijnToe(Wijn wijn) {
         if (aantal > MAX_AANTAL) {
             System.out.println("Kan niet meer wijn bij");
-        } else {
+        } else if (!zoekWijn(wijn)) {
             this.wijnen[aantal] = wijn;
             aantal++;
         }
 
+
     }
 
     public boolean zoekWijn(Wijn wijn) {
-        for (Wijn fles: wijnen) {
-            if (fles.getNaam().equals(wijn.getNaam())) {
-                return true;
+        for (Wijn fles : wijnen) {
+            if (fles != null) {
+                if (fles.getNaam().equals(wijn.getNaam())) {
+                    return true;
+                }
             }
         }
-
         return false;
     }
 
     public Wijn getOudsteWijn() {
-        Wijn wijn = null;
-        int oudstedatum = LocalDate.now().getYear();
+        Wijn oudsteWijn = wijnen[0];
         if (aantal == 0) {
             return null;
         } else {
-            for (int i = 0; i < aantal; i++) {
-                if (wijnen[i].getOogstDatum().getYear() < oudstedatum) {
-                    oudstedatum = wijnen[i].getOogstDatum().getYear();
-                    wijn = wijnen[i];
+            for (int i = 1; i < aantal; i++) {
+                if (wijnen[i].getOogstDatum().isBefore(oudsteWijn.getOogstDatum())) {
+                    oudsteWijn = wijnen[i];
                 }
             }
-            return wijn;
-
+            return oudsteWijn;
         }
     }
 
@@ -58,33 +57,22 @@ public class WijnHuis {
         StringBuilder result = new StringBuilder();
         result.append(String.format("Wijnhuis %s\n", naam.toUpperCase()));
 
-        result.append("\nWijnen:\n");
-        StringBuilder wijnenTekst = new StringBuilder();
-        for (int i = 0; i < aantal; i++) {
-            if (wijnen[i] instanceof Wijn) {
-                wijnenTekst.append(wijnen[i] + "\n");
-            }
-        }
-        result.append(wijnenTekst);
+        StringBuilder wijnenTekst = new StringBuilder("\nWijnen:\n");
 
-        result.append("\nChampagnes:\n");
-        StringBuilder champagneTekst = new StringBuilder();
+        StringBuilder champagneTekst = new StringBuilder("\nChampagnes:\n");
+
+        StringBuilder likeurenTekst = new StringBuilder("\nLikeuren:\n");
+
         for (int i = 0; i < aantal; i++) {
             if (wijnen[i] instanceof Champagne) {
-                champagneTekst.append(wijnen[i] + "\n");
+                wijnenTekst.append("\t" + wijnen[i] + "\n");
+            } else if (wijnen[i] instanceof Likeur) {
+                champagneTekst.append("\t" + wijnen[i] + "\n");
+            } else {
+                likeurenTekst.append("\t" + wijnen[i] + "\n");
             }
         }
-        result.append(champagneTekst);
-
-        result.append("\nLikeuren:\n");
-        StringBuilder likeurenTekst = new StringBuilder();
-        for (int i = 0; i < aantal; i++) {
-            if (wijnen[i] instanceof Likeur) {
-                likeurenTekst.append(wijnen[i] + "\n");
-            }
-        }
-        result.append(likeurenTekst);
-
+        result.append(wijnenTekst + "" + champagneTekst + "" + likeurenTekst);
         return result.toString();
     }
 }

@@ -40,8 +40,7 @@ public class Game {
                         r.nextInt(Room.WIDTH),
                         r.nextInt(Room.HEIGHT));
             } else if (muntje == 1) {
-                this.monsters[i] = new Zombie(this,
-                        r.nextInt(Room.WIDTH),
+                this.monsters[i] = new Zombie(this, r.nextInt(Room.WIDTH),
                         r.nextInt(Room.HEIGHT));
             } else {
                 this.monsters[i] = new Demon(this,
@@ -76,7 +75,7 @@ public class Game {
                 DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
         LocalDate currentDate = LocalDate.now();
         System.out.println(longFormatter.format(currentDate));
-        System.out.println("The player survived for " + (this.endTime -this.startTime) + " seconds.");
+        System.out.println("The player survived for " + (this.endTime - this.startTime) + " seconds.");
         System.out.println("The player died.");
         System.out.println();
     }

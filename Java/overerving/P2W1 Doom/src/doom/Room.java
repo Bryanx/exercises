@@ -5,6 +5,13 @@ import doom.characters.monsters.Monster;
 import doom.characters.Player;
 import doom.characters.monsters.Zombie;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
+import static java.time.LocalTime.now;
+
 /**
  * @author Bryan de Ridder
  * @version 1.0 23/11/2016 09:13
@@ -25,12 +32,12 @@ public class Room {
     }
 
     public void draw() {
-        //bovenkant
+        //Draws the top side of the game
         for (int i = 0; i < WIDTH + 2; i++) {
             System.out.print('-');
         }
         System.out.println();
-        //binnenkant
+        //Draws the inside of the game
         for (int i = 0; i < HEIGHT; i++) {
             System.out.print('|');
             for (int j = 0; j < WIDTH; j++) {
@@ -54,9 +61,17 @@ public class Room {
             System.out.print('|');
             System.out.println();
         }
-        //onderkant
+        //Draws the bottom of the game
         for (int i = 0; i < WIDTH + 2; i++) {
             System.out.print('-');
         }
+        LocalDate datum = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalTime tijd = LocalTime.now();
+        System.out.print("\n"+ formatter.format(datum));
+        for (int i = 0; i < Room.WIDTH-16; i++) {
+            System.out.print(" ");
+        }
+        System.out.println(tijd.minusNanos(tijd.getNano()));
     }
 }

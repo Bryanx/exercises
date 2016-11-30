@@ -18,7 +18,7 @@ public class Champagne extends Wijn {
     @Override
     public double berekenPrijs() {
         if (smaak == Smaak.BRUT || smaak == Smaak.BRUT_SANS_MILLESIME || smaak == Smaak.EXTRA_BRUT) {
-            return super.getBasisPrijs() * 1.10;
+            return super.getBasisPrijs() * 1.1;
         }
         return super.getBasisPrijs();
     }

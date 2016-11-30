@@ -25,6 +25,7 @@ public class Likeur extends Wijn {
 
     @Override
     public String toString() {
-        return super.toString() + " --> " + this.alcoholGehalte + "% alc";
+        return super.toString() + String.format(" --> %.0f%% alc",
+                this.alcoholGehalte*100);
     }
 }
