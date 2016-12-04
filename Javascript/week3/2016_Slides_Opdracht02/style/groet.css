@@ -1,5 +1,10 @@
 body {
     background-color: #8fbc8f;
+}
+header {
     font-family: Arial, sans-serif;
     font-size: 3em;
+}
+#user {
+    color: red;
 }

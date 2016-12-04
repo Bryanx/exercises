@@ -5,4 +5,3 @@ function demo() {
     groeten[0].innerHTML = "Jos";
     groeten[1].innerHTML = "Jennifer";
 }
-

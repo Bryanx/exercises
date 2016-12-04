@@ -1,4 +1,4 @@
-addEventListener("load", init, false);
+addEventListener("load", init, false); //wacht tot pagina geladen is
 
 function init() {
     const naam = prompt("Geef je naam:");

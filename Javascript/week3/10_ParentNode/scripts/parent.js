@@ -5,7 +5,9 @@ function demo() {
     tweedeSpan.innerHTML = "Jos";
     let element = tweedeSpan.parentNode;
     element.childNodes[0].nodeValue = "Rot op ";
-    document.querySelectorAll("span")[0].innerHTML = " parentNode";
+
+    let eersteSpan = document.querySelectorAll("span")[0];
+    eersteSpan.innerHTML = " parentNode";
 }
 
 

@@ -3,3 +3,15 @@ body {
     font-family: Arial, sans-serif;
     font-size: 3em;
 }
+
+.eerste {
+    color: red;
+}
+
+.tweede {
+    color: green;
+}
+
+.derde {
+    color: blue;
+}
