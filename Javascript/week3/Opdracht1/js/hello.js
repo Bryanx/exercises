@@ -1,12 +1,12 @@
 addEventListener("load", form, false);
 
 function form() {
-    bericht = document.querySelector("#bericht");
-    span = document.getElementsByTagName("span");
-    let submit = document.getElementsByClassName("button");
-    submit.addEventListener("click", klikLink, false);
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", dostuff, false);
 }
 
-function klikLink(){
-    span.innerHTML = bericht;
+function dostuff(event) {
+    event.preventDefault();
+    let text = document.getElementById("bericht").value;
+    document.getElementById("demo").innerHTML = text;
 }
