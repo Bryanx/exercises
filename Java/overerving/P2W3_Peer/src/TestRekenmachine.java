@@ -18,6 +18,31 @@ public class TestRekenmachine {
         mijnCalc.installeer(new Vermenigvuldiging());
         mijnCalc.installeer(new Deling());
         mijnCalc.installeer(new Macht());
+        mijnCalc.installeer(new Plugin() {
+            @Override
+            public String getCommand() {
+                return "MIN";
+            }
+
+            @Override
+            public double bereken(double x, double y) {
+                if (x < y) return x;
+                return y;
+
+            }
+        });
+        mijnCalc.installeer(new Plugin() {
+            @Override
+            public String getCommand() {
+                return "MAX";
+            }
+
+            @Override
+            public double bereken(double x, double y) {
+                if (x > y) return x;
+                return y;
+            }
+        });
 
         doeBerekeningEnDrukAf("+", 5, 2);
         doeBerekeningEnDrukAf("-", 5, 2);
@@ -40,36 +65,6 @@ public class TestRekenmachine {
             getallen = keyboard.nextLine();
             String[] getal = getallen.split(" ");
             doeBerekeningEnDrukAf(invoer, parseInt(getal[0]), parseInt(getal[1]));
-        }
-
-        Plugin MIN = new Plugin() {
-            @Override
-            public String getCommand() {
-                return "MIN";
-            }
-
-            @Override
-            public double bereken(double x, double y) {
-                if (x < y) {
-                    return x;
-                }
-                return y;
-
-            }
-        };
-        class MAX implements Plugin {
-            @Override
-            public String getCommand() {
-                return "MAX";
-            }
-
-            @Override
-            public double bereken(double x, double y) {
-                if (x > y) {
-                    return x;
-                }
-                return y;
-            }
         }
     }
 
