@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Keyup</title>
+    <script src="script/alternatief.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<p class="error"><span id="naamfout"></span><br><span id="gemeentefout"></span></p>
+<form action="http://www.kdg.be">
+    <p>
+        <label for="naam">Naam: </label>
+        <input type="text" id="naam" name="naam" required>
+        <label for="gemeente">Gemeente: </label>
+        <input type="text" id="gemeente" name="gemeente" required>
+        <input type="submit" id="verzend" name="submit" value="Go to KdG!">
+    </p>
+    <p>
+        <span id="error"></span>
+    </p>
+</form>
+</body>
+</html>

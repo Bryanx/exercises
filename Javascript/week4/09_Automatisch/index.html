@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Keyup</title>
+    <script src="script/automatisch.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<form action="http://www.kdg.be">
+    <p>
+        <label for="naam">Naam: </label>
+        <input type="text" id="naam" name="naam" required placeholder="Voornaam" minlength="2">
+         <!-- minlength geeft geen feedback, dus JS nodig! -->
+        <label for="number">Nummer: </label>
+        <input type="number" id="number" name="number" min="100" max="999" required>
+        <input type="submit" id="verzend" name="submit" value="Go to KdG!">
+    </p>
+    <p>
+        <span id="error"></span>
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="style/demo.css" rel="stylesheet" />
+    <script src="scripts/demo.js"></script>
+</head>
+<body>
+<h1>Gegevens overdragen met JavaScript</h1>
+
+<form action="hello.html" method="get">
+    <p>
+        <label class="label" for="naam">Naam:</label>
+        <!-- name attribute nodig om waarde naar andere pagina te kunnen doorgeven -->
+        <input class="input" type="text" id="naam" name="naam" size="25"/>
+        <span class="fout" id="naamfout"></span>
+    </p>
+    <p>
+        <label class="label" for="leeftijd">Leeftijd:</label>
+        <input class="input" type="text" id="leeftijd" name="leeftijd" size="25"/>
+        <span class="fout" id="leeftijdfout"></span>
+    </p>
+    <p>
+        <label class="label" for="verzend">&nbsp;</label>
+        <input class="input" type="submit" id="verzend" value="Verzend"/>
+    </p>
+</form>
+<script>initDemo()</script>
+</body>
+</html>

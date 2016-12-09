@@ -1,0 +1,20 @@
+/* CSS Document */
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background-color:#FFFFCC;
+	color:#330099;
+}
+
+.label {
+    width: 140px;
+    float: left;
+}
+
+.input {
+    margin-left: 10px;
+}
+
+.fout {
+    color: red;
+}
+

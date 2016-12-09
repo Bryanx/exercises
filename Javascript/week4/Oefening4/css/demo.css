@@ -1,0 +1,24 @@
+/* CSS Document */
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background-color:#FFFFCC;
+	color:#330099;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.label {
+    width: 2em;
+    float: left;
+}
+
+.input {
+    margin-left: 4em;
+}
+
+.fout {
+    color: red;
+}
+

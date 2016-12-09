@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Slides Opdracht 1</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/formulier.js">
+    </script>
+</head>
+<body>
+<form id="login" action="dummy.html" method="get">
+    <fieldset>
+        <ul>
+            <li><label for="naam">Username:</label>
+                <input type="text" name="naam" id="naam"/>&nbsp;
+                <span id="naamfout"></span>
+            </li>
+            <li><label for="password">Password:</label>
+                <input type="password" name="password" id="password"/>&nbsp;
+                <span id="passwordfout"></span>
+            </li>
+        </ul>
+        <input type="submit" id="verstuur" value="Verstuur"/>
+        <input type="reset" id="reset" value="Herstellen"/>
+    </fieldset>
+</form>
+</body>
+</html>

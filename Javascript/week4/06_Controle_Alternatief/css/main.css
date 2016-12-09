@@ -1,0 +1,19 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#FFFFCC;
+    color:#330099;
+}
+
+#naamfout, #gemeentefout {
+    color: #FF6600;
+}
+
+p.error {
+   margin-left: 2rem;
+}
+
+form {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}
