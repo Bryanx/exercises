@@ -1,0 +1,33 @@
+body {
+    font-family: arial, verdana, sans-serif;
+    background-color: black;
+}
+ol#tablinks {
+    margin: 0;
+    padding: 0;
+}
+ol#tablinks li {
+    display: inline;
+    list-style: none;
+}
+ol#tablinks li a {
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    padding: 6px 6px 0 6px;
+}
+
+ol#tablinks li a:hover {
+    background-color: gray;
+}
+
+ol#tablinks li a.active {
+    background-color: white;
+}
+
+div#tabcontents div {
+    width: 500px;
+    background-color: white;
+    padding: 6px;
+}
+

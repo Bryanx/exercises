@@ -1,0 +1,13 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#FFFFCC;
+    color:#330099;
+}
+
+button, img {
+    margin-left: 2em;
+}
+
+button {
+    margin-top: 1em;
+}

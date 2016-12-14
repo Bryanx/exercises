@@ -1,0 +1,17 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#FFFFCC;
+    color:#330099;
+}
+
+.normaal {
+    font-family: Verdana, sans-serif;
+}
+
+.code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.speciaal {
+    font-family: "Comic Sans MS", serif;
+}
