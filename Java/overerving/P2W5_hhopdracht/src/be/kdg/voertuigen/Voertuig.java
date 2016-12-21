@@ -7,13 +7,16 @@ import java.util.Random;
  * @version 1.0 19/12/2016 15:10
  */
 public abstract class Voertuig {
-    private String merk;
-    private String model;
-    private static int uniekNummer = 0;
+    public static int teller = 0;
+
+    private final String merk;
+    private final String model;
+    private final int uniekNummer;
 
     public Voertuig(String merk, String model) {
         this.merk = merk;
         this.model = model;
+        this.uniekNummer = teller++;
     }
 
     public String getMerk() {
@@ -32,7 +35,6 @@ public abstract class Voertuig {
 
     @Override
     public String toString() {
-        uniekNummer++;
         return String.format("(%d) %s \'%s\'",
                 this.uniekNummer,
                 this.merk,

@@ -17,6 +17,10 @@ public class Fiets extends Voertuig {
         this.aantalVersnellingen = 1;
     }
 
+    public int getAantalVersnellingen() {
+        return aantalVersnellingen;
+    }
+
     @Override
     public boolean isBestuurbaarDoorKinderen() {
         return true;
