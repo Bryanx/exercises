@@ -1,0 +1,21 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color:maroon;
+    background:#ffe4c4;
+}
+
+.border {
+    border: blue groove 2px;
+    margin:10px;
+    padding:10px;
+    height:220px;
+    width:220px;
+}
+
+p {
+    margin-left: 50px;
+}
+
+
+
+

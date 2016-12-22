@@ -1,0 +1,17 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color:maroon;
+    background:#ffe4c4;
+}
+
+#first {
+    display:none;
+}
+
+#back {
+    display:none;
+}
+
+#terug {
+    font-weight:bold;
+}

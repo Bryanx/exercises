@@ -1,0 +1,13 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#FFFFCC;
+    color:#330099;
+}
+
+p {
+    color: black;
+}
+
+.kleur {
+    color: orangered;
+}

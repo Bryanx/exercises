@@ -1,0 +1,12 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: maroon;
+    background: #ffe4c4;
+}
+
+#tekst {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 10px;
+}

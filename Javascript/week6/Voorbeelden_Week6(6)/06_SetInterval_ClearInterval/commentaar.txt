@@ -1,0 +1,12 @@
+<!--  De functie setInterval zorgt ervoor dat continue
+  elke 2,5 seconden de functie nextImage wordt opgeroepen.
+  Bij de creatie wordt een id gegenereerd, waarmee via het
+  klikken op de "Stop, dit is mijn favoriet!" knop
+  de functie nextImage met zijn uitvoering stopt.
+-->
+
+<!--  In de functie nextImage wordt telkens 1 van de drie
+  afbeeldingen in de tabel getoond. Elke oproep geeft
+  telkens de volgende afbeelding, na de derde volgt
+  opnieuw de eerste.
+-->

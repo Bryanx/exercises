@@ -1,0 +1,11 @@
+body {
+    background-color: #FFFFCC;
+    color: #000099;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+div {
+    background-color: #99FFCC;
+    border: groove;
+    width: 750px;
+}
