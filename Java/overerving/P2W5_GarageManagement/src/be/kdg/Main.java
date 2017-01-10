@@ -5,54 +5,96 @@ import be.kdg.voertuigen.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author Bryan de Ridder
  * @version 1.0 10-01-17 21:38
  */
 public class Main {
-    public static void main(String[] args) throws Exception {
-        Plaats grotePlaats = new Plaats(Plaats.Type.GROOT);
-        Plaats kleinePlaats = new Plaats(Plaats.Type.KLEIN);
-        Auto a = new Auto("Audi", "A3", LocalDate.now(), 97.1);
-        ElektrischeFiets ef = new ElektrischeFiets("Gazelle", "Electron", (byte) 6, 55);
-        Step s = new Step("Disney", "Frozen");
-        if (grotePlaats.isBezet() || kleinePlaats.isBezet()) {
-            throw new Exception("Kijk de implementatie van isBezet na, deze klopt niet...");
+    private static String[] autoMerknamen = {"Audi", "BMW", "Opel", "Renault"};
+    private static String[] autoModelnamen = {"A3", "X3", "Astra", "Picasso", "Antara", "Clio", "Zafira"};
+    private static String[] fietsMerknamen = {"Gazelle", "Koga", "Batavu", "Merckx"};
+    private static String[] fietsModelnamen = {"Traptdoor", "Pedalo", "DraaienMaar", "Smarty", "Bellie"};
+    private static String[] stepMerknamen = {"Studio 100", "Disney"};
+    private static String[] stepModellen = {"Bumba", "Frozen", "K3", "GhostRockers", "Pirates Of The Caribien"};
+    private static final int AANTAL_VOERTUIGEN = 30;
+    private static final int AANTAL_GARAGES = 10;
+    private static final int MAX_AANTAL_PLAATSEN_PER_GARAGE = (AANTAL_VOERTUIGEN / AANTAL_GARAGES) + 1;
+    public static void main(String[] args) {
+        List<Voertuig> voertuigen = genereerRandomVoertuigen();
+        List<Garage> garages = genereerRandomGarages();
+        Iterator<Voertuig> it = voertuigen.iterator();
+        while (it.hasNext()) {
+            Voertuig huidigVoertuig = it.next();
+            boolean plaatsGevonden = false;
+            int i = 0;
+            while (!plaatsGevonden && i < garages.size()) {
+                Garage g = garages.get(i);
+                try {
+                    g.stal(huidigVoertuig);
+                    plaatsGevonden = true;
+                } catch(GeenPlaatsGevondenException e) {
+                    //Probeer de volgende garage
+                    plaatsGevonden = false;
+                }
+                i++;
+            }
+            if (!plaatsGevonden) {
+                System.out.println("Volgend voertuig is niet gestald kunnen worden: " + huidigVoertuig.toString());
+            }else {
+                it.remove();
+            }
         }
-        try {
-            grotePlaats.verlaatPlaats();
-            throw new Exception("Oeps, het verlaten van een plaats zou een exception moeten geven maar dat gebeurd niet");
-        } catch (IllegalArgumentException iae) {
-            // Alles goed, dat verwachten we
+        System.out.println("Aantal niet gestalde voertuigen: " + voertuigen.size());
+        for (Garage g: garages) {
+            System.out.println(g.toString());
         }
-        try {
-            kleinePlaats.stalVoertuig(a);
-            throw new Exception("Oeps, het stallen van een auto in een kleine plaats zou een exception moeten geven ...");
-        } catch (IllegalArgumentException iae) {
-            // Alles goed, dat verwachten we
+    }
+    private static List<Garage> genereerRandomGarages() {
+        List<Garage> garages = new ArrayList<>();
+        Random r = new Random();
+        for (int i = 0; i < AANTAL_GARAGES; i++) {
+            garages.add(new Garage(r.nextInt(MAX_AANTAL_PLAATSEN_PER_GARAGE) + 1));
         }
-        try {
-            kleinePlaats.stalVoertuig(ef);
-            throw new Exception("Oeps, het stallen van een EF in een kleine plaats zou een exception moeten geven...");
-        } catch (IllegalArgumentException iae) {
-            // Alles goed, dat verwachten we
+        return garages;
+    }
+    private static List<Voertuig> genereerRandomVoertuigen() {
+        List<Voertuig> voertuigen = new ArrayList<>();
+        Random r = new Random();
+        for (int i = 0; i < AANTAL_VOERTUIGEN; i++) {
+            // 1. Bepaal type voertuig: 0 = auto, 1 = fiets, 2 = elektrische fiets, 3 = step
+            int voertuigType = r.nextInt(4);
+            Voertuig v = null;
+            if (voertuigType == 0) {
+                // Random uitstoor tussen 80 en 159
+                double uitstoot = r.nextDouble() + (r.nextInt(80) + 80);
+                // Willekeurige merk- en modelnaam uitkiezen
+                String merknaam = autoMerknamen[r.nextInt(autoMerknamen.length)];
+                String modelNaam = autoModelnamen[r.nextInt(autoModelnamen.length)];
+                // Willekeurige inschrijvingsdatum, ligt tussen nu en 2500 dagen terug
+                LocalDate inschrijvingDatum = LocalDate.now().minusDays(r.nextInt(2500));
+                v = new Auto(merknaam, modelNaam, inschrijvingDatum, uitstoot);
+            } else if (voertuigType == 1) {
+                byte versnellingen = (byte)(r.nextInt(24) + 1);
+                String merknaam = fietsMerknamen[r.nextInt(fietsMerknamen.length)];
+                String modelNaam = fietsModelnamen[r.nextInt(fietsModelnamen.length)];
+                v = new Fiets(merknaam, modelNaam, versnellingen);
+            } else if (voertuigType == 2) {
+                byte versnellingen = (byte)((r.nextInt(2) + 1) * 3); // ofwel 3, ofwel 6 versnellingen
+                String merknaam = fietsMerknamen[r.nextInt(fietsMerknamen.length)];
+                String modelNaam = fietsModelnamen[r.nextInt(fietsModelnamen.length)];
+                int actieRadius = r.nextInt(70);
+                v = new ElektrischeFiets(merknaam, modelNaam, versnellingen, actieRadius);
+            } else {
+                String merknaam = stepMerknamen[r.nextInt(stepMerknamen.length)];
+                String modelNaam = stepModellen[r.nextInt(stepModellen.length)];
+                v = new Step(merknaam, modelNaam);
+            }
+            voertuigen.add(v);
         }
-        grotePlaats.stalVoertuig(a);
-        kleinePlaats.stalVoertuig(s);
-        if (!grotePlaats.isBezet() || !kleinePlaats.isBezet()) {
-            throw new Exception("Kijk de implementatie van isBezet na, deze klopt niet...");
-        }
-        try {
-            kleinePlaats.stalVoertuig(a);
-            throw new Exception("Oeps, het stallen van een reeds bezette plaats zou een fout moeten geven");
-        } catch (IllegalArgumentException iae) {
-            // Alles goed, dat verwachten we
-        }
-        Voertuig v = grotePlaats.verlaatPlaats();
-        if (v != a) throw new Exception("Oeps, de grote plaats heeft een fout object teruggegeven");
-        if (grotePlaats.isBezet()) throw new Exception("Oeps, de grote plaats zou leeg moeten zijn maar dat is ze niet");
-        System.out.println("Als je deze uitvoer leest, zijn alle tests geslaagd!");
+        return voertuigen;
     }
 }

@@ -2,6 +2,7 @@ package be.kdg.stalling;
 
 import be.kdg.voertuigen.Voertuig;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ public class Garage {
     private int index = 0;
 
     public Garage(int aantalPlaatsen) {
+        this.plaatsen = new ArrayList<>();
         for (int i = 0; i < aantalPlaatsen; i++) {
             Plaats p;
             if (i % 3 == 0) {
@@ -38,9 +40,9 @@ public class Garage {
         return teller;
     }
 
-    public double gemiddeldeCO2Uitstoot() {
-        //TODO
-    }
+//    public double gemiddeldeCO2Uitstoot() {
+//        //TODO
+//    }
 
     public void stal(Voertuig huidigVoertuig) throws GeenPlaatsGevondenException {
         while (index < plaatsen.size()) {
