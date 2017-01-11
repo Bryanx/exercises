@@ -57,13 +57,18 @@ public class Garage {
     }
 
     public void stal(Voertuig o) throws GeenPlaatsGevondenException {
-        for (Plaats plaats : plaatsen) {
-            if (!plaats.isBezet()) {
-                plaats.stalVoertuig(o);
-            } else {
-                throw new GeenPlaatsGevondenException(plaatsen.get(index).voertuig, this);
+        try {
+            for (Plaats plaats : plaatsen) {
+                if (!plaats.isBezet()) {
+                    plaats.stalVoertuig(o);
+                    return;
+                }
             }
+            throw new GeenPlaatsGevondenException(plaatsen.get(index).voertuig, this);
+        } catch (IllegalArgumentException e) {
+            throw new GeenPlaatsGevondenException(plaatsen.get(index).voertuig, this);
         }
+
     }
 
     @Override
