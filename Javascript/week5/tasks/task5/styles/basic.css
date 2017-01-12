@@ -1,0 +1,10 @@
+body {
+    background:#ffe4c4;
+    color:maroon;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+    font-family:monospace;
+    font-size:125%;
+    margin: 10px;
+}

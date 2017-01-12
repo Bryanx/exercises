@@ -1,0 +1,13 @@
+body {
+    background:#ffe4c4;
+    color:maroon;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+caption {
+    color:#a52a2a;
+    font-size:125%;
+    margin-bottom:10px;
+}
+table {
+    border: solid maroon 2px;
+}
