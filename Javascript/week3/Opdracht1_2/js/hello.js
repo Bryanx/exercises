@@ -1,4 +1,4 @@
-addEventListener("load", form, false);
+addEventListener('load', form, false);
 
 function form() {
     let btn = document.getElementById("btn");

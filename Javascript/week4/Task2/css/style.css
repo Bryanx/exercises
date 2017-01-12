@@ -1,0 +1,18 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#FFFFCC;
+    color:#330099;
+}
+.fout {
+    color:red;
+}
+.required {
+    color:black;
+}
+.label {
+    width:3em;
+    float:left;
+}
+.input {
+    margin-left:3em;
+}

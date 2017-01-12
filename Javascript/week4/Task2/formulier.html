@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Slides Opdracht 1</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/formulier.js">
+    </script>
+</head>
+<h1>Voorbeeld validatie met Javascript</h1>
+<h2>Vul de gevraagde velden in en klik op Valideer:</h2>
+<form action=”demo.html”>
+    <fieldset>
+        <p>
+            <label class="label" for="naam">Naam:</label>
+            <input class="input" type="text" id="naam" size="25"/>
+            <span class="required">&nbsp;*</span>
+            <span class="fout" id="naamFout">&nbsp;</span>
+        </p>
+        <p>
+            <label class="label" for="leeftijd">Leeftijd:</label>
+            <input class="input" type="text" id="leeftijd" size="25"/>
+            <span class="required">&nbsp;*</span>
+            <span class="fout" id="leeftijdFout">&nbsp;</span>
+        </p>
+        <p>
+            <label class="label" for="valideer">&nbsp;</label>
+            <input class="input" type="submit" id="valideer" value="Valideer"/>
+        </p>
+    </fieldset>
+</form>
+</html>

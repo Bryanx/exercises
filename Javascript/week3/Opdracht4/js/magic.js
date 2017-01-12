@@ -10,7 +10,7 @@ function images() {
 
         let img = document.getElementsByTagName("img")[i];
 
-        img.addEventListener("mouseover", function () {
+        img.addEventListener("mouseover", function() {
             switch (i) {
                 case(0): kind.setAttribute("src", "images/image-bones.jpg");break;
                 case(1): kind.setAttribute("src", "images/image-castle.jpg");break;
