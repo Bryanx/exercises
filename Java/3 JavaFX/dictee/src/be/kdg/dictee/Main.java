@@ -1,13 +1,10 @@
 package be.kdg.dictee;
 
+import be.kdg.dictee.model.Dictee;
+import be.kdg.dictee.view.DicteePresenter;
+import be.kdg.dictee.view.DicteeView;
 import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -17,10 +14,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Een eigen borderpane aangemaakt:
-        BorderPane root = new DicteeView();
+        Dictee model = new Dictee();
+        DicteeView view = new DicteeView();
 
-        Scene scene = new Scene(root);
+        new DicteePresenter(model, view);
+        Scene scene = new Scene(view);
 
         primaryStage.setScene(scene);
         primaryStage.setTitle("Dictee");

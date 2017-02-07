@@ -1,12 +1,7 @@
-package be.kdg.dictee;
+package be.kdg.dictee.view;
 
-import com.sun.speech.freetts.Voice;
-import com.sun.speech.freetts.VoiceManager;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
@@ -20,19 +15,16 @@ public class DicteeView extends BorderPane {
     private TextArea taDictee;
 
     public DicteeView() {
+        initializeNodes();
+        layoutNodes();
+    }
+
+    private void initializeNodes() {
         btnDictee = new Button("Lees voor");
-
-        btnDictee.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                Voice voice = VoiceManager.getInstance().getVoice("kevin16");
-                voice.allocate();
-                voice.speak(taDictee.getText());
-                voice.deallocate();
-            }
-        });
-
         taDictee = new TextArea();
+    }
+
+    private void layoutNodes() {
         this.setCenter(taDictee);
         this.setBottom(btnDictee);
         setAlignment(btnDictee, Pos.CENTER);
@@ -40,4 +32,13 @@ public class DicteeView extends BorderPane {
         setMargin(taDictee, new Insets(20, 20, 0, 20));
     }
 
+    //alleen de presenter kan er dan bij, model niet!
+    Button getBtnDictee() {
+        return btnDictee;
+    }
+
+    //alleen de presenter kan er dan bij, model niet!
+    TextArea getTaDictee() {
+        return taDictee;
+    }
 }
