@@ -1,6 +1,8 @@
 package be.kdg.tegels.view;
 
 import be.kdg.tegels.model.TileModel;
+import javafx.event.EventHandler;
+import javafx.scene.input.MouseEvent;
 
 public class Presenter {
     private final TileModel model;
@@ -43,10 +45,38 @@ public class Presenter {
     }
 
     private void addEventHandlers() {
-        // Hier aanvullen...
+        view.getCanvas().setOnMouseMoved(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                currentHoverColumn = translateXToColumn(event.getX());
+                currentHoverRow = translateYToRow(event.getY());
+                updateView();
+            }
+        });
+        view.getCanvas().setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                model.setSelectedTile(
+                        translateXToColumn(event.getX()),
+                        translateYToRow(event.getY()));
+                updateView();
+            }
+        });
+        view.getCanvas().setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                currentHoverColumn = -1;
+                currentHoverRow = -1;
+                updateView();
+            }
+        });
     }
 
     private void updateView() {
-        // Hier aanvullen...
+        view.displayCurrentTiles(
+                currentHoverColumn,
+                currentHoverRow,
+                model.getSelectedTileColumn(),
+                model.getSelectedTileRow());
     }
 }
