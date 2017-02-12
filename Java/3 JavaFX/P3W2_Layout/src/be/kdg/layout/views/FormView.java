@@ -37,6 +37,9 @@ public class FormView extends BorderPane {
     private CheckBox ckAkkoord;
     private Button btnSave;
     private Button btnClear;
+    private MenuItem miExit;
+    private MenuItem miAbout;
+    private Label lblStatus;
 
     public FormView() {
         initialiseNodes();
@@ -44,6 +47,8 @@ public class FormView extends BorderPane {
     }
 
     private void initialiseNodes() {
+        miExit = new MenuItem("Exit");
+        miAbout = new MenuItem("About");
         this.lblNaam = new Label("Naam: ");
         lblNaam.setMinWidth(LABEL_MIN_WIDTH);
         this.tfNaam = new TextField();
@@ -94,9 +99,21 @@ public class FormView extends BorderPane {
         btnSave.setPrefWidth(BUTTON_WIDTH);
         this.btnClear = new Button("Clear");
         btnClear.setPrefWidth(BUTTON_WIDTH);
+        lblStatus = new Label("Formulier nog niet opgeslagen");
+        lblStatus.setBackground(new Background(
+                new BackgroundFill(Color.LIGHTGREY, CornerRadii.EMPTY, Insets.EMPTY)));
+        lblStatus.setPrefWidth(PREF_WIDTH);
+        lblStatus.setPadding(new Insets(2, 2, 2, 5));
+
     }
 
     private void updateView() {
+        Menu menu = new Menu("File");
+        menu.getItems().addAll(miAbout,miExit);
+        MenuBar menuBar = new MenuBar(menu);
+        this.setTop(menuBar);
+
+        BorderPane bpCenter = new BorderPane();
         HBox hBoxNaam = new HBox(10, lblNaam, tfNaam);
         hBoxNaam.setMinHeight(NODE_MIN_HEIGHT);
         HBox hBoxVoorNaam = new HBox(10, lblVoorNaam, tfVoorNaam);
@@ -115,17 +132,20 @@ public class FormView extends BorderPane {
         VBox vBox = new VBox(10, hBoxNaam, hBoxVoorNaam, hBoxGeslacht, hBoxNationaliteit,
                 hBoxLeeftijd, hBoxAkkoord, hBoxOpmerk);
 
-        this.setPadding(new Insets(FORM_PADDING));
-        this.setTop(vBox);
+        bpCenter.setPadding(new Insets(FORM_PADDING));
+        bpCenter.setTop(vBox);
 
-        this.setMaxWidth(325);
+        bpCenter.setMaxWidth(325);
         HBox hBoxOpmerkfield = new HBox(taOpmerkingen);
         hBoxOpmerkfield.setMargin(taOpmerkingen, new Insets(10, 0, 10, 0));
-        this.setCenter(hBoxOpmerkfield);
+        bpCenter.setCenter(hBoxOpmerkfield);
 
         HBox hBoxButtons = new HBox(10, btnSave, btnClear);
         hBoxButtons.setAlignment(Pos.BOTTOM_RIGHT);
-        this.setBottom(hBoxButtons);
+        bpCenter.setBottom(hBoxButtons);
+        this.setCenter(bpCenter);
+        this.setBottom(lblStatus);
+        this.setMaxWidth(325);
     }
 
     Button getBtnSave() {
@@ -166,5 +186,13 @@ public class FormView extends BorderPane {
 
     CheckBox getCkAkkoord() {
         return ckAkkoord;
+    }
+
+    MenuItem getMiExit() {
+        return miExit;
+    }
+
+    MenuItem getMiAbout() {
+        return miAbout;
     }
 }
