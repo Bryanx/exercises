@@ -3,6 +3,8 @@ package be.kdg.layout.views;
 import be.kdg.layout.models.FormModel;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 
 /**
  * @author Bryan de Ridder
@@ -51,6 +53,20 @@ public class FormPresenter {
                 } else {
                     view.getBtnSave().setDisable(true);
                 }
+            }
+        });
+        view.getMiAbout().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION,
+                        "Allowkes", ButtonType.OK);
+                alert.showAndWait();
+            }
+        });
+        view.getMiExit().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.exit(0);
             }
         });
     }
