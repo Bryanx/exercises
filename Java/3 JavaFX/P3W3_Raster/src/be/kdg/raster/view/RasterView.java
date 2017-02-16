@@ -53,7 +53,6 @@ public class RasterView extends BorderPane {
         gc.setFill(Color.WHITE);
         gc.fillRect(0,0,widthGC,heightGC);
 
-
         for (int i = 1; i < 100; i++) {
             gc.strokeLine(colWidth*i,0, colWidth*i,heightGC);
             gc.strokeLine(0,rowHeight*i, widthGC,rowHeight*i);
