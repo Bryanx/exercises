@@ -8,11 +8,11 @@ import model.Student;
 public class Main {
     public static void main(String[] args) {
         Klas k = new Klas();
-        k.load();
+        k.loadBinary();
         System.out.println(k);
-        k.addStudent(new Student("Jefke", 12));
-        k.addStudent(new Student("Leo", 25));
-        System.out.println(k);
-        k.save();
+//        k.addStudent(new Student("Karel", 14));
+//        k.addStudent(new Student("Appelman", 15));
+//        System.out.println(k);
+//        k.saveBinary();
     }
 }

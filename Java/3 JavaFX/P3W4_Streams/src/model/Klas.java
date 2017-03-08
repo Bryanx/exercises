@@ -31,8 +31,13 @@ public class Klas {
         return s;
     }
 
+
+    //CHARACTER STREAM OUT:
     public void save() {
-        try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("files/klas.txt")))) {
+        try (PrintWriter pw =
+                     new PrintWriter(
+                             new BufferedWriter(
+                                     new FileWriter("files/klas.txt",true)))) {
             for (Student student : studenten) {
                 pw.write(student.getNaam() + "|" + student.getLeeftijd() + "\n");
             }
@@ -41,6 +46,7 @@ public class Klas {
         }
     }
 
+    //CHARACTER STREAM IN:
     public void load() {
         try (BufferedReader bw = new BufferedReader(new FileReader("files/klas.txt"))) {
             String line = bw.readLine();
@@ -54,6 +60,43 @@ public class Klas {
             //no problem
         } catch (NumberFormatException e) {
             System.out.println("File corrupted.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //BINARY STREAM OUT:
+    public void saveBinary() {
+        try (DataOutputStream dos =
+                     new DataOutputStream(
+                             new BufferedOutputStream(
+                                     new FileOutputStream("files/klas.bin",true)))) {
+            for (Student student : studenten) {
+                dos.writeUTF(student.getNaam());
+                dos.writeInt(student.getLeeftijd());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //BINARY STREAM IN:
+    public void loadBinary() {
+        try (DataInputStream dis =
+                     new DataInputStream(
+                             new BufferedInputStream(
+                                     new FileInputStream("files/klas.bin")))) {
+            while (true) {
+                String naam = dis.readUTF();
+                int leeftijd = dis.readInt();
+                Student student = new Student(naam, leeftijd);
+                studenten.add(student);
+            }
+
+        } catch (EOFException ignored) {
+            //alles is ingelezen
+        } catch (FileNotFoundException ignored) {
+            //no problem
         } catch (IOException e) {
             e.printStackTrace();
         }
