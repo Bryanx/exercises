@@ -31,7 +31,6 @@ public class Klas {
         return s;
     }
 
-
     //CHARACTER STREAM OUT:
     public void save() {
         try (PrintWriter pw =
