@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug
 CMakeFiles/strings.dir/all:
 	$(MAKE) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/depend
 	$(MAKE) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target strings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target strings"
 .PHONY : CMakeFiles/strings.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/strings.dir/clean
 CMakeFiles/hogerLager.dir/all:
 	$(MAKE) -f CMakeFiles/hogerLager.dir/build.make CMakeFiles/hogerLager.dir/depend
 	$(MAKE) -f CMakeFiles/hogerLager.dir/build.make CMakeFiles/hogerLager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target hogerLager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target hogerLager"
 .PHONY : CMakeFiles/hogerLager.dir/all
 
 # Include target in all.
@@ -140,7 +140,7 @@ clean: CMakeFiles/hogerLager.dir/clean
 CMakeFiles/kopofmunt.dir/all:
 	$(MAKE) -f CMakeFiles/kopofmunt.dir/build.make CMakeFiles/kopofmunt.dir/depend
 	$(MAKE) -f CMakeFiles/kopofmunt.dir/build.make CMakeFiles/kopofmunt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target kopofmunt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target kopofmunt"
 .PHONY : CMakeFiles/kopofmunt.dir/all
 
 # Include target in all.
@@ -177,7 +177,7 @@ clean: CMakeFiles/kopofmunt.dir/clean
 CMakeFiles/priemgetallen.dir/all:
 	$(MAKE) -f CMakeFiles/priemgetallen.dir/build.make CMakeFiles/priemgetallen.dir/depend
 	$(MAKE) -f CMakeFiles/priemgetallen.dir/build.make CMakeFiles/priemgetallen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target priemgetallen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target priemgetallen"
 .PHONY : CMakeFiles/priemgetallen.dir/all
 
 # Include target in all.
@@ -214,7 +214,7 @@ clean: CMakeFiles/priemgetallen.dir/clean
 CMakeFiles/dobbelstenen.dir/all:
 	$(MAKE) -f CMakeFiles/dobbelstenen.dir/build.make CMakeFiles/dobbelstenen.dir/depend
 	$(MAKE) -f CMakeFiles/dobbelstenen.dir/build.make CMakeFiles/dobbelstenen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target dobbelstenen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target dobbelstenen"
 .PHONY : CMakeFiles/dobbelstenen.dir/all
 
 # Include target in all.
@@ -251,7 +251,7 @@ clean: CMakeFiles/dobbelstenen.dir/clean
 CMakeFiles/basic_syntax.dir/all:
 	$(MAKE) -f CMakeFiles/basic_syntax.dir/build.make CMakeFiles/basic_syntax.dir/depend
 	$(MAKE) -f CMakeFiles/basic_syntax.dir/build.make CMakeFiles/basic_syntax.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target basic_syntax"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target basic_syntax"
 .PHONY : CMakeFiles/basic_syntax.dir/all
 
 # Include target in all.
@@ -288,7 +288,7 @@ clean: CMakeFiles/basic_syntax.dir/clean
 CMakeFiles/memory.dir/all:
 	$(MAKE) -f CMakeFiles/memory.dir/build.make CMakeFiles/memory.dir/depend
 	$(MAKE) -f CMakeFiles/memory.dir/build.make CMakeFiles/memory.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target memory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target memory"
 .PHONY : CMakeFiles/memory.dir/all
 
 # Include target in all.
@@ -362,7 +362,7 @@ clean: CMakeFiles/arrays.dir/clean
 CMakeFiles/scanners.dir/all:
 	$(MAKE) -f CMakeFiles/scanners.dir/build.make CMakeFiles/scanners.dir/depend
 	$(MAKE) -f CMakeFiles/scanners.dir/build.make CMakeFiles/scanners.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target scanners"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target scanners"
 .PHONY : CMakeFiles/scanners.dir/all
 
 # Include target in all.
@@ -399,7 +399,7 @@ clean: CMakeFiles/scanners.dir/clean
 CMakeFiles/geheugen_ampersand.dir/all:
 	$(MAKE) -f CMakeFiles/geheugen_ampersand.dir/build.make CMakeFiles/geheugen_ampersand.dir/depend
 	$(MAKE) -f CMakeFiles/geheugen_ampersand.dir/build.make CMakeFiles/geheugen_ampersand.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target geheugen_ampersand"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target geheugen_ampersand"
 .PHONY : CMakeFiles/geheugen_ampersand.dir/all
 
 # Include target in all.
@@ -426,6 +426,43 @@ CMakeFiles/geheugen_ampersand.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/geheugen_ampersand.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/asciiTabel.dir
+
+# All Build rule for target.
+CMakeFiles/asciiTabel.dir/all:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/depend
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target asciiTabel"
+.PHONY : CMakeFiles/asciiTabel.dir/all
+
+# Include target in all.
+all: CMakeFiles/asciiTabel.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/asciiTabel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/asciiTabel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/asciiTabel.dir/rule
+
+# Convenience name for target.
+asciiTabel: CMakeFiles/asciiTabel.dir/rule
+
+.PHONY : asciiTabel
+
+# clean rule for target.
+CMakeFiles/asciiTabel.dir/clean:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/clean
+.PHONY : CMakeFiles/asciiTabel.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/asciiTabel.dir/clean
 
 .PHONY : clean
 

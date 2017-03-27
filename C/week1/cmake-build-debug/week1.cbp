@@ -477,6 +477,50 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="asciiTabel">
+				<Option output="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/asciiTabel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 asciiTabel"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="asciiTabel/fast">
+				<Option output="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/asciiTabel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 asciiTabel/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="P1W1_Hello_World">
 				<Option output="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/P1W1_Hello_World" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug"/>
@@ -524,6 +568,9 @@
 		</Build>
 		<Unit filename="/Users/Bryan/Programmeren/exercises/C/week1/arrays.c">
 			<Option target="arrays"/>
+		</Unit>
+		<Unit filename="/Users/Bryan/Programmeren/exercises/C/week1/asciiTabel.c">
+			<Option target="asciiTabel"/>
 		</Unit>
 		<Unit filename="/Users/Bryan/Programmeren/exercises/C/week1/basic_syntax.c">
 			<Option target="basic_syntax"/>

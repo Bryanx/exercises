@@ -241,6 +241,19 @@ geheugen_ampersand/fast:
 .PHONY : geheugen_ampersand/fast
 
 #=============================================================================
+# Target rules for targets named asciiTabel
+
+# Build rule for target.
+asciiTabel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 asciiTabel
+.PHONY : asciiTabel
+
+# fast build rule for target.
+asciiTabel/fast:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/build
+.PHONY : asciiTabel/fast
+
+#=============================================================================
 # Target rules for targets named P1W1_Hello_World
 
 # Build rule for target.
@@ -279,6 +292,33 @@ arrays.s: arrays.c.s
 arrays.c.s:
 	$(MAKE) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/arrays.c.s
 .PHONY : arrays.c.s
+
+asciiTabel.o: asciiTabel.c.o
+
+.PHONY : asciiTabel.o
+
+# target to build an object file
+asciiTabel.c.o:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/asciiTabel.c.o
+.PHONY : asciiTabel.c.o
+
+asciiTabel.i: asciiTabel.c.i
+
+.PHONY : asciiTabel.i
+
+# target to preprocess a source file
+asciiTabel.c.i:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/asciiTabel.c.i
+.PHONY : asciiTabel.c.i
+
+asciiTabel.s: asciiTabel.c.s
+
+.PHONY : asciiTabel.s
+
+# target to generate assembly for a file
+asciiTabel.c.s:
+	$(MAKE) -f CMakeFiles/asciiTabel.dir/build.make CMakeFiles/asciiTabel.dir/asciiTabel.c.s
+.PHONY : asciiTabel.c.s
 
 basic_syntax.o: basic_syntax.c.o
 
@@ -568,10 +608,14 @@ help:
 	@echo "... arrays"
 	@echo "... scanners"
 	@echo "... geheugen_ampersand"
+	@echo "... asciiTabel"
 	@echo "... P1W1_Hello_World"
 	@echo "... arrays.o"
 	@echo "... arrays.i"
 	@echo "... arrays.s"
+	@echo "... asciiTabel.o"
+	@echo "... asciiTabel.i"
+	@echo "... asciiTabel.s"
 	@echo "... basic_syntax.o"
 	@echo "... basic_syntax.i"
 	@echo "... basic_syntax.s"

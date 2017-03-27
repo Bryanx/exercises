@@ -58,5 +58,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/arrays.dir/DependInfo.cmake"
   "CMakeFiles/scanners.dir/DependInfo.cmake"
   "CMakeFiles/geheugen_ampersand.dir/DependInfo.cmake"
+  "CMakeFiles/asciiTabel.dir/DependInfo.cmake"
   "CMakeFiles/P1W1_Hello_World.dir/DependInfo.cmake"
   )
