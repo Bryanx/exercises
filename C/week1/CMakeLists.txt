@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.6)
+project(week1)
+
+set(CMAKE_C_STANDARD 99)
+
+set(SOURCE_FILES main.c)
+add_executable(P1W1_Hello_World ${SOURCE_FILES})
+
+add_executable(basic_syntax basic_syntax.c)
+add_executable(geheugen_ampersand geheugen_ampersand.c)
+add_executable(memory memory.c)
+add_executable(kopofmunt kopofmunt.c)
+add_executable(dobbelstenen dobbelstenen.c)
+add_executable(scanners scanners.c)
+add_executable(hogerLager hogerLager.c)
+add_executable(priemgetallen priemgetallen.c)
+add_executable(strings strings.c)
+add_executable(arrays arrays.c)

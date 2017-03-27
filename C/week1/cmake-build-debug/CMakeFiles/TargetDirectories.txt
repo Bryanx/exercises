@@ -1,0 +1,13 @@
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/strings.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/hogerLager.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/kopofmunt.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/priemgetallen.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/dobbelstenen.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/basic_syntax.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/memory.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/arrays.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/scanners.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/geheugen_ampersand.dir
+/Users/Bryan/Programmeren/exercises/C/week1/cmake-build-debug/CMakeFiles/P1W1_Hello_World.dir
