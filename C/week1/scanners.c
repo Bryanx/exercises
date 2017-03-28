@@ -26,21 +26,41 @@ void berekenGemiddeldeRandom() {
     printf("\n\nGemiddelde: %.2f", som / 5.0);
 }
 
-int charScan() {
-    printf("\nGeef je geslacht (m/v)? ");
-    char geslacht;
-    fflush(stdin);
-    scanf("%c", &geslacht);
-    printf("\nJe bent geslachts: %c",geslacht);
-    return 0;
-}
-
 int berekenLeeftijd(int geboorteJaar) {
     return 2017-geboorteJaar;
 }
 
 double berekenBMI(double gewicht, double lengte) {
     return gewicht/(lengte/100*lengte/100);
+}
+
+void charScanMetFlush() {
+    printf("\nGeef je geslacht (m/v)? ");
+    char geslacht;
+    fflush(stdin);
+    scanf("%c", &geslacht);
+    printf("\nJe bent geslachts: %c",geslacht);
+}
+
+void woordScan() {
+    char woord[10];
+    printf("Geef je naam: ");
+    scanf("%s", woord);
+    printf("%s", woord);
+}
+
+void zinScan() {
+    char zin[50];
+    printf("Geef een zin: ");
+    gets(zin);
+    printf("%s", zin);
+}
+
+void getalScan() {
+    int getal;
+    printf("Geef een getal: ");
+    scanf("%d", &getal);
+    printf("%d", getal);
 }
 
 int main() {

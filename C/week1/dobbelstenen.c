@@ -10,7 +10,7 @@ int main() {
     do {
         int getal;
         scanf("%d",&getal);
-        if (getal ==0) bool = 0;
+        if (getal == 0) bool = 0;
         switch (getal) {
             case 1 : een+= 1;break;
             case 2 : twee+= 1;break;
