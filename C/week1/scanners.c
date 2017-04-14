@@ -34,6 +34,10 @@ double berekenBMI(double gewicht, double lengte) {
     return gewicht/(lengte/100*lengte/100);
 }
 
+/*
+ * Wanneer eerst een int en daarna een char moet worden gescand
+ * gebruik dan flush
+ */
 void charScanMetFlush() {
     printf("\nGeef je geslacht (m/v)? ");
     char geslacht;
@@ -42,6 +46,10 @@ void charScanMetFlush() {
     printf("\nJe bent geslachts: %c",geslacht);
 }
 
+/*
+ * Let op bij het scannen van een woord geen &
+ * omdat een string sowieso altijd een pointer is.
+ */
 void woordScan() {
     char woord[10];
     printf("Geef je naam: ");
@@ -49,6 +57,9 @@ void woordScan() {
     printf("%s", woord);
 }
 
+/*
+ * Let op bij het scannen van een zin geen &
+ */
 void zinScan() {
     char zin[50];
     printf("Geef een zin: ");
