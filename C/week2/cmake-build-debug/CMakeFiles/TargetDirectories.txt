@@ -1,0 +1,7 @@
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/tekeningen.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/pointersArrays.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/randomPointers.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/pointers.dir
+/Users/Bryan/Programmeren/exercises/C/week2/cmake-build-debug/CMakeFiles/week2.dir
