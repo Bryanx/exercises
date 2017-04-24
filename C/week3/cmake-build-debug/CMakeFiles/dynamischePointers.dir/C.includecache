@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bryan/Programmeren/exercises/C/week3/dynamischePointers.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
