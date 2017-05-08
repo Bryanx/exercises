@@ -3,8 +3,7 @@
 
 int power(int x, int n);
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     int getal;
     int i;
     for (getal = 2 ; getal < MAX; getal++) {
@@ -18,5 +17,6 @@ int main(int argc, char **argv)
 }
 
 int power(int x, int n) {
-// vul recursief aan
+    if (n == 0) return 1;
+    return power(x, n-1)*x;
 }

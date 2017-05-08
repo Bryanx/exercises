@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define AANTAL_TEAMS 4
+#define AANTAL_TEAMS 2
 #define AANTAL_PILOTEN 2
 /*
 Team 1: Mercedes - Hamiliton 44 – Bottas 77
@@ -28,18 +28,22 @@ void toon_teams(TEAM* teams);
 int main(int argc, char **argv) {
 
     TEAM* teams[AANTAL_TEAMS];
-    for (int i = 0; i < 1; ++i) {
+    for (int i = 0; i < AANTAL_TEAMS; ++i) {
         teams[i] = malloc(sizeof(TEAM));
         lees_teams(teams[i]);
     }
+    printf("\nTeams\n");
     for (int j = 0; j < AANTAL_TEAMS; ++j) {
-        toon_teams(teams);
+        printf("Team %d: ", j+1);
+        toon_teams(teams[j]);
     }
     return 0;
 }
 
 void toon_teams(TEAM* teams) {
-    printf("")
+    printf("%s - %s %d - %s %d\n", teams->team_naam,
+           teams->piloten[0]->naam, teams->piloten[0]->nummer,
+           teams->piloten[1]->naam, teams->piloten[1]->nummer);
 }
 
 void lees_piloot(TEAM* teams, int i) {
