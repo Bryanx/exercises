@@ -68,14 +68,15 @@ void freeQueue(QUEUE* queue){
 }
 
 void offer(QUEUE* queue, ELEMENT element){
-    if (queue->size == 0) queue->startNode = newNode(element);
-
-    NODE* indexNode = queue->startNode;
-
-    for (int i = 0; i < queue->size; ++i) {
-        indexNode = indexNode->next;
+    if (queue->size == 0) {
+        queue->startNode = newNode(element);
+    } else {
+        NODE *indexNode = queue->startNode;
+        for (int i = 1; i < queue->size; ++i) {
+            indexNode = indexNode->next;
+        }
+        indexNode->next = newNode(element);
     }
-    indexNode->next = newNode(element);
     queue->size++;
 }
 
@@ -87,9 +88,10 @@ ELEMENT peek(QUEUE* queue){
 ELEMENT poll(QUEUE* queue){
     if (queue->size == 0) return NULL;
     ELEMENT tmpElement = queue->startNode->element;
+    NODE* pop = queue->startNode;
     queue->startNode = queue->startNode->next;
-
-
+    free(pop);
+    queue->size--;
     return tmpElement;
 }
 
@@ -99,8 +101,8 @@ void printQueue(QUEUE* queue){
     NODE* indexNode = queue->startNode;
 
     for (int i = 0; i < queue->size; ++i) {
-        indexNode = indexNode->next;
         printf("%s ", indexNode->element);
+        indexNode = indexNode->next;
     }
 
     printf("\n");
