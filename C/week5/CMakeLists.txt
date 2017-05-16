@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.6)
+project(week5)
+
+set(CMAKE_C_STANDARD 99)
+
+set(SOURCE_FILES main.c)
+add_executable(week5 ${SOURCE_FILES})
+add_executable(selectionSort selectionSort.c)
+add_executable(bubbleSortOptimized bubbleSortOptimized.c)
+add_executable(mergeSort mergeSort.c)
+add_executable(merge merge.c)
+add_executable(quickSort quickSort.c)
+add_executable(linearSearch linearSearch.c)
+add_executable(binarySearch binarySearch.c)
+add_executable(bubbleSort bubbleSort.c)
