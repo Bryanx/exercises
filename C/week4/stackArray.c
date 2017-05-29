@@ -13,11 +13,9 @@ typedef struct {
 
 //hulpfunctie: expand
 void expand(STACK *stack) {
-    //printf("Doubling the capacity to %d!\n",2*list->capacity);
     stack->capacity = stack->capacity * 2;
     ELEMENT *newElements = malloc(sizeof(ELEMENT) * stack->capacity);
-    int i;
-    for (i = 0; i < stack->size; i++) {
+    for (int i = 0; i < stack->size; i++) {
         newElements[i] = stack->elements[i];
     }
     free(stack->elements); //vergeet niet het geheugen van de oude array terug vrij te geven!
@@ -49,8 +47,8 @@ ELEMENT pop(STACK *stack) {
 
 //Het bovenste element retourneren zonder het te verwijderen
 ELEMENT peek(STACK *stack) {
-    if (stack->size != 0) return NULL;
-    return stack->elements[stack->size];
+    if (stack->size == 0) return NULL;
+    return stack->elements[stack->size-1];
 }
 
 void printStack(STACK *stack) {
@@ -72,8 +70,11 @@ int main() {
     STACK *myStack = newStack();
     push(myStack, "Corneel");
     push(myStack, "Piet-Joris");
-    push(myStack, "Jan");
+
     printStack(myStack);
+    push(myStack, "Jan");
+    push(myStack, "Jan");
+    push(myStack, "Jan");
     printf("Popping %s\n", pop(myStack));
     printStack(myStack);
     printf("Popping %s\n", pop(myStack));

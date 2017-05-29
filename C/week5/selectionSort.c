@@ -12,8 +12,8 @@ int compare(int a, int b) {
     return a - b;
 }
 
-int* generateRandomList(int nbrOfElements) {
-    int* list = calloc(nbrOfElements, sizeof(int));
+int *generateRandomList(int nbrOfElements) {
+    int *list = calloc(nbrOfElements, sizeof(int));
     int i;
     for (i = 0; i < nbrOfElements; i++) {
         list[i] = rand() % MAX_RANDOM_NUMBER;
@@ -22,38 +22,38 @@ int* generateRandomList(int nbrOfElements) {
 }
 
 //kleinste zoeken en telkens vooraan steken
-void selectionSort(int* list, int size) {
-    compareCounter = 0;
+int *selectionSort(int *list, int size) {
+    int smallest, tmp;
     swapCounter = 0;
-    int indexOfSmallestElement, i, j, tmp;
-    for (i = 0; i < size; i++) {
-        indexOfSmallestElement = i;
-        for (j = i + 1; j < size; j++) {
-            if (compare(list[j],list[indexOfSmallestElement]) < 0) {
-                indexOfSmallestElement = j;
+    compareCounter = 0;
+    for (int i = 0; i < size; ++i) {
+        smallest = i;
+        for (int j = i + 1; j < size; ++j) {
+            if (compare(list[j], list[smallest]) < 0) {
+                smallest = j;
             }
         }
         tmp = list[i];
-        list[i] = list[indexOfSmallestElement];
-        list[indexOfSmallestElement] = tmp;
+        list[i] = list[smallest];
+        list[smallest] = tmp;
         swapCounter++;
     }
 }
 
-void printList(int* list, int size){
+void printList(int *list, int size) {
     printf("Content (compared %d times, swapped %d times): ", compareCounter, swapCounter);
     int i;
-    for(i = 0; i < size; i++){
+    for (i = 0; i < size; i++) {
         printf("%2d ", list[i]);
     }
     printf("\n");
 }
 
-void doTest(int nbrOfElements){
+void doTest(int nbrOfElements) {
     compareCounter = 0;
     swapCounter = 0;
     printf("=> Nbr. of elements = %d\n", nbrOfElements);
-    int* list = generateRandomList(nbrOfElements);
+    int *list = generateRandomList(nbrOfElements);
     printf("Before sorting: ");
     printList(list, nbrOfElements);
     selectionSort(list, nbrOfElements);
@@ -63,7 +63,7 @@ void doTest(int nbrOfElements){
 }
 
 
-int main(){
+int main() {
     srand(time(NULL));
     printf("SelectionSort demo\n\n");
     doTest(50);

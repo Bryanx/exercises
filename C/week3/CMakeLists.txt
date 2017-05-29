@@ -18,6 +18,7 @@ add_executable(structNietDynamisch structNietDynamisch.c)
 add_executable(structures structures.c)
 add_executable(recursieStringReverse recursieStringReverse.c)
 add_executable(recursieFaculteit recursieFaculteit.c)
+add_executable(muziekCollectie muziekCollectie.c)
 add_executable(structKaartDynamisch structKaartDynamisch.c)
 
 

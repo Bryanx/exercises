@@ -42,7 +42,10 @@ void addElement(LINKEDLIST *list, ELEMENT element, int index) {
         //index>1:
         //we zoeken nu de twee nodes waartussen deze node moet komen: nodePrev en nodeNext
         NODE *nodePrev = list->startNode;
-        for (int i = 1; i < index; i++) nodePrev = nodePrev->next; //index keer naar de volgende node springen
+        for (int i = 1; i < index; i++) {
+            nodePrev = nodePrev->next;
+        }
+        //index keer naar de volgende node springen
         NODE *nodeNext = nodePrev->next;
         //nodeNew tussen nodePrev en nodeNext plaatsen
         nodePrev->next = nodeNew;
@@ -123,6 +126,7 @@ int main() {
     printList(list);
     printf("Index of 'D':%d\n", indexOf(list, 'D'));
     printf("Index of 'Q':%d\n", indexOf(list, 'Q'));
+    printf("Element of index 1:'%c' \n", getElement(list, 0));
     freeMemory(list);
     return 0;
 }

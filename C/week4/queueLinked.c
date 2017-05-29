@@ -50,9 +50,7 @@ QUEUE* newQueue(){
 
 NODE* newNode(ELEMENT e){
     NODE* n = malloc(sizeof(NODE));
-    n->element = calloc(strlen(e) + 1, sizeof(char));
-    strcpy(n->element, e);
-    n->next = NULL;
+    n->element = e;
     return n;
 }
 
@@ -87,8 +85,8 @@ ELEMENT peek(QUEUE* queue){
 
 ELEMENT poll(QUEUE* queue){
     if (queue->size == 0) return NULL;
-    ELEMENT tmpElement = queue->startNode->element;
     NODE* pop = queue->startNode;
+    ELEMENT tmpElement = pop->element;
     queue->startNode = queue->startNode->next;
     free(pop);
     queue->size--;
