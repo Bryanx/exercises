@@ -6,13 +6,13 @@
 
 void berekenGemiddelde() {
     printf("\nGeef %d gehele getallen gescheiden door een ';'",AANTAL_GETALLEN);
-    int som = 0;
+    double som = 0;
     for (int i = 0; i < AANTAL_GETALLEN; ++i) {
         int getal;
         scanf("%d;",&getal);
         som +=getal;
     }
-    printf("Gemiddelde: %.2f", som/5.0);
+    printf("Gemiddelde: %.2f", som/AANTAL_GETALLEN);
 }
 
 void berekenGemiddeldeRandom() {
@@ -75,15 +75,15 @@ void getalScan() {
 }
 
 int main() {
-    printf("Wat is je geboortejaar, gewicht en lengte in cm?: ");
-    int gebjaar;
-    double gewicht;
-    double lengte;
-    scanf("%d %lf %lf",&gebjaar, &gewicht, &lengte);
+//    printf("Wat is je geboortejaar, gewicht en lengte in cm?: ");
+//    int gebjaar;
+//    double gewicht;
+//    double lengte;
+//    scanf("%d %lf %lf",&gebjaar, &gewicht, &lengte);
+//
+//    printf("Je bent %d jaar oud\n", berekenLeeftijd(gebjaar));
+//    printf("Je bent %.0f cm lang\n", lengte);
+//    printf("Je BMI is %.2lf\n", berekenBMI(gewicht,lengte));
 
-    printf("Je bent %d jaar oud\n", berekenLeeftijd(gebjaar));
-    printf("Je bent %.0f cm lang\n", lengte);
-    printf("Je BMI is %.2lf\n", berekenBMI(gewicht,lengte));
-
-    berekenGemiddeldeRandom();
+    berekenGemiddelde();
 }

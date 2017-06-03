@@ -78,19 +78,19 @@ void offer(QUEUE* queue, ELEMENT element){
     queue->size++;
 }
 
+ELEMENT poll(QUEUE* queue){
+    if (queue->size == 0) return NULL;
+    NODE* tmpNode = queue->startNode;
+    ELEMENT tmpElement = tmpNode->element;
+    queue->startNode = queue->startNode->next;
+    free(tmpNode);
+    queue->size--;
+    return tmpElement;
+}
+
 ELEMENT peek(QUEUE* queue){
     if (queue->size == 0) return NULL;
     return queue->startNode->element;
-}
-
-ELEMENT poll(QUEUE* queue){
-    if (queue->size == 0) return NULL;
-    NODE* pop = queue->startNode;
-    ELEMENT tmpElement = pop->element;
-    queue->startNode = queue->startNode->next;
-    free(pop);
-    queue->size--;
-    return tmpElement;
 }
 
 

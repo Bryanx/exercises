@@ -19,6 +19,10 @@ add_executable(structures structures.c)
 add_executable(recursieStringReverse recursieStringReverse.c)
 add_executable(recursieFaculteit recursieFaculteit.c)
 add_executable(muziekCollectie muziekCollectie.c)
+add_executable(recursiePalindroom recursiePalindroom.c)
+add_executable(getallenVerticaal getallenVerticaal.c)
+add_executable(getallenSom getallenSom.c)
+add_executable(getallenKwadraten getallenKwadraten.c)
 add_executable(structKaartDynamisch structKaartDynamisch.c)
 
 

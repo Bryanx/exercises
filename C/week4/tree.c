@@ -37,19 +37,16 @@ int compareElements(ELEMENT e1, ELEMENT e2){
 }
 
 void addNode(NODE* parent, ELEMENT element) {
-    NODE* newChildNode;
     int difference = compareElements(element,parent->element);
     if (difference <= 0) {
         if (parent->left == NULL) {
-            newChildNode = newNode(element);
-            parent->left = newChildNode;
+            parent->left = newNode(element);
         } else {
             return addNode(parent->left, element);
         }
     }else {
         if (parent->right == NULL) {
-            newChildNode = newNode(element);
-            parent->right = newChildNode;
+            parent->right = newNode(element);
         } else {
             return addNode(parent->right, element);
         }
@@ -91,9 +88,9 @@ void freeMemory(TREE* tree) {
 
 int containsInNode(NODE* node, ELEMENT element){
     if (node==NULL) return 0;
-    int difference = compareElements(node->element, element);
+    int difference = compareElements(element, node->element);
     if (difference == 0) return 1;
-    if (difference > 0) {
+    if (difference < 0) {
         return containsInNode(node->left, element);
     } else {
         return containsInNode(node->right, element);

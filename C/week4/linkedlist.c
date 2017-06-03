@@ -30,6 +30,7 @@ NODE *newNode(ELEMENT element) {
 
 //Toevoegen
 void addElement(LINKEDLIST *list, ELEMENT element, int index) {
+    if (index < 0 || index > list->size) return;
     //printf("Adding element %c at position %d\n", element, index);
     NODE *nodeNew = newNode(element);
     //index==0 is een speciaal geval: de nieuwe node komt helemaal vooraan de keten
@@ -42,20 +43,19 @@ void addElement(LINKEDLIST *list, ELEMENT element, int index) {
         //index>1:
         //we zoeken nu de twee nodes waartussen deze node moet komen: nodePrev en nodeNext
         NODE *nodePrev = list->startNode;
-        for (int i = 1; i < index; i++) {
+        for (int i = 0; i < index-1; i++) {
             nodePrev = nodePrev->next;
         }
-        //index keer naar de volgende node springen
-        NODE *nodeNext = nodePrev->next;
-        //nodeNew tussen nodePrev en nodeNext plaatsen
+        nodeNew->next = nodePrev->next;
         nodePrev->next = nodeNew;
-        nodeNew->next = nodeNext;
     }
     list->size++;
 }
 
 //Verwijderen
 void removeElementAt(LINKEDLIST *list, int index) {
+    if (index < 0 || index > list->size) return;
+    if (list->size == 0) return;
     //printf("Removing element at position %d\n", index);
     //een element verwijderen wil zeggen: element zoeken en dan de vorige naar de volgende laten wijzen en den huidge free-en
     //als er geen vorige is, dat wil zeggen: index 0, dan moet startNode naar de volgende wijzen
@@ -65,7 +65,7 @@ void removeElementAt(LINKEDLIST *list, int index) {
         free(temp);
     } else {
         NODE *nodePrev = list->startNode;
-        for (int i = 1; i < index; i++) {
+        for (int i = 0; i < index-1; i++) {
             nodePrev = nodePrev->next;
         }
         NODE *temp = nodePrev->next;
@@ -77,6 +77,9 @@ void removeElementAt(LINKEDLIST *list, int index) {
 
 //Opvragen
 ELEMENT getElement(LINKEDLIST *list, int index) {
+    if (index < 0 || index > list->size) return NULL;
+    if (list->size == 0) return NULL;
+
     NODE *indexNode = list->startNode;
     for (int i = 0; i < index; i++) {
         indexNode = indexNode->next;

@@ -91,7 +91,7 @@ void is_palindroom() {
 int main() {
 //    count_asc();
 //    is_numeriek();
-    is_palindroom();
+//    is_palindroom();
 //    grootsteWoordInArray();
     return 0;
 }

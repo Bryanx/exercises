@@ -1,29 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define WOORD_AANTAL 20
 
-typedef struct {
-    char* moedertaal;
-} TAAL;
 
-typedef struct {
-    char* naam;
-    TAAL* taal;
-} PERSOON;
+
+
 
 int main(int argc, char **argv) {
-    PERSOON* persoon = malloc(sizeof(PERSOON));
-    persoon->taal = malloc(sizeof(TAAL));
+    int** tabel = calloc(6, sizeof(int));
 
-    char buffer[WOORD_AANTAL] = "Nederlands";
-    persoon->taal->moedertaal = calloc(strlen(buffer),sizeof(char));
-    strcpy(persoon->taal->moedertaal, buffer);
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            *(*(tabel+i)+j) = j+i;
+        }
+    }
 
-    char buffer2[WOORD_AANTAL] = "Jos";
-    persoon->naam = calloc(strlen(buffer2),sizeof(char));
-    strcpy(persoon->naam, buffer2);
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            printf("%d ",*(*(tabel+i)+j));
+        }
+        printf("\n");
+    }
 
-    printf("%s %s", persoon->naam, persoon->taal->moedertaal);
-    return 0;
+
 }

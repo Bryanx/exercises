@@ -16,8 +16,7 @@ void expand(ARRAYLIST *list) {
     //printf("Doubling the capacity to %d!\n",2*list->capacity);
     list->capacity = list->capacity * 2;
     ELEMENT *newElements = malloc(sizeof(ELEMENT) * list->capacity);
-    int i;
-    for (i = 0; i < list->size; i++) {
+    for (int i = 0; i < list->size; i++) {
         newElements[i] = list->elements[i];
     }
     free(list->elements); //vergeet niet het geheugen van de oude array terug vrij te geven!
@@ -35,9 +34,9 @@ ARRAYLIST *newArrayList() {
 
 //Toevoegen
 void addElement(ARRAYLIST *list, ELEMENT element, int index) {
-    if (list->size == list->capacity) {
-        expand(list);
-    }
+    if (list->size == list->capacity) expand(list);
+    if (index < 0 || index >= list->size) return;
+
     for (int i = list->size; i > index; i--) {
         list->elements[i] = list->elements[i - 1];
     }
@@ -48,6 +47,9 @@ void addElement(ARRAYLIST *list, ELEMENT element, int index) {
 
 //Verwijderen
 void removeElement(ARRAYLIST *list, int index) {
+    if (list->size == 0) return;
+    if (index < 0 || index >= list->size) return;
+
     for (int i = index; i < list->size; i++) {
         list->elements[i] = list->elements[i + 1];
     }
@@ -56,6 +58,7 @@ void removeElement(ARRAYLIST *list, int index) {
 
 //Opvragen
 ELEMENT getElement(ARRAYLIST *list, int index) {
+    if (index < 0 || index >= list->size) return NULL;
     return list->elements[index];
 }
 
@@ -77,6 +80,8 @@ void printList(ARRAYLIST *list) {
  */
 int indexOf(ARRAYLIST *list, ELEMENT element) {
     //Vul aan...
+    printf("Arraylist capacity: %d, size: %d\n", list->capacity, list->size);
+
     for (int i = 0; i < list->size; ++i) {
         if (*(list->elements + i) == element) {
             return i;
@@ -88,7 +93,7 @@ int indexOf(ARRAYLIST *list, ELEMENT element) {
 int main() {
     ARRAYLIST *list = newArrayList();
     int i = 0;
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 4; i++) {
         addElement(list, i + 65, 0);
     }
     printList(list);

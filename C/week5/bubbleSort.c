@@ -27,8 +27,8 @@ int *generateRandomList(int nbrOfElements) {
 void bubbleSort(int *list, int size) {
     compareCounter = 0;
     swapCounter = 0;
-    for (int i = 0; i < size; ++i) {
-        for (int j = 0; j < size - i; ++j) {
+    for (int i = 0; i < size - 1; ++i) {
+        for (int j = 0; j < size - i - 1; ++j) {
             if (compare(list[j], list[j + 1]) > 0) {
                 int buffer = *(list + j + 1);
                 *(list + j + 1) = *(list + j);

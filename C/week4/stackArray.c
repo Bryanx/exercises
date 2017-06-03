@@ -14,7 +14,7 @@ typedef struct {
 //hulpfunctie: expand
 void expand(STACK *stack) {
     stack->capacity = stack->capacity * 2;
-    ELEMENT *newElements = malloc(sizeof(ELEMENT) * stack->capacity);
+    ELEMENT *newElements = calloc(stack->capacity, sizeof(ELEMENT));
     for (int i = 0; i < stack->size; i++) {
         newElements[i] = stack->elements[i];
     }
@@ -70,12 +70,16 @@ int main() {
     STACK *myStack = newStack();
     push(myStack, "Corneel");
     push(myStack, "Piet-Joris");
-
+    push(myStack, "Jan");
     printStack(myStack);
-    push(myStack, "Jan");
-    push(myStack, "Jan");
-    push(myStack, "Jan");
+    printf("Peek %s\n", peek(myStack));
     printf("Popping %s\n", pop(myStack));
+    printf("Peek %s\n", peek(myStack));
+
+    push(myStack, "Jan");
+    push(myStack, "Jan");
+    push(myStack, "Jan");
+    push(myStack, "Jan");
     printStack(myStack);
     printf("Popping %s\n", pop(myStack));
     printStack(myStack);

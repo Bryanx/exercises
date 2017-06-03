@@ -10,8 +10,7 @@ int main(int argc, char **argv) {
 }
 
 void printOmgekeerd(char *woord){
-    if (strlen(woord) == 0) return;
-    printf("%c", woord[strlen(woord)-1]);
-    woord[strlen(woord)-1] = '\0';
-    printOmgekeerd(woord);
+    if (*woord == '\0') return;
+    printOmgekeerd(woord + 1);
+    printf("%c", *woord);
 }

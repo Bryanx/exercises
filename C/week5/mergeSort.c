@@ -1,7 +1,3 @@
-//
-// Created by Bryan de Ridder on 15-05-17.
-//
-
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -37,22 +33,22 @@ void printList(int* list, int size){
 int* merge(int* list1, int* list2, int size1, int size2){
     int sizeMergedList = size1 + size2;
     int* mergedList = calloc(sizeMergedList, sizeof(int));
-    int ixList1 = 0, ixList2 = 0, ixMergedList = 0;
+    int ixList1 = 0, ixList2 = 0;
 
-    for (ixMergedList = 0; ixMergedList < sizeMergedList; ixMergedList++) {
+    for (int i = 0; i < sizeMergedList; i++) {
         if(ixList1 == size1){
-            mergedList[ixMergedList] = list2[ixList2];
+            mergedList[i] = list2[ixList2];
             ixList2++;
         }else if (ixList2 == size2){
-            mergedList[ixMergedList] = list1[ixList1];
+            mergedList[i] = list1[ixList1];
             ixList1++;
         }else{
             int compareResult = compare(list1[ixList1], list2[ixList2]);
             if(compareResult < 0){
-                mergedList[ixMergedList] = list1[ixList1];
+                mergedList[i] = list1[ixList1];
                 ixList1++;
             }else{
-                mergedList[ixMergedList] = list2[ixList2];
+                mergedList[i] = list2[ixList2];
                 ixList2++;
             }
         }
@@ -82,17 +78,9 @@ void mergeSort(int* list, int size){
 
     //Voeg beide individueel gesorteerde lijsten terug samen in ÈÈn nieuwe lijst
     int* mergedList = merge(list1, list2, sizeList1, sizeList2);
-
-    //Kopieer het resultaat van de gesorteerde lijst terug in de originele lijst
-    // die je als parameter hebt binnengekregen in deze functie
-    int i;
-    for (i=0; i < size; i++) {
+    for (int i=0; i < size; i++) {
         list[i] = mergedList[i];
     }
-
-    //De gesorteerde lijst is tijdelijk van aard
-    // We kunnen deze terug vrijgeven omdat nu de originele 'list'
-    // de gesorteerde waarden bevat
     free(mergedList);
 }
 

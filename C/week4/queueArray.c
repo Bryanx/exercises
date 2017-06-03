@@ -1,26 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef char* ELEMENT;
+typedef char *ELEMENT;
 
 typedef struct {
-    ELEMENT* elements;
+    ELEMENT *elements;
     int capacity;
     int size;
 } QUEUE;
 
-QUEUE* newQueue(int);
-void offer(QUEUE*, ELEMENT);
-ELEMENT poll(QUEUE*);
-ELEMENT peek(QUEUE*);
-void printQueue(QUEUE*);
-void expand(QUEUE*);
-void freeQueue(QUEUE*);
+QUEUE *newQueue(int);
+
+void offer(QUEUE *, ELEMENT);
+
+ELEMENT poll(QUEUE *);
+
+ELEMENT peek(QUEUE *);
+
+void printQueue(QUEUE *);
+
+void expand(QUEUE *);
+
+void freeQueue(QUEUE *);
 
 
-int main(){
+int main() {
     printf("Queue-> Array\n");
-    QUEUE* myQueue = newQueue(2);
+    QUEUE *myQueue = newQueue(2);
     offer(myQueue, "Jan");
     offer(myQueue, "Piet");
     offer(myQueue, "Joris");
@@ -35,23 +41,23 @@ int main(){
     return 0;
 }
 
-QUEUE* newQueue(int capacity){
-    QUEUE* q = malloc(sizeof(QUEUE));
+QUEUE *newQueue(int capacity) {
+    QUEUE *q = malloc(sizeof(QUEUE));
     q->elements = malloc(sizeof(ELEMENT) * capacity);
     q->capacity = capacity;
     q->size = 0;
     return q;
 }
 
-void expand(QUEUE* queue){
+void expand(QUEUE *queue) {
     //Capacity van de queue verdubbelen
-    queue->capacity = queue->capacity*2;
+    queue->capacity = queue->capacity * 2;
     //Een nieuwe array van elementen aanmaken, met voldoende plaats in de array
     // om voldoende elementen (= capacity) te kunnen in bewaren
-    ELEMENT* newElements = calloc(queue->capacity, sizeof(ELEMENT));
+    ELEMENT *newElements = calloc(queue->capacity, sizeof(ELEMENT));
     int i;
     //Een voor ÈÈn de inhoud van de 'oude' tabel verhuizen naar de nieuwe array
-    for (i=0; i<queue->size; i++) {
+    for (i = 0; i < queue->size; i++) {
         newElements[i] = queue->elements[i];
     }
     //Geheugen van de oude array vrijgeven (niet vergeten!)
@@ -60,35 +66,35 @@ void expand(QUEUE* queue){
     queue->elements = newElements;
 }
 
-void freeQueue(QUEUE* queue){
+void freeQueue(QUEUE *queue) {
     free(queue->elements);
     free(queue);
 }
 
-void offer(QUEUE* queue, ELEMENT element){
+void offer(QUEUE *queue, ELEMENT element) {
     if (queue->size >= queue->capacity) expand(queue);
     queue->elements[queue->size] = element;
     queue->size++;
 }
 
-ELEMENT peek(QUEUE* queue){
+ELEMENT poll(QUEUE *queue) {
     if (queue->size == 0) return NULL;
-    return queue->elements[0];
-}
+    ELEMENT tmp = queue->elements[0];
 
-ELEMENT poll(QUEUE* queue){
-    if (queue->size == 0) return NULL;
-    ELEMENT element = queue->elements[0];
-
-    for (int i=0;i<queue->size;i++) {
+    for (int i = 0; i < queue->size; i++) {
         queue->elements[i] = queue->elements[i + 1];
     }
 
     queue->size--;
-    return element;
+    return tmp;
 }
 
-void printQueue(QUEUE* queue){
+ELEMENT peek(QUEUE *queue) {
+    if (queue->size == 0) return NULL;
+    return queue->elements[0];
+}
+
+void printQueue(QUEUE *queue) {
     //Vul aan...
     for (int i = 0; i < queue->size; ++i) {
         printf("%s ", queue->elements[i]);

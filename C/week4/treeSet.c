@@ -37,25 +37,22 @@ int compareElements(ELEMENT e1, ELEMENT e2) {
 }
 
 int addNode(NODE *parent, ELEMENT element) {
-    NODE *newChildNode;
     int difference = compareElements(element, parent->element);
     if (difference == 0) return 0;
     if (difference <= 0) {
         if (parent->left == NULL) {
-            newChildNode = newNode(element);
-            parent->left = newChildNode;
-        } else {
-            return addNode(parent->left, element);
+            parent->left = newNode(element);
+            return 1;
         }
+        return addNode(parent->left, element);
+
     } else {
         if (parent->right == NULL) {
-            newChildNode = newNode(element);
-            parent->right = newChildNode;
-        } else {
-            return addNode(parent->right, element);
+            parent->right = newNode(element);
+            return 1;
         }
+        return addNode(parent->right, element);
     }
-    return 1;
 }
 
 void addElement(SET *set, ELEMENT element) {
@@ -81,12 +78,15 @@ void printSet(SET *set) {
     printNode(set->rootNode);
 }
 
-int containsInNode(NODE *node, ELEMENT element) {
-    if (node == NULL) return 0;
-    int difference = compareElements(node->element, element);
+int containsInNode(NODE *parent, ELEMENT element) {
+    if (parent==NULL) return 0;
+    int difference = compareElements(element, parent->element);
     if (difference == 0) return 1;
-    else if (difference > 0) return containsInNode(node->left, element);
-    else return containsInNode(node->right, element);
+    if (difference < 0) {
+        return containsInNode(parent->left, element);
+    } else {
+        return containsInNode(parent->right, element);
+    }
 }
 
 int contains(SET *set, ELEMENT element) {
@@ -96,7 +96,7 @@ int contains(SET *set, ELEMENT element) {
 int counter = 0;
 
 
-void addElementToArray(ELEMENT* deArray, NODE* node) {
+void addElementToArray(ELEMENT *deArray, NODE *node) {
     if (node == NULL) return;
     addElementToArray(deArray, node->left);
     deArray[counter++] = node->element;
@@ -104,7 +104,7 @@ void addElementToArray(ELEMENT* deArray, NODE* node) {
 }
 
 ELEMENT *toArray(SET *set) {
-    ELEMENT* deArray = calloc(1,sizeof(ELEMENT));
+    ELEMENT *deArray = calloc(1, sizeof(ELEMENT));
     addElementToArray(deArray, set->rootNode);
     return deArray;
 }
