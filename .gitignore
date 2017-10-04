@@ -97,3 +97,20 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# C# .NET
+*.userprefs
+*.sln.iml
+*.obj
+*.pdb
+*.exe
+*.pdb
+*.csproj.*
+*.config
+
+#C
+*/cmake-build-debug/
+*.exe
+*cmake-build-debug*
+*.cache
+
