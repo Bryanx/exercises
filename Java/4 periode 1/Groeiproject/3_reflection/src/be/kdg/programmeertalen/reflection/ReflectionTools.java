@@ -44,6 +44,7 @@ public class ReflectionTools {
             if (!(name.startsWith("set") || name.startsWith("get")))
                 System.out.print(method.getName() + " ");
         }
+        System.out.println();
 
     }
 

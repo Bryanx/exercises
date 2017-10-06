@@ -1,5 +1,5 @@
 ﻿namespace CA {
-    public interface INavigatable {
+    public interface IReader {
         object Previous();
         object Next();
     }

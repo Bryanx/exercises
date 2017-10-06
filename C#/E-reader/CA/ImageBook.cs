@@ -17,22 +17,5 @@ namespace CA {
         public override string GetInfo() {
             return $"ImageBook: '{Title}', by {Author} ({Images.Count()} pics)";
         }
-
-        public override object Previous() {
-            if (currentPosition > 1 && currentPosition <= Images.Count()) currentPosition--;
-            else currentPosition = 1;
-            return GetImage(currentPosition);
-        }
-
-
-        public override object Next() {
-            if (currentPosition > 0 && currentPosition < Images.Count()) currentPosition = 1;
-            else currentPosition++;
-            return GetImage(currentPosition);
-        }
-
-        private object GetImage(int imagePosition) {
-            return Images.ElementAt(imagePosition - 1);
-        }
     }
 }

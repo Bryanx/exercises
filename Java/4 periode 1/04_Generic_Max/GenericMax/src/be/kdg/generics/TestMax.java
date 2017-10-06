@@ -42,9 +42,7 @@ public class TestMax {
         intSet.add(8);
         intSet.add(3);
         int maxInt = MaxUtil.max(intSet);
-
     }
-
 }
 
 /*

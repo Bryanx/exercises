@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace CA {
-    public abstract class Book : INavigatable {
+    public abstract class Book {
         #region properties
 
         // field (private field for ISBN-property)
@@ -31,9 +31,5 @@ namespace CA {
         public sealed override string ToString() {
             return String.Format("Book: '{0}', by {1} ({2}, {3})", Title, Author, ISBN, Format);
         }
-
-        public abstract object Previous();
-
-        public abstract object Next();
     }
 }

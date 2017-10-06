@@ -1,5 +1,6 @@
 package be.kdg.programmeertalen;
 
+import be.kdg.programmeertalen.model.ProgrammeerTaal;
 import be.kdg.programmeertalen.model.Taal;
 import be.kdg.programmeertalen.reflection.ReflectionTools;
 
@@ -10,9 +11,10 @@ import be.kdg.programmeertalen.reflection.ReflectionTools;
 public class Demo_3 {
     public static void main(String[] args) {
         ReflectionTools.classAnalysis(Taal.class);
-        ReflectionTools.classAnalysis(String.class);
-        System.out.println("Aangemaakt object door runAnnotated: ");
-        Object obj = ReflectionTools.runAnnotated(Taal.class);
-        System.out.println(obj);
+        System.out.println();
+        ReflectionTools.classAnalysis(ProgrammeerTaal.class);
+//        System.out.println("Aangemaakt object door runAnnotated: ");
+//        Object obj = ReflectionTools.runAnnotated(Taal.class);
+//        System.out.println(obj);
     }
 }

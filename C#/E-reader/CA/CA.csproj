@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="BookFormat.cs" />
+    <Compile Include="BookReader.cs" />
+    <Compile Include="Extensions\ExtensionMethods.cs" />
     <Compile Include="ImageBook.cs" />
+    <Compile Include="ImageBookReader.cs" />
     <Compile Include="IReader.cs" />
     <Compile Include="ISBN.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +57,7 @@
     <Compile Include="Struct\ISBNStruct.cs" />
     <Compile Include="Struct\Program.cs" />
     <Compile Include="TextBook.cs" />
+    <Compile Include="TextBookReader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
