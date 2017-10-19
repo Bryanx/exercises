@@ -11,6 +11,7 @@ namespace Lucky7 {
         public Lucky() {
             this.randomNumberGenerator = new Random();
         }
+
         public Lucky(int teRadenGetal) {
             this.randomNumberGenerator = new Random();
             this.TeRadenGetal = teRadenGetal;
@@ -20,11 +21,15 @@ namespace Lucky7 {
             this.Gok1 = randomNumberGenerator.Next(1, 10);
             this.Gok2 = randomNumberGenerator.Next(1, 10);
             this.Gok3 = randomNumberGenerator.Next(1, 10);
+            
             if (Gok1 == TeRadenGetal ||
                 Gok2 == TeRadenGetal ||
                 Gok3 == TeRadenGetal) return true;
             return false;
         }
         
+        public void Try2(Action<T1,T2,T3>) {
+            
+        }
     }
 }

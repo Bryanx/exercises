@@ -15,6 +15,7 @@ namespace Lucky7 {
                 } else {
                     Console.WriteLine("VERLOREN :-(");
                 }
+                
                 Console.WriteLine("Another Try (Y/N) ?");
                 Char.TryParse(Console.ReadLine(), out char output);
                 if (output == 'Y' || output == 'y') {
@@ -23,7 +24,7 @@ namespace Lucky7 {
                     doorgaan = false;
                 }
             } while (doorgaan);
-
+            Console.WriteLine("Bye");
         }
     }
 }

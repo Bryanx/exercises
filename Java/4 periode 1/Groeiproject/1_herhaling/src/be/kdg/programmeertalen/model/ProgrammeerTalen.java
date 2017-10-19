@@ -14,13 +14,7 @@ public class ProgrammeerTalen {
     }
 
     public boolean voegToe(ProgrammeerTaal taal) {
-        try {
-            talen.add(taal);
-        } catch (Exception iae) {
-            System.err.println("Ongeldig bestand toegevoegd.");
-            return false;
-        }
-        return true;
+        return talen.add(taal);
     }
 
     public boolean verwijder(String naam) {

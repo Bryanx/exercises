@@ -31,26 +31,26 @@ public class ProgrammeerTaal extends Taal {
         setStijl(stijl);
     }
 
-    private void setOprichter(String oprichter) {
+    public void setOprichter(String oprichter) {
         if (oprichter == null || oprichter.length() == 0) {
             throw new IllegalArgumentException("Oprichter naam ongeldig.");
         }
         this.oprichter = oprichter;
     }
 
-    private void setExtensionName(String extension) {
+    public void setExtensionName(String extension) {
         if (extension.length() == 0) throw new IllegalArgumentException("Extensie is ongeldig.");
         if (extension.charAt(0) != '.') throw new IllegalArgumentException("Extensie moet beginnen met een punt.");
         this.extensionName = extension;
 
     }
 
-    private void setLaatsteVersie(double versie) {
+    public void setLaatsteVersie(double versie) {
         if (versie < 0 || versie > 1000) throw new IllegalArgumentException("Versie is ongeldig.");
         this.laatsteVersie = versie;
     }
 
-    private void setStijl(Stijl stijl) {
+    public void setStijl(Stijl stijl) {
         this.stijl = stijl;
     }
 

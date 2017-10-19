@@ -6,25 +6,7 @@ using CA.Extensions;
 namespace CA {
     internal class Program {
         public static void Main(string[] args) {
-            
-            
-            List<string> list = new List<string>();
-            list.Add("Item 1");
-            
-            Stack<int> stack = new Stack<int>();
-            stack.Push(5);
-            
-            Queue<double> queue = new Queue<double>();
-            queue.Enqueue(5.6);
-
-            List<string> list2 = new List<string>() { "item 1", "item 2" };
-            
-            foreach (string item in list) {
-                if (item.ToUpper().Contains("E")) 
-                    Console.WriteLine(item);
-                if (item.Substring(0,3) == "ite")
-                    Console.WriteLine(item);
-            }
+        
             
             
             

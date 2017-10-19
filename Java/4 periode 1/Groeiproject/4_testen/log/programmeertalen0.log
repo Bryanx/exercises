@@ -1,0 +1,21 @@
+2017-10-18 15:39:01.146 SEVERE> Naam mag niet leeg zijn.
+2017-10-18 15:39:01.647 SEVERE> Oprichter naam mag niet leeg zijn.
+2017-10-18 15:39:01.650 SEVERE> 1800-01-01 : Ongeldige oprichtings datum.
+2017-10-18 15:39:01.651 SEVERE> Extensie mag niet leeg zijn voor programmeertaal Python.
+2017-10-18 15:39:01.659 SEVERE> Versie -6.00 mag niet negatief zijn of groter dan 1000 voor programmeertaal C#.
+2017-10-18 15:39:01.663 SEVERE> Aantal gebruikers mag niet onder de 0 liggen voor programmeertaal Swift.
+2017-10-18 15:39:01.669 FINER> Onbekend werd toegevoegd.
+2017-10-18 15:39:01.670 FINER> R werd toegevoegd.
+2017-10-18 15:39:01.671 FINER> C werd toegevoegd.
+2017-10-18 15:39:01.671 FINER> Python werd toegevoegd.
+2017-10-18 15:39:01.672 FINER> Ruby werd toegevoegd.
+2017-10-18 15:39:01.673 FINER> Go werd toegevoegd.
+2017-10-18 15:39:01.673 FINER> C# werd toegevoegd.
+2017-10-18 15:39:01.673 FINER> Javascript werd toegevoegd.
+2017-10-18 15:39:01.673 FINER> PHP werd toegevoegd.
+2017-10-18 15:39:01.673 FINER> C++ werd toegevoegd.
+2017-10-18 15:39:01.674 FINER> Rust werd toegevoegd.
+2017-10-18 15:39:01.674 FINER> Scala werd toegevoegd.
+2017-10-18 15:39:01.674 FINER> Swift werd toegevoegd.
+2017-10-18 15:39:01.674 FINER> Visual Basic werd toegevoegd.
+2017-10-18 15:39:01.674 FINER> Assembly werd toegevoegd.

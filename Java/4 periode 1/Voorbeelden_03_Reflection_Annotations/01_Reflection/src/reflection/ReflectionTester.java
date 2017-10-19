@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.Hashtable;
 
 public class ReflectionTester {
+
     public static void printName(Object obj) {
         Class aClass = obj.getClass();
         System.out.printf("Volledige naam van de klasse: %s\n", aClass.getName());
@@ -22,7 +23,6 @@ public class ReflectionTester {
                     method.getName(), method.getReturnType(), method.getParameterCount());
         }
     }
-
 
     public static void printConstructors(Object obj) {
         Class aClass = obj.getClass();
@@ -39,9 +39,10 @@ public class ReflectionTester {
             System.out.printf("Nieuw object instantieren van de klasse %s:\n", aClass.getName());
             Object object = aClass.newInstance(); //default constructor oproepen
             System.out.println(object.toString());
+
             for (Method method : aClass.getDeclaredMethods()) {
                 if (method.getName().startsWith("get")) {
-                    Object result = method.invoke(object); //alle getters worden getriggerd...
+                    Object result = method.invoke(object);
                     System.out.printf("\tResult van %s: %s\n", method.getName(), result); //...en resultaat ervan afgedrukt
                 }
             }
