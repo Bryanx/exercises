@@ -13,7 +13,7 @@ public interface ProgrammeerTalen {
 
     ProgrammeerTaal zoek(String naam);
 
-    List<ProgrammeerTaal> gesorteerdOpNaam();
+    List gesorteerdOpNaam();
 
     List<ProgrammeerTaal> gesorteerdOpAantalGebruikers();
 

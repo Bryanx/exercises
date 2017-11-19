@@ -24,7 +24,7 @@ public class ObservableProgrammeerTalen extends Observable implements Programmee
         boolean isVeranderd = talen.voegToe(taal);
         if (isVeranderd) {
             setChanged();
-            notifyObservers("Observer meldt: Toegevoegd: "+taal);
+            notifyObservers("Observer meldt: Toegevoegd: " + taal);
             return true;
         }
         return false;
@@ -36,7 +36,7 @@ public class ObservableProgrammeerTalen extends Observable implements Programmee
         boolean isVeranderd = talen.verwijder(naam);
         if (isVeranderd) {
             setChanged();
-            notifyObservers("Observer meldt: Verwijderd: "+temp);
+            notifyObservers("Observer meldt: Verwijderd: " + temp);
             return true;
         }
         return false;

@@ -1,17 +1,9 @@
 package be.kdg.programmeertalen;
 
-import be.kdg.programmeertalen.data.Data;
 import be.kdg.programmeertalen.model.ProgrammeerTaal;
 import be.kdg.programmeertalen.model.ProgrammeerTaalFactory;
-import be.kdg.programmeertalen.model.ProgrammeerTalen;
 import be.kdg.programmeertalen.model.ProgrammeerTalenSet;
-import be.kdg.programmeertalen.patterns.ObservableProgrammeerTalen;
-import be.kdg.programmeertalen.patterns.ObserverProgrammeerTaal;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import be.kdg.programmeertalen.patterns.UnmodifiableProgrammeerTalen;
 
 /**
  * @author Bryan de Ridder
@@ -30,12 +22,14 @@ public class Demo_5 {
 //            observable.verwijder(programmeerTaal.getNaam());
 //        }
 //        System.out.println(ProgrammeerTaalFactory.newEmptyProgrammeerTaal());
-//        for (int i = 0; i < 15; i++) {
+//        Random r = new Random();
+//        for (int i = 0; i < 1000; i++) {
 //            System.out.println(ProgrammeerTaalFactory.newRandomProgrammeerTaal());
 //        }
 
-        for (int i = 0; i < 15; i++) {
-            System.out.println(ProgrammeerTaalFactory.newRandomProgrammeerTaal());
-        }
+        ProgrammeerTalenSet set = new ProgrammeerTalenSet();
+        set.voegToe(ProgrammeerTaalFactory.newEmptyProgrammeerTaal());
+        UnmodifiableProgrammeerTalen unmodi = new UnmodifiableProgrammeerTalen(set);
+        System.out.println(unmodi.gesorteerdOpAantalGebruikers());
     }
 }

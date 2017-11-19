@@ -9,6 +9,13 @@ import java.util.*;
  */
 public class ProgrammeerTaalFactory {
 
+    public static final int MAX_NAME_LENGTH = 7;
+    public static final int MAX_OPRICHTER_LENGTH = 10;
+    public static final int MAX_EXTENSION_LENGTH = 5;
+    public static final int DIFF_LOWER_UPPER = 32;
+    private static final String KLINKERS = "aeiou";
+    private static final String MEDEKLINKERS = "bcdfghjklmnpqrstvwxyz";
+    public static final int AANTAL_DAGEN_PER_JAAR = 365;
     private static Random r = new Random();
 
     private ProgrammeerTaalFactory() {
@@ -25,9 +32,9 @@ public class ProgrammeerTaalFactory {
     }
 
     public static ProgrammeerTaal newRandomProgrammeerTaal() {
-        String naam = generateString(7, 1, true);
-        String oprichter = generateString(10, 2, true);
-        String extensionName = "." + generateString(5, 1, false);
+        String naam = generateString(MAX_NAME_LENGTH, 1, true);
+        String oprichter = generateString(MAX_OPRICHTER_LENGTH, 2, true);
+        String extensionName = "." + generateString(MAX_EXTENSION_LENGTH, 1, false);
         int aantalGebruikers = r.nextInt(Integer.MAX_VALUE);
         double laatsteVersie = r.nextDouble() + r.nextInt(9);
         LocalDate opgerichtIn = generateRandomDate();
@@ -37,50 +44,33 @@ public class ProgrammeerTaalFactory {
     }
 
     private static LocalDate generateRandomDate() {
-        int jaar = 1900 + r.nextInt(2017 - 1900 + 1);
-        int maand = r.nextInt(11) + 1;
-        int dag = r.nextInt(27) + 1;
-        return LocalDate.of(jaar, maand, dag);
+        int jaren = LocalDate.now().getYear() - ProgrammeerTaal.MIN_DATE.getYear();
+        return LocalDate.now().minusDays(r.nextInt(jaren * AANTAL_DAGEN_PER_JAAR));
     }
 
     private static Stijl generateRandomStijl() {
         Stijl[] values = Stijl.values();
-        int max = Stijl.values().length;
-        return values[r.nextInt(max)];
+        return values[r.nextInt(values.length)];
     }
 
     private static String generateString(int maxWordLength, int wordCount, boolean camelCase) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < wordCount; i++) {
-            int max = 1 + r.nextInt(maxWordLength - 1);
+            if (i != 0) sb.append(" "); //spatie tussen 2 woorden
+            int max = 1 + r.nextInt(maxWordLength);
             for (int j = 0; j < max; j++) {
-                if (camelCase && j == 0) {
-                    sb.append(getKarakter());
-                }
-                sb.append((char) (getKarakter() + 32));
+                if (camelCase && j == 0) sb.append((char) (getChar() - DIFF_LOWER_UPPER));
+                else sb.append(getChar());
             }
-            if (i != wordCount - 1) sb.append(" ");
         }
         return sb.toString();
     }
 
-    public static char getKarakter() {
-        List<Integer> klinkers = new ArrayList<>(Arrays.asList(65, 69, 73, 79, 85, 89));
-        int randomGetal = 1 + r.nextInt(9);
-        List<Integer> eenderdekans = Arrays.asList(1, 2, 3);
-
-        //klinker 1/3 kans
-        if (eenderdekans.contains(randomGetal)) {
-            int klinker = klinkers.get(r.nextInt(6));
-            return (char) klinker;
-        } else {
-            //medeklinker 2/3 kans
-            int medeKlinker = 65;
-            while (klinkers.contains(medeKlinker)) {
-                medeKlinker = 65 + r.nextInt(90 - 65 + 1);
-            }
-            return (char) medeKlinker;
+    private static char getChar() {
+        if (r.nextInt(3) == 0) { // Eenderde kans op een klinker
+            return KLINKERS.charAt(r.nextInt(KLINKERS.length()));
         }
+        return MEDEKLINKERS.charAt(r.nextInt(MEDEKLINKERS.length()));
     }
 }
 

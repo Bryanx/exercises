@@ -8,6 +8,8 @@ import java.time.LocalDate;
  */
 public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
 
+    public static final LocalDate MIN_DATE = LocalDate.of(1900, 1, 1);
+    public static final double MAX_VERSION_NR = 1000.0;
     private String naam;
     private String oprichter;
     private String extensionName;
@@ -23,7 +25,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
         setLaatsteVersie(0);
         setAantalGebruikers(0);
         setStijl(Stijl.GEEN);
-        setOpgerichtIn(LocalDate.of(1901, 1, 1));
+        setOpgerichtIn(MIN_DATE);
     }
 
     ProgrammeerTaal(String naam, String oprichter, String extensionName,
@@ -52,7 +54,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     }
 
     public void setLaatsteVersie(double versie) {
-        if (versie < 0.0 || versie > 1000.0) throw new IllegalArgumentException("Versie is ongeldig: " + versie);
+        if (versie < 0.0 || versie > MAX_VERSION_NR) throw new IllegalArgumentException("Versie is ongeldig: " + versie);
         this.laatsteVersie = versie;
     }
 
@@ -66,7 +68,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     }
 
     public void setOpgerichtIn(LocalDate datum) {
-        if (datum.isAfter(LocalDate.now()) || datum.isBefore(LocalDate.of(1900, 1, 1))) {
+        if (datum.isAfter(LocalDate.now()) || datum.isBefore(MIN_DATE)) {
             throw new IllegalArgumentException("Ongeldige oprichtings datum.");
         } else {
             this.opgerichtIn = datum;
