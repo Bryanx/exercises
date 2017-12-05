@@ -1,0 +1,6 @@
+<customer>
+   <name>Jane Doe</name>
+	<phone-number>123</phone-number>
+	<phone-number>456</phone-number>
+	<phone-number>789</phone-number>
+</customer>

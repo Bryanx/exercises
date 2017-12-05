@@ -5,14 +5,8 @@ import java.util.function.Predicate;
 
 public class Selection {
     public void toon(List<Piloot> pilootList, Predicate<Piloot> predicate) {
-        for (Piloot piloot : pilootList) {
-            if (predicate.test(piloot)) {
-                print(piloot);
-            }
-        }
-
         // Later:
-        // pilootList.stream().filter(predicate::test).forEach(this::print);
+        pilootList.stream().filter(predicate).forEach(this::print);
     }
 
     private void print(Piloot piloot) {

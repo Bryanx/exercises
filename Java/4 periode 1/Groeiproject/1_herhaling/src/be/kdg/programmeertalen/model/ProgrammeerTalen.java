@@ -40,7 +40,7 @@ public class ProgrammeerTalen {
         List<ProgrammeerTaal> list = new ArrayList<>(talen.size());
         list.addAll(talen);
         Collections.sort(list);
-        return list;
+        return Collections.unmodifiableList(list);
     }
 
     public List<ProgrammeerTaal> gesorteerdOpAantalGebruikers() {
@@ -49,7 +49,7 @@ public class ProgrammeerTalen {
 
         Collections.sort(list, (o1, o2) -> o2.getAantalGebruikers() - o1.getAantalGebruikers());
 
-        return list;
+        return Collections.unmodifiableList(list);
     }
 
     public List<ProgrammeerTaal> gesorteerdOpOprichtingsDatum() {
@@ -66,7 +66,7 @@ public class ProgrammeerTalen {
                 return 0;
             }
         });
-        return list;
+        return Collections.unmodifiableList(list);
     }
 
     public int getAantal() {

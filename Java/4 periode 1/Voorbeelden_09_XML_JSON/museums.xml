@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<musea>
+    <museum children-allowed="false">
+        <name>Prado Museum</name>
+        <city>Madrid</city>
+        <permanent-exhibition>
+            <name>Permanent Exhibition - Prado Museum</name>
+            <artist>Velazquez</artist>
+            <artist>Goya</artist>
+            <artist>Zurbaran</artist>
+            <artist>Tiziano</artist>
+            <from>2016-11-30</from>
+            <to>2018-06-15</to>
+        </permanent-exhibition>
+        <special-exhibition>
+            <name>Game of Bowls (1908), by Henri Matisse</name>
+            <artist>Mattise</artist>
+            <from>2018-01-01</from>
+            <to>2018-09-30</to>
+        </special-exhibition>
+    </museum>
+    <museum children-allowed="true">
+        <name>Reina Sofia Museum</name>
+        <city>Madrid</city>
+        <permanent-exhibition>
+            <name>Permanent Exhibition - Reina Sofia Museum</name>
+            <artist>Picasso</artist>
+            <artist>Dali</artist>
+            <artist>Miro</artist>
+            <from>2017-11-01</from>
+            <to>2018-01-01</to>
+        </permanent-exhibition>
+    </museum>
+</musea>

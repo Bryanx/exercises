@@ -1,0 +1,27 @@
+[
+  {
+    "firstName": "Homer",
+    "lastName": "Simpson",
+    "age": 45
+  },
+  {
+    "firstName": "Marge",
+    "lastName": "Simpson",
+    "age": 42
+  },
+  {
+    "firstName": "Bart",
+    "lastName": "Simpson",
+    "age": 10
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Simpson",
+    "age": 8
+  },
+  {
+    "firstName": "Maggie",
+    "lastName": "Simpson",
+    "age": 1
+  }
+]

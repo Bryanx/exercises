@@ -5,6 +5,7 @@ import be.kdg.predicate.Selection;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class TestPredicate {
@@ -24,16 +25,19 @@ public class TestPredicate {
 
         // Geef alle Ferrari piloten
         System.out.println("Ferrari:");
+        selection.toon(drivers, d -> d.getTeam().equals("Ferrari"));
         // selection.toon(...));
         System.out.println();
 
         // Geef alle piloten met beginletter < 'M'
         System.out.println("Piloten met beginletter < 'M':");
+        selection.toon(drivers, d -> d.getNaam().charAt(0) < 'M');
         // selection.toon(...);
         System.out.println();
 
         // Geef alle piloten met een nummer kleiner dan 20
         System.out.println("Piloten met een nummer kleiner dan 20:");
+        selection.toon(drivers, d -> d.getNummer() < 20);
         // selection.toon(...);
         System.out.println();
 
@@ -41,6 +45,8 @@ public class TestPredicate {
         // Gebruik Collections.sort met een lambda expression
         // en een forEach voor de afdruk
         System.out.println("Gesorteerd volgens nummer");
+        Collections.sort(drivers, Comparator.comparingInt(Piloot::getNummer));
+        drivers.forEach(System.out::println);
         // Collections.sort(...)
         System.out.println();
 
@@ -48,12 +54,15 @@ public class TestPredicate {
         // Gebruik Collections.sort met een lambda expression
         System.out.println("Gesorteerd volgens naam");
         // Collections.sort(...);
-
+        Collections.sort(drivers, Comparator.comparing(Piloot::getNaam));
+        drivers.forEach(System.out::println);
         System.out.println();
 
         // Sorteer alle pilootnamen volgens naamlengte
         // Gebruik Collections.sort met een lambda expression
         System.out.println("Gesorteerd volgens naamlengte");
+        Collections.sort(drivers, Comparator.comparingInt(o -> o.getNaam().length()));
+        drivers.forEach(System.out::println);
         // Collections.sort(...);
 
         System.out.println();
