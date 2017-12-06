@@ -1,6 +1,8 @@
 package be.kdg.programmeertalen.model;
 
 import be.kdg.programmeertalen.parsing.LocalDateAdapter;
+
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -49,7 +51,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
         this.oprichter = oprichter;
     }
 
-    @XmlElement(name = "extension-name")
+    @XmlAttribute(name = "extension-name")
     public void setExtensionName(String extension) {
         if (extension.isEmpty()) throw new IllegalArgumentException("Extensie is ongeldig.");
         if (extension.charAt(0) != '.') throw new IllegalArgumentException("Extensie moet beginnen met een punt.");
@@ -74,6 +76,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     }
 
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
+    @XmlElement(name = "opgericht-in")
     public void setOpgerichtIn(LocalDate datum) {
         if (datum.isAfter(LocalDate.now()) || datum.isBefore(MIN_DATE))
             throw new IllegalArgumentException("Ongeldige oprichtings datum.");

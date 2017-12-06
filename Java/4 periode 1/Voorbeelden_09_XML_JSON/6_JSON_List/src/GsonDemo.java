@@ -16,14 +16,15 @@ public class GsonDemo {
                 new Person("Lisa", "Simpson", 8),
                 new Person("Maggie", "Simpson", 1)
         );
+
         GsonBuilder builder = new GsonBuilder();
+
         Gson gson = builder.setPrettyPrinting().create();
 
         String jsonString = gson.toJson(familyList);
-        System.out.printf("Serialised:\n\t%s\n", jsonString);
         try (FileWriter jsonWriter = new FileWriter("simpsons.json")) {
             jsonWriter.write(jsonString);
-            System.out.println("Json file saved");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -31,10 +32,8 @@ public class GsonDemo {
         try (BufferedReader data = new BufferedReader(new FileReader("simpsons.json"))) {
             Person[] personArray = gson.fromJson(data, Person[].class);
             List<Person> otherList = Arrays.asList(personArray);
-            System.out.println("Deserialised  :");
-            for (Person person : otherList) {
-                System.out.println("\t" + person);
-            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }

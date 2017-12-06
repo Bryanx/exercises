@@ -7,6 +7,7 @@ import javax.xml.stream.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 /**
  * @author Bryan de Ridder
@@ -21,8 +22,7 @@ public class ProgrammeerTalenStaxParser {
         this.talen = talen;
         try {
             XMLOutputFactory xmlOutputFactory = XMLOutputFactory.newInstance();
-            writer = new IndentingXMLStreamWriter(xmlOutputFactory.createXMLStreamWriter
-                    (new FileWriter(pad)));
+            writer = new IndentingXMLStreamWriter(xmlOutputFactory.createXMLStreamWriter(new FileWriter(pad)));
         } catch (XMLStreamException | IOException e) {
             e.printStackTrace();
         }
@@ -32,7 +32,8 @@ public class ProgrammeerTalenStaxParser {
         try {
             writer.writeStartDocument();
             writer.writeStartElement("programmeertalen");
-            for (ProgrammeerTaal taal : talen.gesorteerdOpNaam()) {
+            List<ProgrammeerTaal> gesorteerdOpNaam = talen.gesorteerdOpNaam();
+            for (ProgrammeerTaal taal : gesorteerdOpNaam) {
                 writer.writeStartElement("programmeertaal");
                 writer.writeAttribute("extension-name", taal.getExtensionName());
                 writeElement(writer, "naam", taal.getNaam());

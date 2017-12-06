@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<apen>
+  <aap kooi="G201">
+    <naam>Gust</naam>
+    <soort>gorilla</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>175.0</gewicht>
+  </aap>
+  <aap kooi="G201">
+    <naam>Sneeuwvlokje</naam>
+    <soort>gorilla</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>95.0</gewicht>
+  </aap>
+  <aap kooi="G203">
+    <naam>Pinky</naam>
+    <soort>gorilla</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>82.0</gewicht>
+  </aap>
+  <aap kooi="K008">
+    <naam>Bumba</naam>
+    <soort>doodshoofdaap</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>0.7</gewicht>
+  </aap>
+  <aap kooi="K008">
+    <naam>Griezel</naam>
+    <soort>doodshoofdaap</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>0.5</gewicht>
+  </aap>
+  <aap kooi="K010">
+    <naam>Banana</naam>
+    <soort>maki</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>1.2</gewicht>
+  </aap>
+  <aap kooi="K010">
+    <naam>Nikita</naam>
+    <soort>maki</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>1.1</gewicht>
+  </aap>
+  <aap kooi="G199">
+    <naam>Koko</naam>
+    <soort>bonobo</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>38.0</gewicht>
+  </aap>
+  <aap kooi="G199">
+    <naam>Pipi</naam>
+    <soort>bonobo</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>29.0</gewicht>
+  </aap>
+  <aap kooi="K033">
+    <naam>Monkey</naam>
+    <soort>leeuwaap</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>0.65</gewicht>
+  </aap>
+  <aap kooi="K034">
+    <naam>Java</naam>
+    <soort>leeuwaap</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>0.42</gewicht>
+  </aap>
+  <aap kooi="G214">
+    <naam>Kingkong</naam>
+    <soort>orang-oetan</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>67.0</gewicht>
+  </aap>
+  <aap kooi="G215">
+    <naam>Louie</naam>
+    <soort>orang-oetan</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>75.0</gewicht>
+  </aap>
+  <aap kooi="G215">
+    <naam>Rosa</naam>
+    <soort>orang-oetan</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>73.0</gewicht>
+  </aap>
+  <aap kooi="K014">
+    <naam>Nancy</naam>
+    <soort>neusaap</soort>
+    <geslacht>VROUW</geslacht>
+    <gewicht>13.0</gewicht>
+  </aap>
+  <aap kooi="K016">
+    <naam>Pinokkio</naam>
+    <soort>neusaap</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>11.0</gewicht>
+  </aap>
+  <aap kooi="K006">
+    <naam>Shout</naam>
+    <soort>brulaap</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>6.0</gewicht>
+  </aap>
+  <aap kooi="K006">
+    <naam>Grompy</naam>
+    <soort>brulaap</soort>
+    <geslacht>MAN</geslacht>
+    <gewicht>7.2</gewicht>
+  </aap>
+</apen>

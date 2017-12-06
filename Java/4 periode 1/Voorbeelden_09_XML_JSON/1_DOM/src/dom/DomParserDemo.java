@@ -19,12 +19,15 @@ public class DomParserDemo {
 
         try {
             //document maken:
+
             Document doc = DocumentBuilderFactory.newInstance()
                     .newDocumentBuilder().parse(new File(file));
 
 
             //Extract the root element
+
             Element rootElement = doc.getDocumentElement();
+
             System.out.println("Root element :" + rootElement.getNodeName());
             System.out.println("----------------------------");
             List<Person> familyList = new ArrayList<>();

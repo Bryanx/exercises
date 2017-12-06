@@ -1,0 +1,199 @@
+{
+  "talen": [
+    {
+      "naam": "Java",
+      "oprichter": "James Gosling",
+      "extensionName": ".java",
+      "laatsteVersie": 9.0,
+      "aantalGebruikers": 9000000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 1995,
+        "month": 5,
+        "day": 23
+      }
+    },
+    {
+      "naam": "R",
+      "oprichter": "Ross Ihaka",
+      "extensionName": ".r",
+      "laatsteVersie": 3.4,
+      "aantalGebruikers": 1500000,
+      "stijl": "FUNCTIONEEL",
+      "opgerichtIn": {
+        "year": 1993,
+        "month": 8,
+        "day": 1
+      }
+    },
+    {
+      "naam": "C",
+      "oprichter": "Dennis Ritchie",
+      "extensionName": ".c",
+      "laatsteVersie": 99.0,
+      "aantalGebruikers": 2520000,
+      "stijl": "IMPERATIEF",
+      "opgerichtIn": {
+        "year": 1972,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Python",
+      "oprichter": "Guido van Rossum",
+      "extensionName": ".py",
+      "laatsteVersie": 3.6,
+      "aantalGebruikers": 5292000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 1991,
+        "month": 2,
+        "day": 20
+      }
+    },
+    {
+      "naam": "Ruby",
+      "oprichter": "Yukihiro Matsumoto",
+      "extensionName": ".rb",
+      "laatsteVersie": 2.4,
+      "aantalGebruikers": 720000,
+      "stijl": "FUNCTIONEEL",
+      "opgerichtIn": {
+        "year": 1995,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Go",
+      "oprichter": "Google",
+      "extensionName": ".go",
+      "laatsteVersie": 1.9,
+      "aantalGebruikers": 180000,
+      "stijl": "IMPERATIEF",
+      "opgerichtIn": {
+        "year": 2009,
+        "month": 11,
+        "day": 10
+      }
+    },
+    {
+      "naam": "C#",
+      "oprichter": "Microsoft",
+      "extensionName": ".cs",
+      "laatsteVersie": 6.0,
+      "aantalGebruikers": 2988000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 2000,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Javascript",
+      "oprichter": "Mozilla",
+      "extensionName": ".js",
+      "laatsteVersie": 6.0,
+      "aantalGebruikers": 2772000,
+      "stijl": "FUNCTIONEEL",
+      "opgerichtIn": {
+        "year": 1995,
+        "month": 12,
+        "day": 4
+      }
+    },
+    {
+      "naam": "PHP",
+      "oprichter": "Rasmus Lerdorf",
+      "extensionName": ".php",
+      "laatsteVersie": 7.0,
+      "aantalGebruikers": 3384000,
+      "stijl": "IMPERATIEF",
+      "opgerichtIn": {
+        "year": 1995,
+        "month": 6,
+        "day": 8
+      }
+    },
+    {
+      "naam": "C++",
+      "oprichter": "Bjarne Stroustrup",
+      "extensionName": ".cpp",
+      "laatsteVersie": 14.0,
+      "aantalGebruikers": 2484000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 1983,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Rust",
+      "oprichter": "Graydon Hoare",
+      "extensionName": ".rs",
+      "laatsteVersie": 1.17,
+      "aantalGebruikers": 108000,
+      "stijl": "FUNCTIONEEL",
+      "opgerichtIn": {
+        "year": 2010,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Scala",
+      "oprichter": "Martin Odersky",
+      "extensionName": ".scala",
+      "laatsteVersie": 1.12,
+      "aantalGebruikers": 432000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 2004,
+        "month": 1,
+        "day": 20
+      }
+    },
+    {
+      "naam": "Swift",
+      "oprichter": "Apple",
+      "extensionName": ".swift",
+      "laatsteVersie": 2.2,
+      "aantalGebruikers": 1044000,
+      "stijl": "OBJECTORIENTED",
+      "opgerichtIn": {
+        "year": 2014,
+        "month": 6,
+        "day": 3
+      }
+    },
+    {
+      "naam": "Visual Basic",
+      "oprichter": "Microsoft",
+      "extensionName": ".vb",
+      "laatsteVersie": 10.0,
+      "aantalGebruikers": 540000,
+      "stijl": "EVENTDRIVEN",
+      "opgerichtIn": {
+        "year": 1991,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "naam": "Assembly",
+      "oprichter": "Kathleen Booth",
+      "extensionName": ".",
+      "laatsteVersie": 0.0,
+      "aantalGebruikers": 756000,
+      "stijl": "IMPERATIEF",
+      "opgerichtIn": {
+        "year": 1949,
+        "month": 1,
+        "day": 1
+      }
+    }
+  ]
+}

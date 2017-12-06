@@ -17,27 +17,23 @@ import java.util.List;
  * @version 1.0 30/11/17 11:54
  */
 public class ProgrammeerTalenGsonParser {
+
     public static void writeJson(ProgrammeerTalen talen, String fileName) {
-        GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.setPrettyPrinting().create();
-        String jsonString = gson.toJson(talen);
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (FileWriter jsonWriter = new FileWriter(fileName)) {
-            jsonWriter.write(jsonString);
-            System.out.println("Json file saved");
+            jsonWriter.write(gson.toJson(talen));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public static ProgrammeerTalen readJson(String fileName) {
-        GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.setPrettyPrinting().create();
-        ProgrammeerTalen talen = null;
+        Gson gson = new GsonBuilder().create();
         try (BufferedReader data = new BufferedReader(new FileReader(fileName))) {
-            talen = gson.fromJson(data, ProgrammeerTalen.class);
+            return gson.fromJson(data, ProgrammeerTalen.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return talen;
+        return null;
     }
 }

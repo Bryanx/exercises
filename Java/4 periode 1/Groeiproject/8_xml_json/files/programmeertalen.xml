@@ -1,138 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <programmeerTalen>
-    <talen>
+    <talen extension-name=".java">
         <naam>Java</naam>
         <oprichter>James Gosling</oprichter>
-        <extension-name>.java</extension-name>
         <laatste-versie>9.0</laatste-versie>
         <aantal-gebruikers>9000000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>1995-05-23</opgerichtIn>
+        <opgericht-in>1995-05-23</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".r">
         <naam>R</naam>
         <oprichter>Ross Ihaka</oprichter>
-        <extension-name>.r</extension-name>
         <laatste-versie>3.4</laatste-versie>
         <aantal-gebruikers>1500000</aantal-gebruikers>
         <stijl>FUNCTIONEEL</stijl>
-        <opgerichtIn>1993-08-01</opgerichtIn>
+        <opgericht-in>1993-08-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".c">
         <naam>C</naam>
         <oprichter>Dennis Ritchie</oprichter>
-        <extension-name>.c</extension-name>
         <laatste-versie>99.0</laatste-versie>
         <aantal-gebruikers>2520000</aantal-gebruikers>
         <stijl>IMPERATIEF</stijl>
-        <opgerichtIn>1972-01-01</opgerichtIn>
+        <opgericht-in>1972-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".py">
         <naam>Python</naam>
         <oprichter>Guido van Rossum</oprichter>
-        <extension-name>.py</extension-name>
         <laatste-versie>3.6</laatste-versie>
         <aantal-gebruikers>5292000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>1991-02-20</opgerichtIn>
+        <opgericht-in>1991-02-20</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".rb">
         <naam>Ruby</naam>
         <oprichter>Yukihiro Matsumoto</oprichter>
-        <extension-name>.rb</extension-name>
         <laatste-versie>2.4</laatste-versie>
         <aantal-gebruikers>720000</aantal-gebruikers>
         <stijl>FUNCTIONEEL</stijl>
-        <opgerichtIn>1995-01-01</opgerichtIn>
+        <opgericht-in>1995-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".go">
         <naam>Go</naam>
         <oprichter>Google</oprichter>
-        <extension-name>.go</extension-name>
         <laatste-versie>1.9</laatste-versie>
         <aantal-gebruikers>180000</aantal-gebruikers>
         <stijl>IMPERATIEF</stijl>
-        <opgerichtIn>2009-11-10</opgerichtIn>
+        <opgericht-in>2009-11-10</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".cs">
         <naam>C#</naam>
         <oprichter>Microsoft</oprichter>
-        <extension-name>.cs</extension-name>
         <laatste-versie>6.0</laatste-versie>
         <aantal-gebruikers>2988000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>2000-01-01</opgerichtIn>
+        <opgericht-in>2000-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".js">
         <naam>Javascript</naam>
         <oprichter>Mozilla</oprichter>
-        <extension-name>.js</extension-name>
         <laatste-versie>6.0</laatste-versie>
         <aantal-gebruikers>2772000</aantal-gebruikers>
         <stijl>FUNCTIONEEL</stijl>
-        <opgerichtIn>1995-12-04</opgerichtIn>
+        <opgericht-in>1995-12-04</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".php">
         <naam>PHP</naam>
         <oprichter>Rasmus Lerdorf</oprichter>
-        <extension-name>.php</extension-name>
         <laatste-versie>7.0</laatste-versie>
         <aantal-gebruikers>3384000</aantal-gebruikers>
         <stijl>IMPERATIEF</stijl>
-        <opgerichtIn>1995-06-08</opgerichtIn>
+        <opgericht-in>1995-06-08</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".cpp">
         <naam>C++</naam>
         <oprichter>Bjarne Stroustrup</oprichter>
-        <extension-name>.cpp</extension-name>
         <laatste-versie>14.0</laatste-versie>
         <aantal-gebruikers>2484000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>1983-01-01</opgerichtIn>
+        <opgericht-in>1983-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".rs">
         <naam>Rust</naam>
         <oprichter>Graydon Hoare</oprichter>
-        <extension-name>.rs</extension-name>
         <laatste-versie>1.17</laatste-versie>
         <aantal-gebruikers>108000</aantal-gebruikers>
         <stijl>FUNCTIONEEL</stijl>
-        <opgerichtIn>2010-01-01</opgerichtIn>
+        <opgericht-in>2010-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".scala">
         <naam>Scala</naam>
         <oprichter>Martin Odersky</oprichter>
-        <extension-name>.scala</extension-name>
         <laatste-versie>1.12</laatste-versie>
         <aantal-gebruikers>432000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>2004-01-20</opgerichtIn>
+        <opgericht-in>2004-01-20</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".swift">
         <naam>Swift</naam>
         <oprichter>Apple</oprichter>
-        <extension-name>.swift</extension-name>
         <laatste-versie>2.2</laatste-versie>
         <aantal-gebruikers>1044000</aantal-gebruikers>
         <stijl>OBJECTORIENTED</stijl>
-        <opgerichtIn>2014-06-03</opgerichtIn>
+        <opgericht-in>2014-06-03</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".vb">
         <naam>Visual Basic</naam>
         <oprichter>Microsoft</oprichter>
-        <extension-name>.vb</extension-name>
         <laatste-versie>10.0</laatste-versie>
         <aantal-gebruikers>540000</aantal-gebruikers>
         <stijl>EVENTDRIVEN</stijl>
-        <opgerichtIn>1991-01-01</opgerichtIn>
+        <opgericht-in>1991-01-01</opgericht-in>
     </talen>
-    <talen>
+    <talen extension-name=".">
         <naam>Assembly</naam>
         <oprichter>Kathleen Booth</oprichter>
-        <extension-name>.</extension-name>
         <laatste-versie>0.0</laatste-versie>
         <aantal-gebruikers>756000</aantal-gebruikers>
         <stijl>IMPERATIEF</stijl>
-        <opgerichtIn>1949-01-01</opgerichtIn>
+        <opgericht-in>1949-01-01</opgericht-in>
     </talen>
 </programmeerTalen>

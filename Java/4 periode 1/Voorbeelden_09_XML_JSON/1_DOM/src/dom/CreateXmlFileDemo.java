@@ -27,14 +27,19 @@ public class CreateXmlFileDemo {
         );
         try {
             //document maken:
+
             Document doc = DocumentBuilderFactory.newInstance()
                     .newDocumentBuilder().newDocument();
+
             //root element maken:
+
             Element rootElement = doc.createElement("family");
             doc.appendChild(rootElement);
+
             //person elementen toevoegen:
             int count = 1;
             for (Person person : familyList) {
+
                 Element personElement = doc.createElement("person");
                 //attribuut toevoegen:
                 personElement.setAttribute("roll-no", String.valueOf(count++));
@@ -57,7 +62,9 @@ public class CreateXmlFileDemo {
                 rootElement.appendChild(personElement);
             }
             // source voor wegschrijven
+
             DOMSource src = new DOMSource(doc);
+
             // schrijver
             Transformer xf = TransformerFactory.newInstance().newTransformer();
             // pretty print
@@ -67,6 +74,8 @@ public class CreateXmlFileDemo {
             xf.transform(src, new StreamResult(System.out));
             //save file
             xf.transform(src, new StreamResult(new File(file)));
+
+
             System.out.println("File Saved!");
         } catch (ParserConfigurationException | TransformerException e) {
             e.printStackTrace();
