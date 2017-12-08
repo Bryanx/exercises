@@ -1,0 +1,39 @@
+﻿@model CM_UI_MVC.Models.ViewModels.SubscribeViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Subscribe</h2>
+@using (Html.BeginForm()) {
+    <div>
+        <br/>
+        @Html.LabelFor(model => model.Subscription.SubscriptionDate
+            , htmlAttributes: new {@class = "control-label col-md-2"})
+        @Html.EditorFor(model => model.Subscription.SubscriptionDate
+            , new {
+                htmlAttributes = new {
+                    @class = "form-control"
+                    , @readonly = true
+                }
+            })
+        <br/>
+    </div>
+    <div>
+        <br/>
+        @Html.LabelFor(model => model.Subscription.Student, new {@class = "control-label col-md-2"})
+        @Html.EditorFor(model => model.Subscription.Student, new {htmlAttributes = new {@class = "form-control"}})
+        <br/>
+    </div>
+    <div>
+        <br/>
+        @Html.LabelFor(model => model.Subscription.CourseId, new {@class = "control-label col-md-2"})
+        @Html.DropDownListFor(model => model.Subscription.CourseId, new SelectList(Model.Courses
+                , "CourseId"
+                , "Name"
+                , Model.Subscription.CourseId)
+            , new {htmlAttributes = new {@class = "form-control"}})
+        <br/>
+    </div>
+    <input type="submit" value="Schrijf in" class="btn btn-default"/>
+}

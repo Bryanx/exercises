@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Hallokes";
+}
+<h2>Index</h2>
+Hier is'm hem! <br/>
+Onze eerste eigen View!
+<br/>
+<h2>Eens data proberen over te sturen</h2>
+<form action="~/DemoView/Index" method="post">
+    <input type="text" name="nameCustomer"/>
+    <input type="text" name="nbr"/>
+    <input type="submit" value="Verstuur"/>
+</form>
+
+@Html.Partial("_DemoPartial")
