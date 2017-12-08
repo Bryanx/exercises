@@ -19,7 +19,7 @@ public class YieldingThread extends Thread {
             if (--countDown == 0) {
                 return;
             }
-            Thread.yield();
+//            Thread.yield();
         }
     }
 }

@@ -2,6 +2,8 @@ package be.kdg.deamonlambda;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.IntStream;
 
 /*
  * Let op! Dit programma geeft niet dezelfde uitvoer als de andere Daemon versies.
@@ -13,9 +15,18 @@ public class StartDaemonRacer {
 
     public static void main(String[] args) {
         Runnable myRunnable = () -> {
-	        //Todo: vul lambda expressie aan
-
+            System.out.println(Thread.currentThread().getName() + " START");
+            ThreadLocalRandom random = ThreadLocalRandom.current();
+            IntStream.range(0, 100).forEach(i -> {
+                try {
+                    System.out.println(Thread.currentThread().getName() + " legt ronde\t" + i + " af");
+                    Thread.sleep(random.nextInt(1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            });
         };
+
 
         Thread threadEen = new Thread(myRunnable, "Hamilton");
         Thread threadTwee = new Thread(myRunnable, "Rosberg");

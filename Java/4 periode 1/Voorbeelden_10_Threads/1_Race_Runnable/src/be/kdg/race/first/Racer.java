@@ -12,11 +12,11 @@ public class Racer implements Runnable {
         System.out.println(naam + " START");
         for (int i = 0; i < 10; i++) {
             System.out.println(naam + " ronde " + (i + 1));
-            try {
-                Thread.sleep(random.nextInt(1000));
-            } catch (InterruptedException e) {
-                // negeer
-            }
+//            try {
+//                Thread.sleep(random.nextInt(100));
+//            } catch (InterruptedException e) {
+//                // negeer
+//            }
         }
         System.out.println(naam + " AANGEKOMEN");
     }

@@ -37,9 +37,9 @@ public class StartJoin {
 
         System.out.println("Waiting for threads to finish.");
         try {
-            one.join();
-            two.join();
-            three.join();
+            one.join(); //One wordt gemarkeert als een Thread waar gewacht op moet worden.
+            two.join(); //Hierdoor wacht de main op deze threads
+            three.join(); //Main Thread exiting is pas op het eind! Wanneer join uitstaat, dan Main thread eerst exit.
         } catch (InterruptedException e) {
             System.out.println("Main thread Interrupted");
         }

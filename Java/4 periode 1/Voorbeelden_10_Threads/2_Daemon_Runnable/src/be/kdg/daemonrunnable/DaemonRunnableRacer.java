@@ -14,6 +14,10 @@ public class DaemonRunnableRacer implements Runnable {
         return naam;
     }
 
+    public Thread getThread() {
+        return new Thread(this);
+    }
+
     public int getRondeNummer() {
         return rondeNummer;
     }

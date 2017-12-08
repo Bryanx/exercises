@@ -8,7 +8,11 @@ public class StartRace {
 
     public static void main(String[] args) {
         Runnable myRunnable = () -> {
-            // TODO Vul hier aan
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         };
 
         Thread racerEen = new Thread(myRunnable, "Peter");

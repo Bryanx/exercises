@@ -2,6 +2,7 @@ package be.kdg.join;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class DemoJoin {
     private List<String> threadNamen = new ArrayList<>();
@@ -29,7 +30,9 @@ public class DemoJoin {
 
     private class MyThread extends Thread {
         public void run() {
-            for (int i = 0; i < 100000000; i++) {/* leeg */}
+            IntStream.of(0,100000000).forEach(i -> {
+
+            });
             threadNamen.add(getName());
         }
     }

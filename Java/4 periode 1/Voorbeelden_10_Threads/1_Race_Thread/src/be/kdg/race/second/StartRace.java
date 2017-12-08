@@ -7,7 +7,5 @@ public class StartRace {
 
         racerEen.start();
         racerTwee.start();
-
-        // Kortere schrijfwijze:  new Racer("Peter").start();
     }
 }

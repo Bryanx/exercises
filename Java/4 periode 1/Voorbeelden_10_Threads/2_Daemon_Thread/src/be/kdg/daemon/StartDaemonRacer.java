@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StartDaemonRacer {
     public static void main(String[] args) {
         DaemonRacer threadEen = new DaemonRacer("Hamilton");
-        DaemonRacer threadTwee = new DaemonRacer("Rosberg");
+        DaemonRacer threadTwee = new DaemonRacer("Verstappen");
 
         threadEen.setDaemon(true);
         threadTwee.setDaemon(true);
