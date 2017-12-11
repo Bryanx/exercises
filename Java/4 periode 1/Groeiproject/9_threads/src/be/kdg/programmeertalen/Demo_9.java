@@ -47,9 +47,21 @@ public class Demo_9 {
         double totaal = 0L;
         for (int i = 0; i < TESTCOUNT; i++) {
             long start = System.currentTimeMillis();
-            new Thread(run1).start();
-            new Thread(run2).start();
-            new Thread(run3).start();
+            Thread een2 = new Thread(run1);
+            Thread twee2 = new Thread(run2);
+            Thread drie2 = new Thread(run3);
+
+            een2.start();
+            twee2.start();
+            drie2.start();
+
+            try {
+                een2.join();
+                twee2.join();
+                drie2.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             totaal += System.currentTimeMillis() - start;
         }
 
