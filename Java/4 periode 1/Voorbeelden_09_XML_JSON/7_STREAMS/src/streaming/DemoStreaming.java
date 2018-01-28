@@ -52,8 +52,7 @@ public class DemoStreaming {
         System.out.println(jsonStr);
 
         //4) Json gesorteerd:
-        Comparator<Person> BY_FIRST =
-                (lhs, rhs) -> lhs.getFirstName().compareTo(rhs.getFirstName());
+        Comparator<Person> BY_FIRST = Comparator.comparing(Person::getFirstName);
 
 
         String jsonStr2 = familyList.stream()

@@ -58,6 +58,7 @@ public class Exhibition {
     /*
      * indicates JaxB what adapter it should use to manage this field
      */
+
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public void setTo(LocalDate to) {
         this.to = to;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root-tagname>
+  <parent-tagname attributename="attribute-value">
+    <child-tagname>Homer</child-tagname>
+  </parent-tagname>
+  <parent-tagname attributename="attribute-value">
+    <child-tagname>Marge</child-tagname>
+  </parent-tagname>
+  <parent-tagname attributename="attribute-value">
+    <child-tagname>Bart</child-tagname>
+  </parent-tagname>
+  <parent-tagname attributename="attribute-value">
+    <child-tagname>Lisa</child-tagname>
+  </parent-tagname>
+  <parent-tagname attributename="attribute-value">
+    <child-tagname>Maggie</child-tagname>
+  </parent-tagname>
+</root-tagname>

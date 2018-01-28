@@ -6,74 +6,31 @@ import java.time.LocalDate;
  * @author Bryan de Ridder
  * @version 1.0 20/09/17 17:05
  */
-public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
+public final class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
 
     public static final LocalDate MIN_DATE = LocalDate.of(1900, 1, 1);
     public static final double MAX_VERSION_NR = 1000.0;
-    private String naam;
-    private String oprichter;
-    private String extensionName;
-    private double laatsteVersie;
-    private int aantalGebruikers;
-    private Stijl stijl;
-    private LocalDate opgerichtIn;
+    private final String naam;
+    private final String oprichter;
+    private final String extensionName;
+    private final double laatsteVersie;
+    private final int aantalGebruikers;
+    private final Stijl stijl;
+    private final LocalDate opgerichtIn;
 
     public ProgrammeerTaal() {
-        setNaam("Onbekend");
-        setOprichter("Onbekend");
-        setExtensionName(".");
-        setLaatsteVersie(0.0);
-        setAantalGebruikers(0);
-        setStijl(Stijl.GEEN);
-        setOpgerichtIn(MIN_DATE);
+        this("Onbekend", "Onbekend", ".", 0.0, 0, Stijl.GEEN, MIN_DATE);
     }
 
     public ProgrammeerTaal(String naam, String oprichter, String extensionName,
                            double laatsteVersie, int aantalGebruikers, Stijl stijl, LocalDate opgerichtIn) {
-        setNaam(naam);
-        setOprichter(oprichter);
-        setExtensionName(extensionName);
-        setLaatsteVersie(laatsteVersie);
-        setAantalGebruikers(aantalGebruikers);
-        setStijl(stijl);
-        setOpgerichtIn(opgerichtIn);
-    }
-
-    public void setOprichter(String oprichter) {
-        if (oprichter.isEmpty()) throw new IllegalArgumentException("Oprichter naam ongeldig.");
-        this.oprichter = oprichter;
-    }
-
-    public void setExtensionName(String extension) {
-        if (extension.isEmpty()) throw new IllegalArgumentException("Extensie is ongeldig.");
-        if (extension.charAt(0) != '.') throw new IllegalArgumentException("Extensie moet beginnen met een punt.");
-        this.extensionName = extension;
-
-    }
-
-    public void setLaatsteVersie(double versie) {
-        if (versie < 0.0 || versie > MAX_VERSION_NR) throw new IllegalArgumentException("Versie is ongeldig.");
-        this.laatsteVersie = versie;
-    }
-
-    public void setAantalGebruikers(int aantal) {
-        if (aantal < 0) throw new IllegalArgumentException("Aantal gebruikers mag niet onder 0 liggen.");
-        this.aantalGebruikers = aantal;
-    }
-
-    public void setStijl(Stijl stijl) {
-        this.stijl = stijl;
-    }
-
-    public void setOpgerichtIn(LocalDate datum) {
-        if (datum.isAfter(LocalDate.now()) || datum.isBefore(MIN_DATE))
-            throw new IllegalArgumentException("Ongeldige oprichtings datum.");
-        this.opgerichtIn = datum;
-    }
-
-    public void setNaam(String naam) {
-        if (naam.isEmpty()) throw new IllegalArgumentException("Ongeldige naam.");
         this.naam = naam;
+        this.oprichter = oprichter;
+        this.extensionName = extensionName;
+        this.laatsteVersie = laatsteVersie;
+        this.aantalGebruikers = aantalGebruikers;
+        this.stijl = stijl;
+        this.opgerichtIn = opgerichtIn;
     }
 
     public String getNaam() {

@@ -8,8 +8,8 @@ import java.time.LocalDate;
  */
 public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
 
-    public static final LocalDate MIN_DATE = LocalDate.of(1900, 1, 1);
-    public static final double MAX_VERSION_NR = 1000.0;
+    private static final LocalDate MIN_DATE = LocalDate.of(1900, 1, 1);
+    private static final double MAX_VERSION_NR = 1000.0;
     private String naam;
     private String oprichter;
     private String extensionName;
@@ -19,13 +19,8 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     private LocalDate opgerichtIn;
 
     public ProgrammeerTaal() {
-        setNaam("Onbekend");
-        setOprichter("Onbekend");
-        setExtensionName(".");
-        setLaatsteVersie(0.0);
-        setAantalGebruikers(0);
-        setStijl(Stijl.GEEN);
-        setOpgerichtIn(MIN_DATE);
+        this("Onbekend", "Onbekend", ".",0.0,0,Stijl.GEEN,
+                LocalDate.of(1900, 1, 1));
     }
 
     public ProgrammeerTaal(String naam, String oprichter, String extensionName,

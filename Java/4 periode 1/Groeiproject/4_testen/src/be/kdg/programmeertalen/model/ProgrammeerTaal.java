@@ -80,7 +80,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
             String error = String.format("Aantal gebruikers mag niet onder de 0 liggen " +
                     "voor programmeertaal %s.", this.getNaam());
             LOGGER.log(Level.SEVERE, error, this.getClass().getSimpleName());
-//            throw new IllegalArgumentException(error);
+            throw new IllegalArgumentException(error);
         }
         this.aantalGebruikers = aantal;
     }

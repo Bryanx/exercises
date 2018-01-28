@@ -17,19 +17,19 @@ public class Demo_8 {
         ProgrammeerTalen talen = new ProgrammeerTalen();
         Data.getLijst().forEach(talen::voegToe);
 
-//        ProgrammeerTalenStaxParser parser = new ProgrammeerTalenStaxParser(talen, "8_xml_json/files/programmeertalen.xml");
-//        parser.writeXML();
-//
-//        ProgrammeerTalenDomParser dom = new ProgrammeerTalenDomParser();
-//        dom.getContentXML().gesorteerdOpNaam().forEach(System.out::println);
-//
-//        ProgrammeerTalenJaxbParser.JaxbWriteXml("8_xml_json/files/programmeertalen.xml", talen);
-//        ProgrammeerTalen talen2 =
-//                ProgrammeerTalenJaxbParser.JaxbReadXml("8_xml_json/files/programmeertalen.xml", ProgrammeerTalen.class);
-//        talen2.gesorteerdOpNaam().forEach(System.out::println);
+        ProgrammeerTalenStaxParser parser = new ProgrammeerTalenStaxParser(talen, "8_xml_json/files/programmeertalen.xml");
+        parser.writeXML();
 
-        ProgrammeerTalenGsonParser.writeJson(talen, "8_xml_json/files/programmeertalen.txt");
-        ProgrammeerTalenGsonParser.readJson("8_xml_json/files/programmeertalen.txt")
+        ProgrammeerTalenDomParser dom = new ProgrammeerTalenDomParser();
+        dom.getContentXML().gesorteerdOpNaam().forEach(System.out::println);
+
+        ProgrammeerTalenJaxbParser.JaxbWriteXml("8_xml_json/files/programmeertalen2.xml", talen);
+        ProgrammeerTalen talen2 =
+                ProgrammeerTalenJaxbParser.JaxbReadXml("8_xml_json/files/programmeertalen2.xml", ProgrammeerTalen.class);
+        talen2.gesorteerdOpNaam().forEach(System.out::println);
+
+        ProgrammeerTalenGsonParser.writeJson(talen, "8_xml_json/files/programmeertalen.json");
+        ProgrammeerTalenGsonParser.readJson("8_xml_json/files/programmeertalen.json")
                 .gesorteerdOpNaam().forEach(System.out::println);
 
     }

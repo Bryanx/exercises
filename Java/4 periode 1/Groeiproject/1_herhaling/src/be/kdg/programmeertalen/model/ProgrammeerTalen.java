@@ -3,8 +3,9 @@ package be.kdg.programmeertalen.model;
 import java.util.*;
 
 /**
- * @author Bryan de Ridder
- * @version 1.0 20/09/17 17:05
+ * MULTIKLASSE
+ * STUDENT: Bryan de Ridder
+ * klasgroep: INF203A
  */
 public class ProgrammeerTalen {
     private TreeSet<ProgrammeerTaal> talen;

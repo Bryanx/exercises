@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<marathon>
+    <marathonloper>
+        <naam>Biwott Stanley</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2016-01-03</wedstrijddatum>
+        <seconden>7432</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Gebrselassie Haile</naam>
+        <herkomst>Ethiopie</herkomst>
+        <wedstrijddatum>2008-12-04</wedstrijddatum>
+        <seconden>7439</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Mutai Emmanuel</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2014-12-23</wedstrijddatum>
+        <seconden>7393</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Kimetto Dennis</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2014-12-23</wedstrijddatum>
+        <seconden>7377</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Noguchi Mizuki</naam>
+        <herkomst>Japan</herkomst>
+        <wedstrijddatum>2012-12-10</wedstrijddatum>
+        <seconden>8352</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Kipsang Wilson</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2016-01-03</wedstrijddatum>
+        <seconden>7403</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Makau Patrick</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2011-06-08</wedstrijddatum>
+        <seconden>7418</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Kipchoge Eliud</naam>
+        <herkomst>Kenia</herkomst>
+        <wedstrijddatum>2016-02-13</wedstrijddatum>
+        <seconden>7384</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Bekele Kenenisa</naam>
+        <herkomst>Ethiopie</herkomst>
+        <wedstrijddatum>2016-01-03</wedstrijddatum>
+        <seconden>7383</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Radcliffe Paula</naam>
+        <herkomst>Groot-Brittanie</herkomst>
+        <wedstrijddatum>2003-02-05</wedstrijddatum>
+        <seconden>8125</seconden>
+    </marathonloper>
+    <marathonloper>
+        <naam>Keitany Mary</naam>
+        <herkomst>Ethiopie</herkomst>
+        <wedstrijddatum>2012-12-10</wedstrijddatum>
+        <seconden>8317</seconden>
+    </marathonloper>
+</marathon>

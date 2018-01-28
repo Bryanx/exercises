@@ -28,11 +28,14 @@ public class TestProgrammeerTaal {
         assertSame("Objecten moeten hetzelfde zijn", taal1.getNaam(), taal2.getNaam());
     }
 
+//    Methode verwacht een Exception, maar deze staan uit ivm logging.
+
     @Test(expected = IllegalArgumentException.class)
     public void testOngeldig() {
         taal1.setAantalGebruikers(-1);
         fail("Mag niet negatief zijn.");
     }
+
 
     @Test
     public void testGeldig() {

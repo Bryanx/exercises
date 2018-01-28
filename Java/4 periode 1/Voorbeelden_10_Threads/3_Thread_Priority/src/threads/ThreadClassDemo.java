@@ -11,6 +11,7 @@ public class ThreadClassDemo {
 
         Thread helloThread = new Thread(myRunnable, "Hello");
         helloThread.setPriority(Thread.MAX_PRIORITY);
+
 //        helloThread.setDaemon(true);
         System.out.println("Starting hello thread...");
         helloThread.start();

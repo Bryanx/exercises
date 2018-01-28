@@ -3,13 +3,12 @@ package be.kdg.programmeertalen.model;
 import java.time.LocalDate;
 
 /**
- * @author Bryan de Ridder
- * @version 1.0 20/09/17 17:05
+ * BASISKLASSE
+ * STUDENT: Bryan de Ridder
+ * klasgroep: INF203A
  */
 public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
 
-    public static final LocalDate MIN_DATE = LocalDate.of(1900, 1, 1);
-    public static final double MAX_VERSION_NR = 1000.0;
     private String naam;
     private String oprichter;
     private String extensionName;
@@ -19,13 +18,8 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     private LocalDate opgerichtIn;
 
     public ProgrammeerTaal() {
-        setNaam("Onbekend");
-        setOprichter("Onbekend");
-        setExtensionName(".");
-        setLaatsteVersie(0.0);
-        setAantalGebruikers(0);
-        setStijl(Stijl.GEEN);
-        setOpgerichtIn(MIN_DATE);
+        this("Onbekend", "Onbekend", ".",0.0,0,Stijl.GEEN,
+                LocalDate.of(1900, 1, 1));
     }
 
     public ProgrammeerTaal(String naam, String oprichter, String extensionName,
@@ -52,7 +46,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     }
 
     public void setLaatsteVersie(double versie) {
-        if (versie < 0.0 || versie > MAX_VERSION_NR) throw new IllegalArgumentException("Versie is ongeldig.");
+        if (versie < 0.0 || versie > 1000.0) throw new IllegalArgumentException("Versie is ongeldig.");
         this.laatsteVersie = versie;
     }
 
@@ -66,7 +60,7 @@ public class ProgrammeerTaal implements Comparable<ProgrammeerTaal> {
     }
 
     public void setOpgerichtIn(LocalDate datum) {
-        if (datum.isAfter(LocalDate.now()) || datum.isBefore(MIN_DATE))
+        if (datum.isAfter(LocalDate.now()) || datum.isBefore(LocalDate.of(1900, 1, 1)))
             throw new IllegalArgumentException("Ongeldige oprichtings datum.");
         this.opgerichtIn = datum;
     }

@@ -19,7 +19,6 @@ public class Demo_7 {
          Serialization
          */
 
-        /*
         ProgrammeerTalen talenOut = new ProgrammeerTalen();
 
         Data.getLijst().forEach(talenOut::voegToe);
@@ -27,31 +26,16 @@ public class Demo_7 {
         System.out.println("Voor Serialize:");
         talenOut.gesorteerdOpNaam().forEach(System.out::println);
 
-        //Output:
-        try (FileOutputStream f = new FileOutputStream("7_persistentie/db/talen.ser");
-             ObjectOutputStream out = new ObjectOutputStream(f)) {
-            out.writeObject(talenOut);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        writeSerialize(talenOut, "7_persistentie/db/talen.ser");
 
         System.out.println();
-        System.out.println();
 
-        //Input:
-        ProgrammeerTalen talenIn = null;
-        try (FileInputStream f = new FileInputStream("7_persistentie/db/talen.ser");
-             ObjectInputStream in = new ObjectInputStream(f)) {
-            talenIn = (ProgrammeerTalen) in.readObject();
-            System.out.println("Na Serialize:");
-            talenIn.gesorteerdOpNaam().forEach(System.out::println);
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        ProgrammeerTalen talenIn = readSerialize("7_persistentie/db/talen.ser");
+        System.out.println("Na Serialize:");
+        talenOut.gesorteerdOpNaam().forEach(System.out::println);
 
-        if (talenOut.equals(talenIn)) System.out.println("\nEquals: true");
-        else System.out.println("\nEquals: false");
-        */
+        System.out.println(talenOut.equals(talenIn) ? "\nEquals: true" : "\nEquals: false");
+
 
         /**
          JDBC
@@ -73,5 +57,24 @@ public class Demo_7 {
         dao.filter(500000).gesorteerdOpAantalGebruikers().forEach(System.out::println);
         dao.close();
 
+    }
+
+    public static ProgrammeerTalen readSerialize(String fileName) {
+        try (FileInputStream f = new FileInputStream(fileName);
+             ObjectInputStream in = new ObjectInputStream(f)) {
+            return (ProgrammeerTalen) in.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static <T> void writeSerialize(T object, String fileName) {
+        try (FileOutputStream f = new FileOutputStream(fileName);
+             ObjectOutputStream out = new ObjectOutputStream(f)) {
+            out.writeObject(object);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
