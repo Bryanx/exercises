@@ -1,0 +1,24 @@
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+#navbar {
+  background: #a2231d; }
+  #navbar ul {
+    list-style-type: none; }
+    #navbar ul li {
+      display: inline-block; }
+  #navbar a {
+    color: #5ddce2; }
+
+.sr-only {
+  display: none; }
+
+.icon-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 2px;
+  background: slategray; }
+
+/*# sourceMappingURL=styles.css.map */

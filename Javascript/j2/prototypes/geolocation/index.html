@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="location"></div>
+
+<script type="text/javascript">
+
+    function showPosition(position){
+        var key = "AIzaSyC82a7EVzFkMUePqYH6afAWMh3vKfsdafY";
+        var latlon = position.coords.latitude + ","
+            + position.coords.longitude;
+        var img_url = "http://maps.googleapis.com/maps/api/staticmap?"
+            + "center=" + latlon
+            + "&key=" + key
+            + "&zoom=14"
+            + "&size=1600x900"
+            + "&sensor=false"
+            + "&markers=color:blue%7Clabel:H%7C" + latlon;
+        document.getElementById("location").innerHTML = "<img src='" + img_url + "' />";
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((e) => {
+            showPosition(e);
+        });
+    }
+</script>
+</body>
+</html>

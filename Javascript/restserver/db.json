@@ -1,0 +1,44 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "zip": 1000,
+      "name": "Antwerpen"
+    },
+    {
+      "id": 2,
+      "zip": 2000,
+      "name": "Ghent"
+    },
+    {
+      "id": 3,
+      "zip": 3000,
+      "name": "Brussel"
+    },
+    {
+      "id": 4,
+      "zip": 4000,
+      "name": "Luik"
+    },
+    {
+      "id": 5,
+      "zip": 5000,
+      "name": "Mortsel"
+    },
+    {
+      "id": 6,
+      "zip": 6000,
+      "name": "Turnhout"
+    },
+    {
+      "id": "8",
+      "zip": "6000",
+      "name": "Aarschot"
+    },
+    {
+      "id": "9",
+      "zip": "5000",
+      "name": "Luik"
+    }
+  ]
+}

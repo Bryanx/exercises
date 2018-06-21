@@ -1,0 +1,10 @@
+$color: pink;
+
+body {
+  background-color: $color;
+  width: 100%;
+}
+
+h1 {
+  color: darken($color, 10%);
+}

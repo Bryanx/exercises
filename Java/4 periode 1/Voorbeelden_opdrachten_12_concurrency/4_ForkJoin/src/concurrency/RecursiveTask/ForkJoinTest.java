@@ -7,8 +7,8 @@ public class ForkJoinTest {
     public static void main(String[] args) throws Exception {
         int size = 1000;
 
-        ForkJoinPool pool = new ForkJoinPool(4);
 
+        ForkJoinPool pool = new ForkJoinPool(4);
         double[] numbers = new double[10_000_000];
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (double) i;

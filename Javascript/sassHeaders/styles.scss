@@ -1,0 +1,8 @@
+
+@for $i from 1 to 7 {
+  h#{$i} {
+    font-size: #{56-8*$i}px;
+    color: lighten(darkblue, $i*10);
+  }
+}
+
