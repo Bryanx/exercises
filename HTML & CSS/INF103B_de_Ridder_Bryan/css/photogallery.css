@@ -1,46 +1,59 @@
 /* Banner on the photos page */
 .photogallerybanner {
-    background: url(../images/banners/lights.jpg) no-repeat fixed center bottom;
-    background-size: cover;
-    min-height: 370px;
-    height: 50vh;
+  background: url(../images/banners/lights.jpg) no-repeat fixed center bottom;
+  background-size: cover;
+  min-height: 370px;
+  height: 50vh;
 }
 
 /* -----------------------------------*/
 /* ------->>> PHOTO GALLERY <<<-------*/
 /* -----------------------------------*/
 .photogallery {
-    min-width: 100%;
-    border-top: 20px solid #77C4D3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photogallery:first-of-type {
+  border-top: 35px solid #77C4D3;
+}
+
+.photogallery > .photo::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 
 .photo {
-    right: 0;
-    float: left;
-    background-color: black;
-    overflow: hidden;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
 }
 
 .photo img {
-    transition: transform .1s ease, filter .1s ease;
-    width: 25vw;
-    height: auto;
-    vertical-align: middle;
-    filter: brightness(60%);
-    transform: scale(1.0);
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: transform .1s ease, filter .1s ease;
+  filter: brightness(60%);
 }
+
 .photo img:hover {
-    filter: brightness(100%);
-    transform: scale(1.1);
+  filter: brightness(100%);
+  transform: scale(1.1);
 }
+
 @media screen and (max-width: 1000px) {
-    .photo img {
-        width: 50vw;
-    }
+  .photogallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .photo img {
-        width: 100vw;
-    }
+  .photogallery {
+    grid-template-columns: 1fr;
+  }
 }
